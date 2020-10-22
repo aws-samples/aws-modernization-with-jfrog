@@ -1,0 +1,22 @@
+pipelines:
+  - name: reset_jfrog
+    steps:
+    - name: delete_scaffolding
+      type: Bash
+      configuration:
+       inputResources:
+        - name: gitRepo_code
+          trigger: false
+       integrations:
+        - name: Artifactory
+      execution:
+       onStart:
+        - curl -fL https://getcli.jfrog.io | sh
+        - sudo apt-get install -y jq
+        - cp jfrog  `which jfrog`
+        - retry_command jfrog rt config --url $int_Artifactory_url --user
+          $int_Artifactory_user --apikey $int_Artifactory_apikey
+          --interactive=false
+        - "cd ${res_gitRepo_code_resourcePath}"
+        - "ls -lR"
+        - "./scripts/delete_entities.sh"
