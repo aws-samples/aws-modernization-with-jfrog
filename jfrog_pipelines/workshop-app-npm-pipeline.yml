@@ -1,0 +1,106 @@
+pipelines:
+  - name: npm_build
+  # Global configuration section for the entire pipeline
+    configuration:
+      environmentVariables:
+        readOnly:
+          Version: latest
+    steps:
+      - name: npm_prep
+        type: NpmBuild
+        configuration:
+          npmArgs:   --no-audit
+          repositoryName: npm-demo
+          sourceLocation: workshop-app
+          integrations:
+            - name: Artifactory
+          inputResources:
+            - name: gitRepo_code
+
+#      - name: npm_compile
+#        type: Bash
+#        configuration:
+#          inputSteps:
+#            - name: npm_prep
+#          integrations:
+#            - name: Artifactory
+#        execution:
+#          onStart:
+#            - export tempStateLocation="$step_tmp_dir/npmSourceState"
+#            # Restore file from previous step to current step
+#            - restore_run_files npmBuildInputGitRepo $tempStateLocation
+#            - pushd $tempStateLocation/workshop-app
+#            - npm run-script build
+#            # Add files to npm pipeline target
+#            - add_run_files $tempStateLocation/. npmBuildInputGitRepo
+#            - popd
+  
+      - name: npm_publish
+        type: NpmPublish
+        configuration:
+          repositoryName: npm-demo
+          integrations:
+            - name: Artifactory
+          inputSteps:
+            - name: npm_prep
+
+      - name: npm_docker_build
+        type: DockerBuild
+        configuration:
+          affinityGroup: bldGroup
+          dockerFileLocation: workshop-app
+          dockerFileName: Dockerfile
+          dockerImageName: ${Fullimagename}  
+          dockerImageTag: ${Version}
+          inputSteps:
+            - name: npm_publish
+          inputResources: 
+            - name: gitRepo_code
+          integrations:
+            - name: Artifactory
+        execution:
+          onStart:
+            - pushd ${res_gitRepo_code_resourcePath}/workshop-app
+            # Creating a Folder for the fileSpec Target
+            - mkdir -p npm_results
+            - popd
+            - export domain=$(echo ${int_Artifactory_url} | awk -F[/:] '{print $4}' )
+            - export Fullimagename="${domain}/docker-demo/npm-app"
+          onSuccess:
+            - echo "Congrats The Docker image was build"
+
+      - name: npm_docker_push
+        type: DockerPush
+        configuration:
+          affinityGroup: bldGroup
+          targetRepository: docker-demo
+          autoPublishBuildInfo: true
+          integrations:
+            - name:  Artifactory
+          inputSteps:
+            - name: npm_docker_build
+          outputResources:
+            - name: docker_npmBuild_Info
+
+      - name: npm_docker_scan
+        type: XrayScan
+        configuration:
+          inputResources:
+            - name: docker_npmBuild_Info
+              trigger: true
+          outputResources: 
+            - name: scanned_npm_dockerBuild_Info
+
+      - name: npm_docker_promote
+        type: PromoteBuild
+        configuration:
+          targetRepository:      docker-demo-prod-local
+          includeDependencies:   true   
+          status:                Passed
+          comment:               Artifact passed Xray Scan
+          copy:                  false
+          inputResources:
+            - name:    scanned_npm_dockerBuild_Info
+              trigger: true       
+          outputResources:
+            - name: final_docker_npmBuild_Info 
