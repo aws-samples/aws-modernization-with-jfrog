@@ -7,10 +7,6 @@
   </url>
   
   <url>
-    <loc>/0_welcome.html</loc>
-  </url>
-  
-  <url>
     <loc>/1_prerequisites.html</loc>
   </url>
   
@@ -19,19 +15,27 @@
   </url>
   
   <url>
-    <loc>/3_workshop_setup.html</loc>
+    <loc>/3_workshop.html</loc>
   </url>
   
   <url>
-    <loc>/4_build_publish_app.html</loc>
+    <loc>/4_workshop_setup.html</loc>
   </url>
   
   <url>
-    <loc>/5_deploy_ecs.html</loc>
+    <loc>/5_build_publish_app.html</loc>
   </url>
   
   <url>
-    <loc>/70_hands-on_lab/20_configure_github_integration.html</loc>
+    <loc>/6_view_results.html</loc>
+  </url>
+  
+  <url>
+    <loc>/7_deploy_ecs.html</loc>
+  </url>
+  
+  <url>
+    <loc>/8_conclusion.html</loc>
   </url>
   
   <url>
@@ -51,107 +55,79 @@
   </url>
   
   <url>
-    <loc>/70_hands-on_lab/30_configure_artifactory_integration.html</loc>
+    <loc>/4_workshop_setup/41_aws_setup.html</loc>
   </url>
   
   <url>
-    <loc>/3_workshop_setup/31_aws_setup.html</loc>
+    <loc>/4_workshop_setup/42_code_setup.html</loc>
   </url>
   
   <url>
-    <loc>/3_workshop_setup/32_github_setup.html</loc>
+    <loc>/4_workshop_setup/43_jfrog_setup.html</loc>
   </url>
   
   <url>
-    <loc>/3_workshop_setup/33_jfrog_setup.html</loc>
+    <loc>/7_deploy_ecs/71_configure_ecs.html</loc>
   </url>
   
   <url>
-    <loc>/70_hands-on_lab/40_configure_initialization_pipeline.html</loc>
+    <loc>/7_deploy_ecs/72_deploy.html</loc>
   </url>
   
   <url>
-    <loc>/70_hands-on_lab/50_configure_pipeline_source.html</loc>
+    <loc>/4_workshop_setup/41_aws_setup/412_aws_event_account.html</loc>
   </url>
   
   <url>
-    <loc>/5_deploy_ecs/51_configure_ecs.html</loc>
+    <loc>/4_workshop_setup/41_aws_setup/413_self_paced_account.html</loc>
   </url>
   
   <url>
-    <loc>/5_deploy_ecs/52_deploy.html</loc>
+    <loc>/4_workshop_setup/41_aws_setup/414_cloud9.html</loc>
   </url>
   
   <url>
-    <loc>/70_hands-on_lab/60_execute_initialization_pipeline.html</loc>
+    <loc>/4_workshop_setup/41_aws_setup/415_create_role.html</loc>
   </url>
   
   <url>
-    <loc>/70_hands-on_lab/70_execute_npm_build_pipeline.html</loc>
+    <loc>/4_workshop_setup/41_aws_setup/416_attach_role_workspace.html</loc>
   </url>
   
   <url>
-    <loc>/70_hands-on_lab.html</loc>
+    <loc>/4_workshop_setup/41_aws_setup/417_update_iam_settings.html</loc>
   </url>
   
   <url>
-    <loc>/70_hands-on_lab/120_conclusion.html</loc>
+    <loc>/4_workshop_setup/43_jfrog_setup/431_jfrog_free.html</loc>
   </url>
   
   <url>
-    <loc>/3_workshop_setup/31_aws_setup/312_aws_event_account.html</loc>
+    <loc>/4_workshop_setup/43_jfrog_setup/432_api_key.html</loc>
   </url>
   
   <url>
-    <loc>/3_workshop_setup/31_aws_setup/313_self_paced_account.html</loc>
+    <loc>/4_workshop_setup/43_jfrog_setup/433_jfrog_cli.html</loc>
   </url>
   
   <url>
-    <loc>/3_workshop_setup/31_aws_setup/314_cloud9.html</loc>
+    <loc>/4_workshop_setup/43_jfrog_setup/434_configure_jfrog.html</loc>
   </url>
   
   <url>
-    <loc>/3_workshop_setup/31_aws_setup/315_create_role.html</loc>
+    <loc>/7_deploy_ecs/71_configure_ecs/711_configure_ecs_secrets.html</loc>
   </url>
   
   <url>
-    <loc>/3_workshop_setup/31_aws_setup/316_attach_role_workspace.html</loc>
+    <loc>/7_deploy_ecs/71_configure_ecs/712_configure_ecs_role.html</loc>
   </url>
   
   <url>
-    <loc>/3_workshop_setup/31_aws_setup/317_update_iam_settings.html</loc>
+    <loc>/7_deploy_ecs/72_deploy/721_deploy_your_image.html</loc>
   </url>
   
   <url>
-    <loc>/3_workshop_setup/33_jfrog_setup/321_jfrog_free.html</loc>
-  </url>
-  
-  <url>
-    <loc>/3_workshop_setup/33_jfrog_setup/322_api_key.html</loc>
-  </url>
-  
-  <url>
-    <loc>/3_workshop_setup/33_jfrog_setup/323_jfrog_cli.html</loc>
-  </url>
-  
-  <url>
-    <loc>/3_workshop_setup/33_jfrog_setup/324_configure_jfrog.html</loc>
-  </url>
-  
-  <url>
-    <loc>/5_deploy_ecs/52_deploy/521_deploy_your_image.html</loc>
-  </url>
-  
-  <url>
-    <loc>/5_deploy_ecs/52_deploy/522_view_your_application.html</loc>
-  </url>
-  
-  <url>
-    <loc>/5_deploy_ecs/51_configure_ecs/511_configure_ecs_secrets.html</loc>
-  </url>
-  
-  <url>
-    <loc>/5_deploy_ecs/51_configure_ecs/512_configure_ecs_role.html</loc>
+    <loc>/7_deploy_ecs/72_deploy/722_view_your_application.html</loc>
   </url>
   
   <url>

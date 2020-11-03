@@ -7,17 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Configure the GitHub Integration</title>
-      <link>/70_hands-on_lab/20_configure_github_integration.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/70_hands-on_lab/20_configure_github_integration.html</guid>
-      <description>In order for JFrog Pipelines to get access to the code in your aws-modernization-with-jfrog repository, we must first set up a Pipelines GitHub integration. This allows Pipelines to authenticate and get access to your GitHub repositories. To do this, we create a GitHub Personal Access Token with the correct permissions.
-JFrog Pipelines can also integrate with other source code repositories such as GitHub Enterprise, BitBucket and GitLab.
-  Go to your GitHub Personal Access Tokens settings page.</description>
-    </item>
-    
-    <item>
       <title>Continuous Integration and Delivery</title>
       <link>/2_devops_cloud/21_continuous_integration_and_delivery.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -55,70 +44,11 @@ JFrog Artifactory is an Artifact Repository Manager that fully supports software
     </item>
     
     <item>
-      <title>Configure the Artifactory Integration</title>
-      <link>/70_hands-on_lab/30_configure_artifactory_integration.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/70_hands-on_lab/30_configure_artifactory_integration.html</guid>
-      <description>Similar to the GitHub Integration, in the following steps you will configure an Artifactory Integration that allows JFrog Pipelines to also access your Artifactory repositories in order to publish your artifacts and build info. You will do this by creating an API key.
-Artifactory offers a universal solution supporting all major package formats including Alpine, Maven, Gradle, Docker, Conda, Conan, Debian, Go, Helm, Vagrant, YUM, P2, Ivy, NuGet, PHP, NPM, RubyGems, PyPI, Bower, CocoaPods, GitLFS, Opkg, SBT and more.</description>
-    </item>
-    
-    <item>
-      <title>Configure the Initialization Pipeline</title>
-      <link>/70_hands-on_lab/40_configure_initialization_pipeline.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/70_hands-on_lab/40_configure_initialization_pipeline.html</guid>
-      <description>Next, we will update the lab pipelines to add your new GitHub and Artifactory integrations. In previous steps, you forked and cloned the lab repository. We will modify the initialization pipeline in your forked repository to add these integrations.
- In your local git directory, open aws-modernization-with-jfrog/jfrog_pipelines/init-jfrog.yml in your Cloud9 editor. Update the resources section of the file to use your new forked repository. Change the path and substitute your username.</description>
-    </item>
-    
-    <item>
-      <title>Configure the Pipeline Source</title>
-      <link>/70_hands-on_lab/50_configure_pipeline_source.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/70_hands-on_lab/50_configure_pipeline_source.html</guid>
-      <description>In these next steps, we will add the build pipelines as a JFrog Pipelines source. This will allow JFrog Pipelines to execute these pipelines automatically whenever there is a commit or manually as needed.
-A Pipeline Source represents a source control repository (such as GitHub or BitBucket) where Pipelines definition files can be found. A pipeline source connects to the repository through an integration.
-  In your JFrog Platform instance, go to Pipelines ► Pipeline Sources.</description>
-    </item>
-    
-    <item>
-      <title>Execute the Initialization Pipeline</title>
-      <link>/70_hands-on_lab/60_execute_initialization_pipeline.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/70_hands-on_lab/60_execute_initialization_pipeline.html</guid>
-      <description>The first pipeline that we will execute will initialize our environment. This pipeline will create users, groups, permissions, repositories, Xray policies and watches, Xray indexes and access federation. This prepares our JFrog Platform instance to run our NPM build pipeline.
-This pipeline initializes the JFrog Platform for the next build pipelines by creating the necessary users, repositories, permissions and Xray configuration. It does this by using the JFrog Platform REST APIs.</description>
-    </item>
-    
-    <item>
-      <title>Execute the NPM Build Pipeline</title>
-      <link>/70_hands-on_lab/70_execute_npm_build_pipeline.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/70_hands-on_lab/70_execute_npm_build_pipeline.html</guid>
-      <description>The npm_build pipeline builds our web application. This pipeline uses a NpmBuild Pipelines step build the user interface components. Next, it uses NpmPublish to publish the components. DockerBuild and DockerPush steps are used to build a Docker image and push it to Artifactory. It then scans the build using the XrayScan step. Then it pushes the produced artifacts to the &amp;ldquo;staging&amp;rdquo; repository in Artifactory along with all build information by using the PromoteBuild step.</description>
-    </item>
-    
-    <item>
-      <title>Conclusion</title>
-      <link>/70_hands-on_lab/120_conclusion.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/70_hands-on_lab/120_conclusion.html</guid>
-      <description>In this workshop, we demonstrated that using the JFrog Platform to create CI/CD pipelines to build an application, manage the artifacts, scan the artifacts for security vulnerabilities and license compliance, and publish the artifacts of your application to a staging repository. Then you used Amazon ECS to deploy your application so that end-users can access it. Now you have a basic understanding of the JFrog Platform as a modern DevOps cloud platform on AWS.</description>
-    </item>
-    
-    <item>
       <title>AWS Event: Create an AWS account</title>
-      <link>/3_workshop_setup/31_aws_setup/312_aws_event_account.html</link>
+      <link>/4_workshop_setup/41_aws_setup/412_aws_event_account.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/3_workshop_setup/31_aws_setup/312_aws_event_account.html</guid>
+      <guid>/4_workshop_setup/41_aws_setup/412_aws_event_account.html</guid>
       <description>Only complete this section if you are running the workshop through an AWS hosted event.
  To complete this workshop, you are provided with an AWS account via the AWS Event Engine service. A 12-digit hash will be provided to you by event staff - this is your unique access code. eg:
 e8476543c00e 1 . Go to https://dashboard.eventengine.run/. The following screen shows up.
@@ -127,10 +57,10 @@ e8476543c00e 1 . Go to https://dashboard.eventengine.run/. The following screen 
     
     <item>
       <title>Self-paced: Create an AWS account</title>
-      <link>/3_workshop_setup/31_aws_setup/313_self_paced_account.html</link>
+      <link>/4_workshop_setup/41_aws_setup/413_self_paced_account.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/3_workshop_setup/31_aws_setup/313_self_paced_account.html</guid>
+      <guid>/4_workshop_setup/41_aws_setup/413_self_paced_account.html</guid>
       <description>Only complete this section if you are running the workshop on your own. If you are at an AWS hosted event, go to Start the workshop at an AWS event. Your account must have the ability to create new IAM roles and scope other IAM permissions.
    If you don&amp;rsquo;t already have an AWS account with Administrator access: create one now by clicking here.
   Once you have an AWS account, ensure you are following the remaining workshop steps as an IAM user with administrator access to the AWS account: Create a new IAM user to use for the workshop.</description>
@@ -138,38 +68,38 @@ e8476543c00e 1 . Go to https://dashboard.eventengine.run/. The following screen 
     
     <item>
       <title>Set up your Cloud9 IDE</title>
-      <link>/3_workshop_setup/31_aws_setup/314_cloud9.html</link>
+      <link>/4_workshop_setup/41_aws_setup/414_cloud9.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/3_workshop_setup/31_aws_setup/314_cloud9.html</guid>
+      <guid>/4_workshop_setup/41_aws_setup/414_cloud9.html</guid>
       <description>AWS Cloud9 is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser. It includes a code editor, debugger, and terminal. Cloud9 comes prepackaged with essential tools for popular programming languages, including JavaScript, Python, PHP, and more, so you don’t need to install files or configure your development machine to start new projects.
  Within the AWS console, use the region drop list to select us-west-2 (Oregon).</description>
     </item>
     
     <item>
       <title>Create an IAM role for your workspace</title>
-      <link>/3_workshop_setup/31_aws_setup/315_create_role.html</link>
+      <link>/4_workshop_setup/41_aws_setup/415_create_role.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/3_workshop_setup/31_aws_setup/315_create_role.html</guid>
+      <guid>/4_workshop_setup/41_aws_setup/415_create_role.html</guid>
       <description> Follow this link to create an IAM role with Administrator access. Confirm that AWS service and EC2 are selected, then click Next to view permissions. Confirm that AdministratorAccess is checked, then click Next through to Review. Enter JFrog-Workshop-Admin for the role name. Click Create Role.   </description>
     </item>
     
     <item>
       <title>Attach the IAM role to your Workspace</title>
-      <link>/3_workshop_setup/31_aws_setup/316_attach_role_workspace.html</link>
+      <link>/4_workshop_setup/41_aws_setup/416_attach_role_workspace.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/3_workshop_setup/31_aws_setup/316_attach_role_workspace.html</guid>
+      <guid>/4_workshop_setup/41_aws_setup/416_attach_role_workspace.html</guid>
       <description> Follow this link to find your Cloud9 EC2 instance. Select the instance, then choose Actions ► Security ► Modify IAM role.  Choose JFrog-Workshop-Admin from the IAM Role drop down, and click Save.   </description>
     </item>
     
     <item>
       <title>Update IAM settings for your Workspace</title>
-      <link>/3_workshop_setup/31_aws_setup/317_update_iam_settings.html</link>
+      <link>/4_workshop_setup/41_aws_setup/417_update_iam_settings.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/3_workshop_setup/31_aws_setup/317_update_iam_settings.html</guid>
+      <guid>/4_workshop_setup/41_aws_setup/417_update_iam_settings.html</guid>
       <description>Return to your Cloud9 workspace and click the gear icon (in top right corner).
   Select AWS Settings.
   Turn off AWS managed temporary credentials.
@@ -180,80 +110,80 @@ e8476543c00e 1 . Go to https://dashboard.eventengine.run/. The following screen 
     
     <item>
       <title>Get a Free JFrog Platform Instance</title>
-      <link>/3_workshop_setup/33_jfrog_setup/321_jfrog_free.html</link>
+      <link>/4_workshop_setup/43_jfrog_setup/431_jfrog_free.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/3_workshop_setup/33_jfrog_setup/321_jfrog_free.html</guid>
+      <guid>/4_workshop_setup/43_jfrog_setup/431_jfrog_free.html</guid>
       <description>If you do not have access to a JFrog Platform instance, use the JFrog Platform Cloud Free Tier to get your own JFrog Platform instance with Artifactory and Xray.
  JFrog Platform Cloud Free Tier   </description>
     </item>
     
     <item>
       <title>Generate an API Key</title>
-      <link>/3_workshop_setup/33_jfrog_setup/322_api_key.html</link>
+      <link>/4_workshop_setup/43_jfrog_setup/432_api_key.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/3_workshop_setup/33_jfrog_setup/322_api_key.html</guid>
+      <guid>/4_workshop_setup/43_jfrog_setup/432_api_key.html</guid>
       <description>The JFrog Platform offers a universal solution supporting all major package formats including Alpine, Maven, Gradle, Docker, Conda, Conan, Debian, Go, Helm, Vagrant, YUM, P2, Ivy, NuGet, PHP, NPM, RubyGems, PyPI, Bower, CocoaPods, GitLFS, Opkg, SBT and more.
   Go to your JFrog Platform instance at https://[server name].jfrog.io. Refer to your JFrog Free Subscription Activation email if needed. Substitute your server name.  Login to your JFrog Platform instance with your credentials.</description>
     </item>
     
     <item>
       <title>Install and Configure the JFrog CLI</title>
-      <link>/3_workshop_setup/33_jfrog_setup/323_jfrog_cli.html</link>
+      <link>/4_workshop_setup/43_jfrog_setup/433_jfrog_cli.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/3_workshop_setup/33_jfrog_setup/323_jfrog_cli.html</guid>
+      <guid>/4_workshop_setup/43_jfrog_setup/433_jfrog_cli.html</guid>
       <description>JFrog CLI is a client that provides a simple interface that automates access to JFrog products simplifying your automation scripts and making them more readable and easier to maintain. JFrog CLI works with JFrog Artifactory, JFrog Mission Control, JFrog Bintray and JFrog Xray (through their respective REST APIs) making your scripts more efficient and reliable. You can use the JFrog CLI to assist in your builds, create artifacts, promote artifacts, trigger security scans and much more.</description>
     </item>
     
     <item>
       <title>Configure JFrog Artifactory and Xray</title>
-      <link>/3_workshop_setup/33_jfrog_setup/324_configure_jfrog.html</link>
+      <link>/4_workshop_setup/43_jfrog_setup/434_configure_jfrog.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/3_workshop_setup/33_jfrog_setup/324_configure_jfrog.html</guid>
-      <description>Now that we have</description>
-    </item>
-    
-    <item>
-      <title>Deploy Your Image with ECS</title>
-      <link>/5_deploy_ecs/52_deploy/521_deploy_your_image.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/5_deploy_ecs/52_deploy/521_deploy_your_image.html</guid>
-      <description>We are now ready to deploy your image with Amazon ECS. If not yet created, Amazon ECS can create a new VPC and ECS cluster as well as the other components that are required to serve your application. Amazon ECS will then authenticate, pull the image from Artifactory and deploy the container to the ECS cluster.
-The Amazon ECS first-run wizard guides you through the process of getting started with Amazon ECS using the Fargate launch type.</description>
-    </item>
-    
-    <item>
-      <title>View Your Application</title>
-      <link>/5_deploy_ecs/52_deploy/522_view_your_application.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/5_deploy_ecs/52_deploy/522_view_your_application.html</guid>
-      <description>In the previous section, you deployed your image with Amazon ECS. Now let&amp;rsquo;s check it out!
- When complete, click on your deployed service, npm-app-service.  Click on the Tasks tab.  Ensure the Last status shows RUNNING before going to the next step. Click on the deploy-npm-app task. On the Details page of the task, locate the Public IP.  In your browser, go to https://&amp;lt;Public IP&amp;gt; to view your deployed web application.</description>
+      <guid>/4_workshop_setup/43_jfrog_setup/434_configure_jfrog.html</guid>
+      <description> In your Cloud9 terminal, change directory to the aws-modernization-with-jfrog directory. Execute the following command to create Artifactory repositories, Xray watches and policies.  scripts/create_entities.sh </description>
     </item>
     
     <item>
       <title>Configure AWS Secrets Manager for ECS</title>
-      <link>/5_deploy_ecs/51_configure_ecs/511_configure_ecs_secrets.html</link>
+      <link>/7_deploy_ecs/71_configure_ecs/711_configure_ecs_secrets.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/5_deploy_ecs/51_configure_ecs/511_configure_ecs_secrets.html</guid>
+      <guid>/7_deploy_ecs/71_configure_ecs/711_configure_ecs_secrets.html</guid>
       <description>In the previous section, we set up JFrog Pipelines to authenticate and publish images to Artifactory. In the next sections, we will add the same Artifactory credentials to AWS Secrets Manager. We will then use an IAM Role to allow Amazon ECS to authenticate with Artifactory, pull the image and deploy it.
 Private registry authentication for ECS tasks using AWS Secrets Manager enables you to store your credentials securely and then reference them in your container definition.</description>
     </item>
     
     <item>
       <title>Configure an IAM Role for ECS</title>
-      <link>/5_deploy_ecs/51_configure_ecs/512_configure_ecs_role.html</link>
+      <link>/7_deploy_ecs/71_configure_ecs/712_configure_ecs_role.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/5_deploy_ecs/51_configure_ecs/512_configure_ecs_role.html</guid>
+      <guid>/7_deploy_ecs/71_configure_ecs/712_configure_ecs_role.html</guid>
       <description>We now have our Artifactory credentials in the AWS Secrets Manager. Next, we must create an IAM role that will allow ECS to access our Artifactory secrets and deploy our image.
 Before you can launch ECS container instances and register them into a cluster, you must create an IAM role for those container instances to use when they are launched. The Amazon ECS container agent makes calls to the Amazon ECS API on your behalf using this role.</description>
+    </item>
+    
+    <item>
+      <title>Deploy Your Image with ECS</title>
+      <link>/7_deploy_ecs/72_deploy/721_deploy_your_image.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/7_deploy_ecs/72_deploy/721_deploy_your_image.html</guid>
+      <description>We are now ready to deploy your image with Amazon ECS. If not yet created, Amazon ECS can create a new VPC and ECS cluster as well as the other components that are required to serve your application. Amazon ECS will then authenticate, pull the image from Artifactory and deploy the container to the ECS cluster.
+The Amazon ECS first-run wizard guides you through the process of getting started with Amazon ECS using the Fargate launch type.</description>
+    </item>
+    
+    <item>
+      <title>View Your Application</title>
+      <link>/7_deploy_ecs/72_deploy/722_view_your_application.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/7_deploy_ecs/72_deploy/722_view_your_application.html</guid>
+      <description>In the previous section, you deployed your image with Amazon ECS. Now let&amp;rsquo;s check it out!
+ When complete, click on your deployed service, npm-app-service.  Click on the Tasks tab.  Ensure the Last status shows RUNNING before going to the next step. Click on the deploy-npm-app task. On the Details page of the task, locate the Public IP.  In your browser, go to https://&amp;lt;Public IP&amp;gt; to view your deployed web application.</description>
     </item>
     
     <item>
