@@ -83,11 +83,11 @@ IS_EPLUS=`curl -s -w "%{http_code}" -o /dev/null -u ${int_Artifactory_user}:${in
 
 for file in ${dirName}/*.watch; do
     watch="$(b=${file##*/}; echo ${b%.*})"
-    curl -u ${int_Artifactory_user}:${int_Artifactory_apikey} -X DELETE --silent  ${BASEURL}/xray/api/v2/watches/$watch
+    jfrog rt curl -X DELETE --silent  ${BASEURL}/xray/api/v2/watches/$watch
 done
 for file in ${dirName}/*.policy; do
     policy="$(b=${file##*/}; echo ${b%.*})"
-    curl -u ${int_Artifactory_user}:${int_Artifactory_apikey} -H 'Content-Type:application/json' -X DELETE --silent  ${BASEURL}/xray/api/v2/policies/$policy
+    jfrog rt curl -H 'Content-Type:application/json' -X DELETE --silent  ${BASEURL}/xray/api/v2/policies/$policy
 done
 
 

@@ -3,135 +3,171 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/10_devops_cloud/1_continuous_integration_and_delivery.html</loc>
+    <loc>/</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/55_workshop_setup/30_self_paced/account.html</loc>
+    <loc>/0_welcome.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/</loc>
+    <loc>/1_prerequisites.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/10_devops_cloud/10_binary_repository_management.html</loc>
+    <loc>/2_devops_cloud.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/10_devops_cloud.html</loc>
+    <loc>/3_workshop_setup.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/10_fork_lab_repo.html</loc>
+    <loc>/4_build_publish_app.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/55_workshop_setup/10_start_workshop.html</loc>
+    <loc>/5_deploy_ecs.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/55_workshop_setup/20_aws_event.html</loc>
+    <loc>/70_hands-on_lab/20_configure_github_integration.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/20_configure_github_integration.html</loc>
+    <loc>/2_devops_cloud/21_continuous_integration_and_delivery.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/10_devops_cloud/20_dev_sec_ops.html</loc>
+    <loc>/2_devops_cloud/22_binary_repository_management.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/20_jfrog_platform_overview.html</loc>
+    <loc>/2_devops_cloud/23_dev_sec_ops.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/55_workshop_setup/30_self_paced.html</loc>
+    <loc>/2_devops_cloud/24_jfrog_platform_overview.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/30_configure_artifactory_integration.html</loc>
+    <loc>/70_hands-on_lab/30_configure_artifactory_integration.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/40_configure_initialization_pipeline.html</loc>
+    <loc>/3_workshop_setup/31_aws_setup.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/55_workshop_setup/40_cloud9.html</loc>
+    <loc>/3_workshop_setup/32_github_setup.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/50_configure_pipeline_source.html</loc>
+    <loc>/3_workshop_setup/33_jfrog_setup.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/55_workshop_setup/50_create_role.html</loc>
+    <loc>/70_hands-on_lab/40_configure_initialization_pipeline.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/55_workshop_setup.html</loc>
+    <loc>/70_hands-on_lab/50_configure_pipeline_source.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/55_workshop_setup/60_attach_role_workspace.html</loc>
+    <loc>/5_deploy_ecs/51_configure_ecs.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/60_execute_initialization_pipeline.html</loc>
+    <loc>/5_deploy_ecs/52_deploy.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/70_execute_npm_build_pipeline.html</loc>
+    <loc>/70_hands-on_lab/60_execute_initialization_pipeline.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab.html</loc>
+    <loc>/70_hands-on_lab/70_execute_npm_build_pipeline.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/55_workshop_setup/70_update_iam_settings.html</loc>
+    <loc>/70_hands-on_lab.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/80_configure_ecs_secrets.html</loc>
+    <loc>/70_hands-on_lab/120_conclusion.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/55_workshop_setup/80_jfrog_free.html</loc>
+    <loc>/3_workshop_setup/31_aws_setup/312_aws_event_account.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/90_configure_ecs_role.html</loc>
+    <loc>/3_workshop_setup/31_aws_setup/313_self_paced_account.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/100_deploy_your_image.html</loc>
+    <loc>/3_workshop_setup/31_aws_setup/314_cloud9.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/110_view_your_application.html</loc>
+    <loc>/3_workshop_setup/31_aws_setup/315_create_role.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/120_conclusion.html</loc>
+    <loc>/3_workshop_setup/31_aws_setup/316_attach_role_workspace.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/categories.html</loc>
+    <loc>/3_workshop_setup/31_aws_setup/317_update_iam_settings.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/cleanup.html</loc>
+    <loc>/3_workshop_setup/33_jfrog_setup/321_jfrog_free.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/resources.html</loc>
+    <loc>/3_workshop_setup/33_jfrog_setup/322_api_key.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/tags.html</loc>
+    <loc>/3_workshop_setup/33_jfrog_setup/323_jfrog_cli.html</loc>
+  </url>
+  
+  <url>
+    <loc>/3_workshop_setup/33_jfrog_setup/324_configure_jfrog.html</loc>
+  </url>
+  
+  <url>
+    <loc>/5_deploy_ecs/52_deploy/521_deploy_your_image.html</loc>
+  </url>
+  
+  <url>
+    <loc>/5_deploy_ecs/52_deploy/522_view_your_application.html</loc>
+  </url>
+  
+  <url>
+    <loc>/5_deploy_ecs/51_configure_ecs/511_configure_ecs_secrets.html</loc>
+  </url>
+  
+  <url>
+    <loc>/5_deploy_ecs/51_configure_ecs/512_configure_ecs_role.html</loc>
+  </url>
+  
+  <url>
+    <loc>/categories.html</loc>
+  </url>
+  
+  <url>
+    <loc>/cleanup.html</loc>
+  </url>
+  
+  <url>
+    <loc>/resources.html</loc>
+  </url>
+  
+  <url>
+    <loc>/tags.html</loc>
   </url>
   
 </urlset>

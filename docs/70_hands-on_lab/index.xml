@@ -1,27 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hands-On Lab on JFrog Workshop</title>
-    <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab.html</link>
-    <description>Recent content in Hands-On Lab on JFrog Workshop</description>
+    <title>Hands-On Lab on JFrog DevOps Modernization Workshop</title>
+    <link>/70_hands-on_lab.html</link>
+    <description>Recent content in Hands-On Lab on JFrog DevOps Modernization Workshop</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language><atom:link href="https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Fork the Lab Repository</title>
-      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/10_fork_lab_repo.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/10_fork_lab_repo.html</guid>
-      <description>To get started, you will need to fork this workshop repository. It contains the files, scripts and configurations that are required to complete the hands-on lab.
- Navigate to https://github.com/aws-samples/aws-modernization-with-jfrog. In the top-right corner of the GitHub repository page, click Fork. Wait for GitHub to complete the forking process. In your Cloud9 terminal, clone the new fork to your local git directory.  git clone https://github.com/[username]/aws-modernization-with-jfrog.git In the next sections, you will make changes to your new repository.</description>
-    </item>
-    
+    <language>en-US</language><atom:link href="/70_hands-on_lab/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Configure the GitHub Integration</title>
-      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/20_configure_github_integration.html</link>
+      <link>/70_hands-on_lab/20_configure_github_integration.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/20_configure_github_integration.html</guid>
+      <guid>/70_hands-on_lab/20_configure_github_integration.html</guid>
       <description>In order for JFrog Pipelines to get access to the code in your aws-modernization-with-jfrog repository, we must first set up a Pipelines GitHub integration. This allows Pipelines to authenticate and get access to your GitHub repositories. To do this, we create a GitHub Personal Access Token with the correct permissions.
 JFrog Pipelines can also integrate with other source code repositories such as GitHub Enterprise, BitBucket and GitLab.
   Go to your GitHub Personal Access Tokens settings page.</description>
@@ -29,30 +19,30 @@ JFrog Pipelines can also integrate with other source code repositories such as G
     
     <item>
       <title>Configure the Artifactory Integration</title>
-      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/30_configure_artifactory_integration.html</link>
+      <link>/70_hands-on_lab/30_configure_artifactory_integration.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/30_configure_artifactory_integration.html</guid>
+      <guid>/70_hands-on_lab/30_configure_artifactory_integration.html</guid>
       <description>Similar to the GitHub Integration, in the following steps you will configure an Artifactory Integration that allows JFrog Pipelines to also access your Artifactory repositories in order to publish your artifacts and build info. You will do this by creating an API key.
 Artifactory offers a universal solution supporting all major package formats including Alpine, Maven, Gradle, Docker, Conda, Conan, Debian, Go, Helm, Vagrant, YUM, P2, Ivy, NuGet, PHP, NPM, RubyGems, PyPI, Bower, CocoaPods, GitLFS, Opkg, SBT and more.</description>
     </item>
     
     <item>
       <title>Configure the Initialization Pipeline</title>
-      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/40_configure_initialization_pipeline.html</link>
+      <link>/70_hands-on_lab/40_configure_initialization_pipeline.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/40_configure_initialization_pipeline.html</guid>
+      <guid>/70_hands-on_lab/40_configure_initialization_pipeline.html</guid>
       <description>Next, we will update the lab pipelines to add your new GitHub and Artifactory integrations. In previous steps, you forked and cloned the lab repository. We will modify the initialization pipeline in your forked repository to add these integrations.
  In your local git directory, open aws-modernization-with-jfrog/jfrog_pipelines/init-jfrog.yml in your Cloud9 editor. Update the resources section of the file to use your new forked repository. Change the path and substitute your username.</description>
     </item>
     
     <item>
       <title>Configure the Pipeline Source</title>
-      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/50_configure_pipeline_source.html</link>
+      <link>/70_hands-on_lab/50_configure_pipeline_source.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/50_configure_pipeline_source.html</guid>
+      <guid>/70_hands-on_lab/50_configure_pipeline_source.html</guid>
       <description>In these next steps, we will add the build pipelines as a JFrog Pipelines source. This will allow JFrog Pipelines to execute these pipelines automatically whenever there is a commit or manually as needed.
 A Pipeline Source represents a source control repository (such as GitHub or BitBucket) where Pipelines definition files can be found. A pipeline source connects to the repository through an integration.
   In your JFrog Platform instance, go to Pipelines ► Pipeline Sources.</description>
@@ -60,69 +50,29 @@ A Pipeline Source represents a source control repository (such as GitHub or BitB
     
     <item>
       <title>Execute the Initialization Pipeline</title>
-      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/60_execute_initialization_pipeline.html</link>
+      <link>/70_hands-on_lab/60_execute_initialization_pipeline.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/60_execute_initialization_pipeline.html</guid>
+      <guid>/70_hands-on_lab/60_execute_initialization_pipeline.html</guid>
       <description>The first pipeline that we will execute will initialize our environment. This pipeline will create users, groups, permissions, repositories, Xray policies and watches, Xray indexes and access federation. This prepares our JFrog Platform instance to run our NPM build pipeline.
 This pipeline initializes the JFrog Platform for the next build pipelines by creating the necessary users, repositories, permissions and Xray configuration. It does this by using the JFrog Platform REST APIs.</description>
     </item>
     
     <item>
       <title>Execute the NPM Build Pipeline</title>
-      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/70_execute_npm_build_pipeline.html</link>
+      <link>/70_hands-on_lab/70_execute_npm_build_pipeline.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/70_execute_npm_build_pipeline.html</guid>
+      <guid>/70_hands-on_lab/70_execute_npm_build_pipeline.html</guid>
       <description>The npm_build pipeline builds our web application. This pipeline uses a NpmBuild Pipelines step build the user interface components. Next, it uses NpmPublish to publish the components. DockerBuild and DockerPush steps are used to build a Docker image and push it to Artifactory. It then scans the build using the XrayScan step. Then it pushes the produced artifacts to the &amp;ldquo;staging&amp;rdquo; repository in Artifactory along with all build information by using the PromoteBuild step.</description>
     </item>
     
     <item>
-      <title>Configure AWS Secrets Manager for ECS</title>
-      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/80_configure_ecs_secrets.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/80_configure_ecs_secrets.html</guid>
-      <description>In the previous section, we set up JFrog Pipelines to authenticate and publish images to Artifactory. In the next sections, we will add the same Artifactory credentials to AWS Secrets Manager. We will then use an IAM Role to allow Amazon ECS to authenticate with Artifactory, pull the image and deploy it.
-Private registry authentication for ECS tasks using AWS Secrets Manager enables you to store your credentials securely and then reference them in your container definition.</description>
-    </item>
-    
-    <item>
-      <title>Configure an IAM Role for ECS</title>
-      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/90_configure_ecs_role.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/90_configure_ecs_role.html</guid>
-      <description>We now have our Artifactory credentials in the AWS Secrets Manager. Next, we must create an IAM role that will allow ECS to access our Artifactory secrets and deploy our image.
-Before you can launch ECS container instances and register them into a cluster, you must create an IAM role for those container instances to use when they are launched. The Amazon ECS container agent makes calls to the Amazon ECS API on your behalf using this role.</description>
-    </item>
-    
-    <item>
-      <title>Deploy Your Image with ECS</title>
-      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/100_deploy_your_image.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/100_deploy_your_image.html</guid>
-      <description>We are now ready to deploy your image with Amazon ECS. If not yet created, Amazon ECS can create a new VPC and ECS cluster as well as the other components that are required to serve your application. Amazon ECS will then authenticate, pull the image from Artifactory and deploy the container to the ECS cluster.
-The Amazon ECS first-run wizard guides you through the process of getting started with Amazon ECS using the Fargate launch type.</description>
-    </item>
-    
-    <item>
-      <title>View Your Application</title>
-      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/110_view_your_application.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/110_view_your_application.html</guid>
-      <description>In the previous section, you deployed your image with Amazon ECS. Now let&amp;rsquo;s check it out!
- When complete, click on your deployed service, npm-app-service.  Click on the Tasks tab.  Ensure the Last status shows RUNNING before going to the next step. Click on the deploy-npm-app task. On the Details page of the task, locate the Public IP.  In your browser, go to https://&amp;lt;Public IP&amp;gt; to view your deployed web application.</description>
-    </item>
-    
-    <item>
       <title>Conclusion</title>
-      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/120_conclusion.html</link>
+      <link>/70_hands-on_lab/120_conclusion.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/70_hands-on_lab/120_conclusion.html</guid>
+      <guid>/70_hands-on_lab/120_conclusion.html</guid>
       <description>In this workshop, we demonstrated that using the JFrog Platform to create CI/CD pipelines to build an application, manage the artifacts, scan the artifacts for security vulnerabilities and license compliance, and publish the artifacts of your application to a staging repository. Then you used Amazon ECS to deploy your application so that end-users can access it. Now you have a basic understanding of the JFrog Platform as a modern DevOps cloud platform on AWS.</description>
     </item>
     
