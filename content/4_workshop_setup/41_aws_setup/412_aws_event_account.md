@@ -27,9 +27,7 @@ This account will expire at the end of the workshop and the all the resources cr
 
 ![Event Engine Dashboard](/images/event-engine-dashboard.png)
 
-5. Use a single region for the duration of this workshop. This workshop supports the following regions:
-
-* us-west-2 (US West - Oregon)
+5. Use a single region for the duration of this workshop. This workshop supports the region **us-west-2 US West (Oregon)**.
 
 6. Please select **US West (Oregon)** in the top right corner.
 
