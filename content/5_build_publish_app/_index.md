@@ -1,47 +1,16 @@
 ---
-title: "Build and Publish the NPM App"
+title: "Build and Publish the App"
 chapter: false
 weight: 5
 pre: "<b>5 </b>"
 ---
 
-1. Change directory to _aws-modernization-with-jfrog/workshop_app_.
-2. Configure the NPM repositories with the JFrog CLI. Substitute the _Artifactory server ID_ that you entered previously.
-```
-jfrog rt npmc --repo-resolve npm-demo --repo-deploy npm-demo --server-id-resolve <Artifactory server ID> --server-id-deploy <Artifactory server ID>
-```
+The JFrog CLI is a powerful tool that you can use in your CI/CD process and toolchain. It can be used to build code and publish artifacts while collecting valuable build information along the way. It greatly simplifies the publishing of the build artifacts and the build info to JFrog Artifactory. It is commonly used in automation scripts and with CI/CD software tools. In the next steps, we will execute a CI/CD process with JFrog CLI commands to demonstrate how to build and publish with NPM and Docker.
 
-3. Perform an NPM install with the JFrog CLI command to verify NPM dependencies.
 
-```
-jfrog rt npm-install --build-name=npm_build --build-number=1
-```
+![JFrog CLI CI/CD](/images/jfrog-cli-ci-cd.svg)
 
-4. Perform an NPM publish to package and deploy to the _npm-demo_ repository.
+{{% notice info %}}
+In this workshop, we use NPM and Docker, but the JFrog Platform is a universal solution supporting all major package formats including Alpine, Maven, Gradle, Docker, Conda, Conan, Debian, Go, Helm, Vagrant, YUM, P2, Ivy, NuGet, PHP, NPM, RubyGems, PyPI, Bower, CocoaPods, GitLFS, Opkg, SBT and more. 
+{{% /notice %}}
 
-```
-jfrog rt npm-publish --build-name=npm_build --build-number=1
-```
-
-5. Next, let's create a Docker image for our NPM application. Substitute your _server name_ in the following command.
-
-```
-docker build -t <server name>.jfrog.io/docker-demo/npm-app:latest .
-```
-
-6. Now use the JFrog CLI to push the docker image. Substitute your _server name_ in the following command.
-
-```
-jfrog rt docker-push <server name>.jfrog.io/docker-demo/npm-app:latest docker-demo --build-name=npm_build --build-number=1
-```
-7. Now trigger a Xray scan of the build.
-
-```
-jfrog rt build-scan npm_build 1
-```
-
-8. If our build passes the Xray scan, we can promote it with the following command. Substitute your _server name_ in the following command.
-
-```
-jfrog rt build-promote <server name>.jfrog.io/docker-demo/npm-app:latest docker-demo docker-demo-prod-local 
-```

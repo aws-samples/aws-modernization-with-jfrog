@@ -5,10 +5,6 @@ weight: 7
 pre: "<b>7 </b>"
 ---
 
-In this section, we will configure our workshop environment. This includes:
+We are now ready to deploy your image with Amazon ECS. If not yet created, Amazon ECS can create a new VPC and ECS cluster as well as the other components that are required to serve your application. Amazon ECS will then authenticate, pull the image from Artifactory and deploy the container to the ECS cluster.
 
-- Setting up our AWS account and IAM roles.
-- Provisioning a Cloud9 IDE instance.
-- Preparing our JFrog Platform instance.
-- Installing and configuring the JFrog CLI.
-- Forking our workshop GitHub Repo.
+![ECS Architecture](/images/ecs-architecture.svg)

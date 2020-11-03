@@ -19,7 +19,7 @@ pre: "<b>4.1.4 </b>"
 
 ![image](/images/c9-create.png)
 
-4. For the name enter `jfrog-workshop` and click **Next Step**.
+4. For the name, enter `jfrog-workshop` and click **Next Step**.
 
 
 5. Select **Other instance type** and choose **t3.medium**.
@@ -29,7 +29,7 @@ pre: "<b>4.1.4 </b>"
 
 ![image](/images/c9-settings.png)
 
-7. Click **Next Step**
+7. Click **Next Step**.
 
 8. On the **Review** page, click **Create environment**. The Cloud9 environment will take a few minutes to provision.
 
@@ -46,7 +46,7 @@ Your workspace should now look like this and can hide the left hand environment 
 ![c9after](/images/c9after.png)
 
 {{% notice tip %}}
-If you don't like this dark theme, you can change it from the **View / Themes** Cloud9 workspace menu.
+If you don't like this dark theme, you can change it from the **View** ► **Themes** menu.
 {{% /notice %}}
 
 {{% notice tip %}}

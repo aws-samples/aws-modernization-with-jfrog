@@ -67,11 +67,27 @@
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/7_deploy_ecs/71_configure_ecs.html</loc>
+    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_build_publish_app/51_npm.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/7_deploy_ecs/72_deploy.html</loc>
+    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_build_publish_app/52_docker.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/7_deploy_ecs/71_configure_ecs_secrets.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/7_deploy_ecs/72_configure_ecs_role.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/7_deploy_ecs/73_deploy_your_image.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/7_deploy_ecs/74_view_your_application.html</loc>
   </url>
   
   <url>
@@ -112,22 +128,6 @@
   
   <url>
     <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/4_workshop_setup/43_jfrog_setup/434_configure_jfrog.html</loc>
-  </url>
-  
-  <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/7_deploy_ecs/71_configure_ecs/711_configure_ecs_secrets.html</loc>
-  </url>
-  
-  <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/7_deploy_ecs/71_configure_ecs/712_configure_ecs_role.html</loc>
-  </url>
-  
-  <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/7_deploy_ecs/72_deploy/721_deploy_your_image.html</loc>
-  </url>
-  
-  <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/7_deploy_ecs/72_deploy/722_view_your_application.html</loc>
   </url>
   
   <url>

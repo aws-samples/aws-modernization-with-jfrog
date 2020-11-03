@@ -1,21 +1,16 @@
 ---
 title: "Deploy Your Image with ECS"
 chapter: false
-weight: 721
-pre: "<b>7.2.1 </b>"
+weight: 73
+pre: "<b>7.3 </b>"
 ---
-We are now ready to deploy your image with Amazon ECS. If not yet created, Amazon ECS can create a new VPC and ECS cluster as well as the other components that are required to serve your application. Amazon ECS will then authenticate, pull the image from Artifactory and deploy the container to the ECS cluster.
 
-![ECS Architecture](/images/ecs-architecture.svg)
-
-{{% notice info %}}
-The Amazon ECS first-run wizard guides you through the process of getting started with Amazon ECS using the Fargate launch type. The wizard gives you the option of creating a cluster and launching your application. It is a great way to get started with deploying your application with Amazon ECS. 
-{{% /notice %}}
+The Amazon ECS first-run wizard guides you through the process of getting started with Amazon ECS using the Fargate launch type. The wizard gives you the option of creating a cluster and launching your application. It is a great way to get started with deploying your application with Amazon ECS. We will use the wizard to deploy our NPM application Docker image from Artifactory.
 
 1. Go to the [Amazon ECS console first-run wizard](https://console.aws.amazon.com/ecs/home#/firstRun).
 2. In the **Container definition** section, click **Configure** on the **custom** option.
 3. For the container name, specify ```npm-app```.
-4. For the **Image** specify the docker image name for your npm-app. This should be ```${domain}/docker-demo/npm-app:latest```. _domain_ is the JFrog Platform instance domain (_server name_.jfrog.io).
+4. For the **Image** specify the Docker image name for our _npm-app_. This should be ```${domain}/docker-demo/npm-app:latest```. _domain_ is the JFrog Platform instance domain (_server name_.jfrog.io).
 5. Check **Private repository autentication**.
 6. For **Secrets Manager ARN** paste the **Secrets ARN** from the [Secrets Manager step](80_configure_ecs_secrets.html).
 7. For port mapping, specify 443.

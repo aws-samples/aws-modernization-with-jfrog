@@ -10,27 +10,28 @@ Only complete this section if you are running the workshop through an AWS hosted
 {{% /notice %}}
 
 
-To complete this workshop, you are provided with an AWS account via the AWS Event Engine service. A 12-digit hash will be provided to you by event staff - this is your unique access code. eg:
+For an AWS hosted event, you are provided with an AWS account through the AWS Event Engine service using a 12-digit hash by event staff. This is your unique access code.
 
-## `e8476543c00e`
-
-1 . Go to [https://dashboard.eventengine.run/](https://dashboard.eventengine.run/). The following screen shows up. 
+1 . Go to [https://dashboard.eventengine.run/](https://dashboard.eventengine.run/).
 
 ![Event Engine](/images/event-engine-initial-screen.png)
 
-2. Enter the provided hash in the text box. 
+2. Enter the provided hash code in the text box. 
 
 3. Click on the **Accept Terms & Login** button.
 
-4. Choose **AWS Console**, then **Open AWS Console**.
-This account will expire at the end of the workshop and the all the resources created will be automatically deprovisioned. You will not be able to access this account after today.
+4. Select **AWS Console**.
+
+5. Then select **Open AWS Console**.
 
 ![Event Engine Dashboard](/images/event-engine-dashboard.png)
 
-5. Use a single region for the duration of this workshop. This workshop supports the region **us-west-2 US West (Oregon)**.
-
-6. Please select **US West (Oregon)** in the top right corner.
+6. This workshop supports the region **us-west-2 US West (Oregon)**. Please select **US West (Oregon)** in the top right corner.
 
 ![Event Engine Region](/images/event-engine-region.png)
 
 You can leave the AWS console open.
+
+{{% notice warning %}}
+This AWS account will expire at the end of the workshop and any resources will automatically be de-provisioned. You will not be able to access this account after today.
+{{% /notice %}}

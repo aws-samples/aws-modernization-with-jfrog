@@ -13,7 +13,8 @@
       
       <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/4_workshop_setup/43_jfrog_setup/431_jfrog_free.html</guid>
       <description>If you do not have access to a JFrog Platform instance, use the JFrog Platform Cloud Free Tier to get your own JFrog Platform instance with Artifactory and Xray.
- JFrog Platform Cloud Free Tier   </description>
+When signing up for the JFrog Platform Cloud Free Tier, ensure that you select AWS and the US West 2 (Oregon) region.
+  JFrog Platform Cloud Free Tier   </description>
     </item>
     
     <item>
@@ -22,8 +23,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/4_workshop_setup/43_jfrog_setup/432_api_key.html</guid>
-      <description>The JFrog Platform offers a universal solution supporting all major package formats including Alpine, Maven, Gradle, Docker, Conda, Conan, Debian, Go, Helm, Vagrant, YUM, P2, Ivy, NuGet, PHP, NPM, RubyGems, PyPI, Bower, CocoaPods, GitLFS, Opkg, SBT and more.
-  Go to your JFrog Platform instance at https://[server name].jfrog.io. Refer to your JFrog Free Subscription Activation email if needed. Substitute your server name.  Login to your JFrog Platform instance with your credentials.</description>
+      <description>Remember your username and API Key. We will use it again with the JFrog CLI and to set up ECS to deploy your image.
+  Go to your JFrog Platform instance at https://[server name].jfrog.io. Refer to your JFrog Free Subscription Activation email if needed. Substitute your server name.  Login to your JFrog Platform instance with your credentials.  Once logged into your JFrog Platform instance, you will be presented with the landing page.</description>
     </item>
     
     <item>
@@ -32,7 +33,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/4_workshop_setup/43_jfrog_setup/433_jfrog_cli.html</guid>
-      <description>JFrog CLI is a client that provides a simple interface that automates access to JFrog products simplifying your automation scripts and making them more readable and easier to maintain. JFrog CLI works with JFrog Artifactory, JFrog Mission Control, JFrog Bintray and JFrog Xray (through their respective REST APIs) making your scripts more efficient and reliable. You can use the JFrog CLI to assist in your builds, create artifacts, promote artifacts, trigger security scans and much more.</description>
+      <description>JFrog CLI is a client that provides a simple CLI interface that automates the management of JFrog products. JFrog CLI works with JFrog Artifactory, JFrog Mission Control, JFrog Bintray and JFrog Xray (through their respective REST APIs) making your scripts more efficient and reliable. You can use the JFrog CLI to assist in your builds, create artifacts, promote artifacts, trigger security scans and much more. It is powerful to that you can use in your CI/CD process and general automation.</description>
     </item>
     
     <item>
@@ -41,7 +42,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/4_workshop_setup/43_jfrog_setup/434_configure_jfrog.html</guid>
-      <description> In your Cloud9 terminal, change directory to the aws-modernization-with-jfrog directory. Execute the following command to create Artifactory repositories, Xray watches and policies.  scripts/create_entities.sh </description>
+      <description>Now that we have the JFrog CLI installed and configured, we will use it to create the Artifactory NPM and docker repositories, Xray watches and policies. We will need these when we build and publish our NPM application later. The JFrog CLI uses the the JFrog Platform REST APIs. This is another way that you can manage and monitor the JFrog Platform.
+ In your Cloud9 terminal, change directory to the aws-modernization-with-jfrog directory.</description>
     </item>
     
   </channel>

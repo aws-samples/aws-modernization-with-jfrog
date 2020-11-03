@@ -4,8 +4,9 @@ chapter: false
 weight: 432
 pre: "<b>4.3.2 </b>"
 ---
-{{% notice info %}}
-The JFrog Platform offers a universal solution supporting all major package formats including Alpine, Maven, Gradle, Docker, Conda, Conan, Debian, Go, Helm, Vagrant, YUM, P2, Ivy, NuGet, PHP, NPM, RubyGems, PyPI, Bower, CocoaPods, GitLFS, Opkg, SBT and more. 
+
+{{% notice tip %}}
+Remember your username and API Key. We will use it again with the JFrog CLI and to set up ECS to deploy your image.
 {{% /notice %}}
 
 1. Go to your JFrog Platform instance at _https://[server name].jfrog.io_. Refer to your _JFrog Free Subscription Activation_ email if needed. Substitute your _server name_.
@@ -21,8 +22,6 @@ The JFrog Platform offers a universal solution supporting all major package form
 ![Api Key](/images/api-key.png)
 7. Copy the **API Key**.
 
-{{% notice tip %}}
-Remember your username and API Key. We will use it again with the JFrog CLI and to set up ECS to deploy our image.
-{{% /notice %}}
+
 
 

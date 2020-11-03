@@ -1,5 +1,6 @@
 #!/bin/bash 
 export LC_ALL=C
+export NG_CLI_ANALYTICS=ci
 
 #########################################
 # This script creates local repositories and virtual repository that include all.
@@ -86,3 +87,6 @@ for file in ${dirName}/*.watch; do
     watch="$(b=${file##*/}; echo ${b%.*})"
     curl -u ${jfrog_user}:${jfrog_apikey} -X POST --silent -H "Content-Type: application/json" --data "@${file}" ${BASEURL}/xray/api/v2/watches
 done
+
+echo "Resizing Cloud9 environment"
+sh scripts/resize_c9.sh 20

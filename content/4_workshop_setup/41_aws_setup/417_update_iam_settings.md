@@ -38,3 +38,5 @@ aws sts get-caller-identity --query Arn | grep JFrog-Workshop-Admin -q && echo "
 ```
 
 If the IAM role is not valid, <span style="color: red;">**DO NOT PROCEED**</span>. Go back and confirm the steps on this page. 
+
+![IAM Role Valid](/images/iam-role-valid.png)

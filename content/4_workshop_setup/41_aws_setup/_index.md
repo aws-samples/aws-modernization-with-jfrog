@@ -5,7 +5,7 @@ weight: 41
 pre: "<b>4.1 </b>"
 ---
 
-In this section, we will setup our AWS environment. Please choose if you are running the workshop on your own or attending an AWS event.
+In this section, we will setup our AWS environment which includes accounts, roles and Cloud9 IDE. Please choose if you are running the workshop on your own or attending an AWS event.
 
-* ...[running the workshop on your own](/3_workshop_setup/31_aws_setup/313_self_paced_account.html), or
-* ...[attending an AWS hosted event](/3_workshop_setup/31_aws_setup/312_aws_event_account.html)
+* ...[running the workshop on your own](/4_workshop_setup/41_aws_setup/413_self_paced_account.html), or
+* ...[attending an AWS hosted event](/4_workshop_setup/41_aws_setup/412_aws_event_account.html)
