@@ -9,10 +9,10 @@ weight: 1
 
 ### Welcome
 
-In this workshop you will learn about the JFrog Platform and how to leverage Artifactory, XRay and Pipelines for managing your Software Development Lifecycle (SDLC) and bring DevOps to the cloud on AWS.
+In this workshop you will learn about the JFrog Platform and how to leverage Artifactory and Xray for managing your Software Development Lifecycle (SDLC) and bring DevOps to the cloud on AWS.
 
 ### Learning Objectives
-- Understand the roles of Artifactory, XRay and Pipelines in your software delivery life cycle (SDLC).
+- Understand the roles of Artifactory and Xray in your software delivery life cycle (SDLC).
 - Use Local, Remote and Virtual Repositories in Artifactory.
 - Publish and promote Build Info.
 - Scan your artifacts and builds for security vulnerabilities.
