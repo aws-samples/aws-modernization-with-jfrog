@@ -11,7 +11,7 @@ Continuous integration and delivery (CI/CD) is the process for which your softwa
 
 - EC2 instances can be used as CI/CD pipeline nodes that can be dynamically spun up and down to execute pipeline tasks.
 - EC2 spot instances can dramatically lower costs by utilizing spare capacity nodes for CI/CD pipeline tasks.
-- EKS can provide a Kubernetes-based CI/CD worker node pools and allow more efficient use of compute resources.
+- Amazon Elastic Kubernetes Service (EKS) can provide a Kubernetes-based CI/CD worker node pools and allow more efficient use of compute resources.
 - AWS Outposts can allow you to span your CI/CD pipelines from your on-premise datacenter to the cloud for hybrid and migration use cases.
 
 
