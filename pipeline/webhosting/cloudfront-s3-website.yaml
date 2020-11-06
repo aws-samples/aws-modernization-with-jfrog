@@ -9,7 +9,7 @@ Parameters:
     ConstraintDescription: must be a valid DNS name.
   DomainName:
     Type: String
-    Default: aws-modernization-with-jfrog.io
+    Default: awsworkshop.io
     Description: The DNS name of an existing Amazon Route 53 hosted zone 
     AllowedPattern: (?!-)[a-zA-Z0-9-.]{1,63}(?<!-)
     ConstraintDescription: must be a valid DNS zone name.
