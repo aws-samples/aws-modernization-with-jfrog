@@ -28,9 +28,8 @@ phases:
   build:
     commands:
       - echo Build Website
-      - ./hugo -D
+      - ./hugo -D --renderToDisk
       - echo Deploy Copy Website to S3 Bucket
-      - ls -al 
       - aws s3 cp public/ s3://${WEB_SITE_BUCKET}/ --recursive
       - aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_DISTRO_ID} --paths /\*
       
