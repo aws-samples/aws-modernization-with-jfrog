@@ -1,4 +1,8 @@
+#Use this baseurl for github pages
 baseURL = "https://jefferyfry.github.io/aws-modernization-with-jfrog/"
+
+#Use this baseurl for AWS
+#baseUrl = "/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
