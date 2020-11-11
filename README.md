@@ -11,7 +11,7 @@ A critical aspect of DevOps is infrastructure. Cloud computing infrastructure ha
 - Leveraging new cloud services in their application and software development processes to improve the quality, security and delivery of their applications.
 - Allowing multi-discipline teams to collaborate in the cloud across the software lifecycle to ensure quality, security, velocity and scale of applications.
 
-This workshop walks you through a typical build, docker build and push, security scan and promotion process using Artifactory, Pipelines and Xray on AWS cloud infrastructure using Amazon ECS.
+This workshop walks you through a typical build, docker build and push, security scan and promotion process using Artifactory and Xray on AWS cloud infrastructure using Amazon ECS.
 ## Building this Workshop with [Hugo](https://gohugo.io/)
 
 ### Hugo Theme Installation

@@ -33,3 +33,7 @@ The Amazon ECS first-run wizard guides you through the process of getting starte
 ![ECS Fargate Services](/images/ecs-fargate-services.png)
 
 It will take a few minutes for Amazon ECS to create your VPC, create a cluster, create services and deploy your image. When that is complete, we can view our application!
+
+{{%expand "What is Amazon ECS first-run wizard doing?" %}}
+![AWS Deploy Diagram](/images/aws-deploy-diagram.png)
+.{{% /expand%}}

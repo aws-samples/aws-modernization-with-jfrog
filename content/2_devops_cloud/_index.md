@@ -1,7 +1,7 @@
 ---
 title: "DevOps in the Cloud"
 chapter: false
-weight: 3
+weight: 2
 pre: "<b>2 </b>"
 ---
 

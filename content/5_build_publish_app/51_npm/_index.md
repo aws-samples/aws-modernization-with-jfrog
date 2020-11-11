@@ -7,13 +7,16 @@ pre: "<b>5.1 </b>"
 
 In this section, we will focus on the NPM package of our application by validating NPM dependencies and publishing the resulting NPM package.
 
+![NPM Logo](/images/npm-logo.png)
+
 ![JFrog CLI NPM](/images/jfrog-cli-npm.svg)
 
 {{% notice info %}}
 As we are building our NPM package and Docker image, the JFrog CLI is collecting build info along the way. Build info is referenced by the build name and build number. Build info is all the information collected during the build which includes details about the build itself. The build info includes the list of project modules, artifacts, dependencies, environment variables and more. When using one of the JFrog CLI to build the code, it can collect the build-info and publish it to Artifactory. When the build info is published to Artifactory, all the published details become visible in the Artifactory UI. 
 {{% /notice %}}
 
-1. In the Cloud9 terminal, change directory to _aws-modernization-with-jfrog/workshop_app_. This directory contains the code for our NPM application.
+1. In the Cloud9 terminal, change directory to _aws-modernization-with-jfrog/workshop-app_. This directory contains the code for our NPM application.
+
 2. Configure the NPM repositories with the JFrog CLI. Substitute the _Artifactory server ID_ that you entered previously. This sets the _npm-demo_ as the NPM repository for deploying and resolving packages.
 
 ``
@@ -29,6 +32,12 @@ jfrog rt npm-install --build-name=npm_build --build-number=1
 This command should result in successful install.
 ![NPM Install](/images/npm-install.png)
 
+{{%expand "What's going on here?" %}}
+_npm-demo_ is a virtual repository. With _npmjs_ as a remote repository. Artifactory proxies and caches your packages!
+![NPM Demo](/images/npm-demo.png)
+![NPM Remote](/images/npm-remote.png)
+.{{% /expand%}}
+
 4. Perform an NPM publish to package and deploy to the _npm-demo_ repository. You set this repository in _Step 2_.
 
 ``
@@ -43,6 +52,10 @@ This command should result in successful publishing.
 ``
 jfrog rt build-publish npm_build 1
 ``
+
+{{%expand "Review what we have done." %}}
+![NPM Review](/images/npm-review.png)
+.{{% /expand%}}
 
 6. In your JFrog Platform instance, go to **Artifactory** ► **Builds**.
 
@@ -64,7 +77,7 @@ jfrog rt build-publish npm_build 1
 
 12. Click **Manage Builds**.
 
-13. Move the _npm_build_ to the included builds. This will allow Xray to scan this build.
+13. Move the _npm_build_ to the included builds and click **Save**. This enables Xray to scan this build.
 
 ![Indexed Builds](/images/indexed-builds.png)
 
