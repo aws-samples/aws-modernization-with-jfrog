@@ -11,6 +11,8 @@ The following items are required for this workshop.
 
 - JFrog Platform instance - Use the [JFrog Platform Cloud Free Tier](https://jfrog.com/artifactory/start-free/) to get your own JFrog Platform instance with Artifactory and Xray.
 
+- Have a notepad available for saving important workshop data.
+
 {{% notice warning %}}
 When signing up for the [JFrog Platform Cloud Free Tier](https://jfrog.com/artifactory/start-free/), ensure that you select **AWS** and the **US West 2 (Oregon)** region.
 {{% /notice %}}

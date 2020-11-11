@@ -12,21 +12,21 @@
     <title>Build and Push the Docker Image :: JFrog DevOps Modernization Workshop</title>
 
     
-    <link href="/css/nucleus.css?1605063221" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1605063221" rel="stylesheet">
-    <link href="/css/hybrid.css?1605063221" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1605063221" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1605063221" rel="stylesheet">
-    <link href="/css/auto-complete.css?1605063221" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1605063221" rel="stylesheet">
-    <link href="/css/theme.css?1605063221" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1605063221" rel="stylesheet">
+    <link href="/css/nucleus.css?1605072916" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1605072916" rel="stylesheet">
+    <link href="/css/hybrid.css?1605072916" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1605072916" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1605072916" rel="stylesheet">
+    <link href="/css/auto-complete.css?1605072916" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1605072916" rel="stylesheet">
+    <link href="/css/theme.css?1605072916" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1605072916" rel="stylesheet">
     
-    <link href="/css/theme-mine.css?1605063221" rel="stylesheet">
+    <link href="/css/theme-mine.css?1605072916" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1605063221"></script>
+    <script src="/js/jquery-3.3.1.min.js?1605072916"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1605063221"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1605063221"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1605072916"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1605072916"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1605063221"></script>
+<script type="text/javascript" src="/js/search.js?1605072916"></script>
 
     
   </div>
@@ -982,14 +982,13 @@
 <p><img src="/images/docker-logo.png" alt="JFrog Docker Logo"></p>
 <p><img src="/images/jfrog-cli-docker.svg" alt="JFrog CLI Docker"></p>
 <ol>
-<li>
-<p>Return to your Cloud9 terminal.</p>
-</li>
-<li>
-<p>Let&rsquo;s create a Docker image for our NPM application. Substitute your <em>server name</em> in the following command.</p>
-</li>
+<li>Return to your Cloud9 terminal. Let&rsquo;s create a Docker image for our NPM application. Let&rsquo;s create an environment variable for our image name. Substitute your <em>server name</em> in the following command.</li>
 </ol>
-<p><code>docker build -t &lt;server name&gt;.jfrog.io/docker-demo/npm-app:latest .</code></p>
+<p><code>export image_name=&lt;server name&gt;.jfrog.io/docker-demo/npm-app:latest</code></p>
+<ol start="2">
+<li>Now let&rsquo;s build a docker image with the following command.</li>
+</ol>
+<p><code>sudo docker build -t $image_name .</code></p>
 <p>This command should result in a successful Docker image build.
 <img src="/images/docker-build.png" alt="Docker Build"></p>
 
@@ -1012,9 +1011,9 @@
     </div>
 </div>
 <ol start="3">
-<li>Now use the JFrog CLI to push the docker image. Substitute your <em>server name</em> in the following command.</li>
+<li>Now use the JFrog CLI to push the docker image.</li>
 </ol>
-<p><code>jfrog rt docker-push &lt;server name&gt;.jfrog.io/docker-demo/npm-app:latest docker-demo --build-name=npm_build --build-number=1</code></p>
+<p><code>sudo jfrog rt docker-push $image_name docker-demo --build-name=npm_build --build-number=1</code></p>
 <ol start="4">
 <li>Now trigger a Xray scan of the build.</li>
 </ol>
@@ -1024,7 +1023,7 @@
 <ol start="5">
 <li>If our build passes the Xray scan, we can promote it with the following command. This promotes from the <em>dev</em> repository to the <em>prod</em> repository. Substitute your <em>server name</em> in the following command.</li>
 </ol>
-<p><code>jfrog rt docker-promote npm-app docker-demo-dev-local docker-demo-prod-local</code></p>
+<p><code>jfrog rt docker-promote npm-app docker-demo-dev-local docker-demo-prod-local --copy</code></p>
 
 <div class="expand">
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
@@ -1610,19 +1609,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1605063221"></script>
-    <script src="/js/perfect-scrollbar.min.js?1605063221"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1605063221"></script>
-    <script src="/js/jquery.sticky.js?1605063221"></script>
-    <script src="/js/featherlight.min.js?1605063221"></script>
-    <script src="/js/highlight.pack.js?1605063221"></script>
+    <script src="/js/clipboard.min.js?1605072916"></script>
+    <script src="/js/perfect-scrollbar.min.js?1605072916"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1605072916"></script>
+    <script src="/js/jquery.sticky.js?1605072916"></script>
+    <script src="/js/featherlight.min.js?1605072916"></script>
+    <script src="/js/highlight.pack.js?1605072916"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1605063221"></script>
-    <script src="/js/learn.js?1605063221"></script>
-    <script src="/js/hugo-learn.js?1605063221"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1605072916"></script>
+    <script src="/js/learn.js?1605072916"></script>
+    <script src="/js/hugo-learn.js?1605072916"></script>
     
         
-            <script src="/mermaid/mermaid.js?1605063221"></script>
+            <script src="/mermaid/mermaid.js?1605072916"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

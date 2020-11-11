@@ -17,10 +17,10 @@ As we are building our NPM package and Docker image, the JFrog CLI is collecting
 
 1. In the Cloud9 terminal, change directory to _aws-modernization-with-jfrog/workshop-app_. This directory contains the code for our NPM application.
 
-2. Configure the NPM repositories with the JFrog CLI. Substitute the _Artifactory server ID_ that you entered previously. This sets the _npm-demo_ as the NPM repository for deploying and resolving packages.
+2. Configure the NPM repositories with the JFrog CLI. This sets the _npm-demo_ as the NPM repository for deploying and resolving packages.
 
 ``
-jfrog rt npmc --repo-resolve npm-demo --repo-deploy npm-demo --server-id-resolve <Artifactory server ID> --server-id-deploy <Artifactory server ID>
+jfrog rt npmc --repo-resolve npm-demo --repo-deploy npm-demo --server-id-resolve $jfrog_server_id --server-id-deploy $jfrog_server_id
 ``
 
 3. Perform an NPM install with the JFrog CLI command to verify NPM dependencies. _--build-name_ specifies the name for this build. _--build-number_ specifies the run. Each time this code is built, reference the same build name, but increment the build number. Build info is referenced to these values.

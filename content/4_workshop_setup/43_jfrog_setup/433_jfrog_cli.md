@@ -37,7 +37,7 @@ export jfrog_apikey=<api key>
 4. Next, we will configure the JFrog CLI to use our JFrog Platform credentials (username and API key). Execute the following command. Substitute your JFrog Platform credentials (username and API key).
 
 ``
-jfrog rt config --user <username/email> --apikey <api key>
+jfrog rt config --user $jfrog_user --apikey $jfrog_apikey
 ``
 
 5. When prompted, enter a unique _Artifactory server ID_ such as your JFrog Platform server name. Remember this ID.
@@ -46,21 +46,17 @@ jfrog rt config --user <username/email> --apikey <api key>
 
 ![JFrog CLI Config](/images/jfrog-cli-config.png)
 
-8. Execute the following to list your Artifactory servers that are configured in the JFrog CLI.
+8. And let's set an environment variable for our _Artifactory server ID_.
+
+``
+export jfrog_server_id=<server ID>
+``
+
+9. Execute the following to list your Artifactory servers that are configured in the JFrog CLI.
 
 ``
 jfrog rt config show
 ``
-
-9. Execute the following command to set the Artifactory server in use for the next commands. Use the _Artifactory server ID_ that you entered above.
-
-``
-jfrog rt use <Artifactory server ID>
-``
-
-This command should result in a successful confirmation.
-
-![JFrog CLI RT Use](/images/jfrog-rt-use.png)
 
 10. Execute the following command to check connectivity to the server. You should get an _OK_ response.
 
