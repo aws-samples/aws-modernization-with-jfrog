@@ -7,10 +7,6 @@ COPY package.json package-lock.json ./
 RUN apk update && apk upgrade && \
     apk add --no-cache bash git openssh
 
-RUN npm update
-
-RUN npm audit fix
-
 RUN npm install
 
 COPY . .

@@ -12,21 +12,21 @@
     <title>Install and Configure the JFrog CLI :: JFrog DevOps Modernization Workshop</title>
 
     
-    <link href="/css/nucleus.css?1605063221" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1605063221" rel="stylesheet">
-    <link href="/css/hybrid.css?1605063221" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1605063221" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1605063221" rel="stylesheet">
-    <link href="/css/auto-complete.css?1605063221" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1605063221" rel="stylesheet">
-    <link href="/css/theme.css?1605063221" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1605063221" rel="stylesheet">
+    <link href="/css/nucleus.css?1605073176" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1605073176" rel="stylesheet">
+    <link href="/css/hybrid.css?1605073176" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1605073176" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1605073176" rel="stylesheet">
+    <link href="/css/auto-complete.css?1605073176" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1605073176" rel="stylesheet">
+    <link href="/css/theme.css?1605073176" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1605073176" rel="stylesheet">
     
-    <link href="/css/theme-mine.css?1605063221" rel="stylesheet">
+    <link href="/css/theme-mine.css?1605073176" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1605063221"></script>
+    <script src="/js/jquery-3.3.1.min.js?1605073176"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1605063221"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1605063221"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1605073176"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1605073176"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1605063221"></script>
+<script type="text/javascript" src="/js/search.js?1605073176"></script>
 
     
   </div>
@@ -1005,7 +1005,7 @@ sudo yum install -y jfrog-cli;
 <ol start="4">
 <li>Next, we will configure the JFrog CLI to use our JFrog Platform credentials (username and API key). Execute the following command. Substitute your JFrog Platform credentials (username and API key).</li>
 </ol>
-<p><code>jfrog rt config --user &lt;username/email&gt; --apikey &lt;api key&gt;</code></p>
+<p><code>jfrog rt config --user $jfrog_user --apikey $jfrog_apikey</code></p>
 <ol start="5">
 <li>When prompted, enter a unique <em>Artifactory server ID</em> such as your JFrog Platform server name. Remember this ID.</li>
 <li>Enter the URL for the JFrog Artifactory server which has the <em>artifactory</em> path.</li>
@@ -1013,15 +1013,13 @@ sudo yum install -y jfrog-cli;
 </ol>
 <p><img src="/images/jfrog-cli-config.png" alt="JFrog CLI Config"></p>
 <ol start="8">
+<li>And let&rsquo;s set an environment variable for our <em>Artifactory server ID</em>.</li>
+</ol>
+<p><code>export jfrog_server_id=&lt;server ID&gt;</code></p>
+<ol start="9">
 <li>Execute the following to list your Artifactory servers that are configured in the JFrog CLI.</li>
 </ol>
 <p><code>jfrog rt config show</code></p>
-<ol start="9">
-<li>Execute the following command to set the Artifactory server in use for the next commands. Use the <em>Artifactory server ID</em> that you entered above.</li>
-</ol>
-<p><code>jfrog rt use &lt;Artifactory server ID&gt;</code></p>
-<p>This command should result in a successful confirmation.</p>
-<p><img src="/images/jfrog-rt-use.png" alt="JFrog CLI RT Use"></p>
 <ol start="10">
 <li>Execute the following command to check connectivity to the server. You should get an <em>OK</em> response.</li>
 </ol>
@@ -1587,19 +1585,19 @@ sudo yum install -y jfrog-cli;
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1605063221"></script>
-    <script src="/js/perfect-scrollbar.min.js?1605063221"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1605063221"></script>
-    <script src="/js/jquery.sticky.js?1605063221"></script>
-    <script src="/js/featherlight.min.js?1605063221"></script>
-    <script src="/js/highlight.pack.js?1605063221"></script>
+    <script src="/js/clipboard.min.js?1605073176"></script>
+    <script src="/js/perfect-scrollbar.min.js?1605073176"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1605073176"></script>
+    <script src="/js/jquery.sticky.js?1605073176"></script>
+    <script src="/js/featherlight.min.js?1605073176"></script>
+    <script src="/js/highlight.pack.js?1605073176"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1605063221"></script>
-    <script src="/js/learn.js?1605063221"></script>
-    <script src="/js/hugo-learn.js?1605063221"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1605073176"></script>
+    <script src="/js/learn.js?1605073176"></script>
+    <script src="/js/hugo-learn.js?1605073176"></script>
     
         
-            <script src="/mermaid/mermaid.js?1605063221"></script>
+            <script src="/mermaid/mermaid.js?1605073176"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
