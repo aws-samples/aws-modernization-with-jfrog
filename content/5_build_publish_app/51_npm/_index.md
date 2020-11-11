@@ -7,6 +7,8 @@ pre: "<b>5.1 </b>"
 
 In this section, we will focus on the NPM package of our application by validating NPM dependencies and publishing the resulting NPM package.
 
+![NPM Logo](/images/npm-logo.png)
+
 ![JFrog CLI NPM](/images/jfrog-cli-npm.svg)
 
 {{% notice info %}}
@@ -30,6 +32,12 @@ jfrog rt npm-install --build-name=npm_build --build-number=1
 This command should result in successful install.
 ![NPM Install](/images/npm-install.png)
 
+{{%expand "What's going on here?" %}}
+_npm-demo_ is a virtual repository. With _npmjs_ as a remote repository. Artifactory proxies and caches your packages!
+![NPM Demo](/images/npm-demo.png)
+![NPM Remote](/images/npm-remote.png)
+.{{% /expand%}}
+
 4. Perform an NPM publish to package and deploy to the _npm-demo_ repository. You set this repository in _Step 2_.
 
 ``
@@ -44,6 +52,10 @@ This command should result in successful publishing.
 ``
 jfrog rt build-publish npm_build 1
 ``
+
+{{%expand "Review what we have done." %}}
+![NPM Review](/images/npm-review.png)
+.{{% /expand%}}
 
 6. In your JFrog Platform instance, go to **Artifactory** ► **Builds**.
 

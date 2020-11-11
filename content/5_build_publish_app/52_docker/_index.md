@@ -7,6 +7,8 @@ pre: "<b>5.2 </b>"
 
 We will now build a Docker image with our NPM package and publish the image to our JFrog Artifactory repository.
 
+![JFrog Docker Logo](/images/docker-logo.png)
+
 ![JFrog CLI Docker](/images/jfrog-cli-docker.svg)
 
 1. Return to your Cloud9 terminal. 
@@ -19,6 +21,14 @@ docker build -t <server name>.jfrog.io/docker-demo/npm-app:latest .
 
 This command should result in a successful Docker image build.
 ![Docker Build](/images/docker-build.png)
+
+{{%expand "Docker rate limit policies! Artifactory can help!" %}}
+Docker Hub has set a new limit on data transfer beginning November 1st for free accounts: 100 pulls for anonymous users and 200 pulls for authenticated/free users for every 6 hours per IP address or a unique user.
+
+Artifactory can protect you from this by proxying and caching images! This reduces the number of pulls from Docker Hub.
+
+![Docker Remote](/images/docker-remote.png)
+.{{% /expand%}}
 
 3. Now use the JFrog CLI to push the docker image. Substitute your _server name_ in the following command.
 
@@ -40,6 +50,10 @@ This command should result in successful scanning.
 ``
 jfrog rt docker-promote npm-app docker-demo-dev-local docker-demo-prod-local
 ``
+
+{{%expand "Review what we have done." %}}
+![Docker Review](/images/docker-review.png)
+.{{% /expand%}}
 
 6. In your JFrog Platform instance, go to **Artifactory** ► **Artifacts** to see this in the docker repositories.
 
