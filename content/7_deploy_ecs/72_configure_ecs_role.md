@@ -13,7 +13,7 @@ Before you can launch ECS container instances and register them into a cluster, 
 1. Go to [IAM Roles](https://us-east-1.console.aws.amazon.com/iam/home?#/roles).
 2. Click on **Create role**.
 3. Select the **Elastic Container Service** service and **Elastic Container Service Task** use case.
-![AWS ECS_IAM](/images/IAM_ECS.png)
+![AWS ECS_IAM](/images/iam-ecs.PNG)
 
 4. Click on **Create Policy**.
 5. Click on the **JSON** tab and paste the following.
