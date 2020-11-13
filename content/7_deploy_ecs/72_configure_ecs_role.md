@@ -13,6 +13,8 @@ Before you can launch ECS container instances and register them into a cluster, 
 1. Go to [IAM Roles](https://us-east-1.console.aws.amazon.com/iam/home?#/roles).
 2. Click on **Create role**.
 3. Select the **Elastic Container Service** service and **Elastic Container Service Task** use case.
+![AWS ECS_IAM](/images/IAM_ECS.png)
+
 4. Click on **Create Policy**.
 5. Click on the **JSON** tab and paste the following.
 
@@ -46,8 +48,8 @@ arn:aws:secretsmanager:<region>:<aws_account_id>: secret:secret_name
 8. Click on **Review policy**.
 9. Name the policy ```ecsAccessToSecrets``` and create the policy by clicking **Create policy**. This creates a policy that allows ECS to access your Artifactory credentials that are stored in the Secrets Manager.
 ![Inline Policy](/images/inline-policy.png)
-10. Now go back to your role and search for your new policy _ecsAccessToSecrets_ and attach it. You may need to refresh the policy list. 
-11. Also attach the **AmazonECSTaskExecutionRolePolicy**. This policy allows the execution of Amazon ECS tasks.
+10. Now go back to your role and search for your new policy ```ecsAccessToSecrets``` and attach it. You may need to refresh the policy list. 
+11. Also attach the ```AmazonECSTaskExecutionRolePolicy```. This policy allows the execution of Amazon ECS tasks.
 12. Click through the next steps and then create the role with the name ```ecsWorkshop```.
 ![IAM Role](/images/iam-role.png)
 

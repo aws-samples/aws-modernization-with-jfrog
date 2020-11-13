@@ -34,7 +34,7 @@ export jfrog_user=<username/email>
 export jfrog_apikey=<api key>
 ``
 
-4. Next, we will configure the JFrog CLI to use our JFrog Platform credentials (username and API key). Execute the following command. Substitute your JFrog Platform credentials (username and API key).
+4. Next, we will configure the JFrog CLI to use our JFrog Platform credentials (username and API key). Execute the following command. 
 
 ``
 jfrog rt config --user $jfrog_user --apikey $jfrog_apikey
