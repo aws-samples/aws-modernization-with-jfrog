@@ -37,7 +37,7 @@ Artifactory can protect you from this by proxying and caching images! This reduc
 3. Now use the JFrog CLI to push the docker image.
 
 ``
-sudo jfrog rt docker-push $image_name docker-demo --build-name=npm_build --build-number=1
+jfrog rt docker-push $image_name docker-demo --build-name=npm_build --build-number=1
 ``
 
 4. Now trigger a Xray scan of the build.

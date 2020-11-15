@@ -21,6 +21,7 @@ Remember your username and API Key. We will use it again with the JFrog CLI and 
 6. In the **Authentication Settings** section, click the gear icon to generate an API key.
 ![Api Key](/images/api-key.png)
 7. Copy the **API Key**.
+8. Click **Save**.
 
 
 

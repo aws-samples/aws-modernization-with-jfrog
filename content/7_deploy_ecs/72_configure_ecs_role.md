@@ -27,8 +27,7 @@ Before you can launch ECS container instances and register them into a cluster, 
         "secretsmanager:GetSecretValue"
       ],
       "Resource": [
-        "<secret_arn>",
-        "arn:aws:kms:<region>:<aws_account_id>:key/key_id"     
+        "<secret_arn>"   
       ]
     }
   ]
@@ -37,18 +36,13 @@ Before you can launch ECS container instances and register them into a cluster, 
 ```
 
 6. Substitute your copied **Secret ARN** for \<secret_arn\>.
-7. Also substitute your \<region\> and \<aws_account_id\>. You can derive this from the **Secret ARN** format.
 
-``
-arn:aws:secretsmanager:<region>:<aws_account_id>: secret:secret_name
-``
-
-8. Click on **Review policy**.
-9. Name the policy ```ecsAccessToSecrets``` and create the policy by clicking **Create policy**. This creates a policy that allows ECS to access your Artifactory credentials that are stored in the Secrets Manager.
+7. Click on **Review policy**.
+8. Name the policy ```ecsAccessToSecrets``` and create the policy by clicking **Create policy**. This creates a policy that allows ECS to access your Artifactory credentials that are stored in the Secrets Manager.
 ![Inline Policy](/images/inline-policy.png)
-10. Now go back to your role and search for your new policy _ecsAccessToSecrets_ and attach it. You may need to refresh the policy list. 
-11. Also attach the **AmazonECSTaskExecutionRolePolicy**. This policy allows the execution of Amazon ECS tasks.
-12. Click through the next steps and then create the role with the name ```ecsWorkshop```.
+9. Now go back to your role and search for your new policy _ecsAccessToSecrets_ and attach it. You may need to refresh the policy list. 
+10. Also attach the **AmazonECSTaskExecutionRolePolicy**. This policy allows the execution of Amazon ECS tasks.
+11. Click through the next steps and then create the role with the name ```ecsWorkshop```.
 ![IAM Role](/images/iam-role.png)
 
 You have now created an IAM role that will allow ECS to deploy images from Artifactory.
