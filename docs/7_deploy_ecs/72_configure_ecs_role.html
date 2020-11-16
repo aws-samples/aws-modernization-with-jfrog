@@ -12,21 +12,21 @@
     <title>Configure an IAM Role for ECS :: JFrog DevOps Modernization Workshop</title>
 
     
-    <link href="/css/nucleus.css?1605073175" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1605073175" rel="stylesheet">
-    <link href="/css/hybrid.css?1605073175" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1605073175" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1605073175" rel="stylesheet">
-    <link href="/css/auto-complete.css?1605073175" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1605073175" rel="stylesheet">
-    <link href="/css/theme.css?1605073175" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1605073175" rel="stylesheet">
+    <link href="/css/nucleus.css?1605488122" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1605488122" rel="stylesheet">
+    <link href="/css/hybrid.css?1605488122" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1605488122" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1605488122" rel="stylesheet">
+    <link href="/css/auto-complete.css?1605488122" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1605488122" rel="stylesheet">
+    <link href="/css/theme.css?1605488122" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1605488122" rel="stylesheet">
     
-    <link href="/css/theme-mine.css?1605073175" rel="stylesheet">
+    <link href="/css/theme-mine.css?1605488122" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1605073175"></script>
+    <script src="/js/jquery-3.3.1.min.js?1605488122"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1605073175"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1605073175"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1605488122"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1605488122"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1605073175"></script>
+<script type="text/javascript" src="/js/search.js?1605488122"></script>
 
     
   </div>
@@ -999,26 +999,33 @@
         &quot;secretsmanager:GetSecretValue&quot;
       ],
       &quot;Resource&quot;: [
-        &quot;&lt;secret_arn&gt;&quot;,
-        &quot;arn:aws:kms:&lt;region&gt;:&lt;aws_account_id&gt;:key/key_id&quot;     
+        &quot;&lt;secret_arn&gt;&quot;   
       ]
     }
   ]
 }
 
 </code></pre><ol start="6">
-<li>Substitute your copied <strong>Secret ARN</strong> for &lt;secret_arn&gt;.</li>
-<li>Also substitute your &lt;region&gt; and &lt;aws_account_id&gt;. You can derive this from the <strong>Secret ARN</strong> format.</li>
-</ol>
-<p><code>arn:aws:secretsmanager:&lt;region&gt;:&lt;aws_account_id&gt;: secret:secret_name</code></p>
-<ol start="8">
-<li>Click on <strong>Review policy</strong>.</li>
-<li>Name the policy <code>ecsAccessToSecrets</code> and create the policy by clicking <strong>Create policy</strong>. This creates a policy that allows ECS to access your Artifactory credentials that are stored in the Secrets Manager.
-<img src="/images/inline-policy.png" alt="Inline Policy"></li>
-<li>Now go back to your role and search for your new policy <em>ecsAccessToSecrets</em> and attach it. You may need to refresh the policy list.</li>
-<li>Also attach the <strong>AmazonECSTaskExecutionRolePolicy</strong>. This policy allows the execution of Amazon ECS tasks.</li>
-<li>Click through the next steps and then create the role with the name <code>ecsWorkshop</code>.
-<img src="/images/iam-role.png" alt="IAM Role"></li>
+<li>
+<p>Substitute your copied <strong>Secret ARN</strong> for &lt;secret_arn&gt;.</p>
+</li>
+<li>
+<p>Click on <strong>Review policy</strong>.</p>
+</li>
+<li>
+<p>Name the policy <code>ecsAccessToSecrets</code> and create the policy by clicking <strong>Create policy</strong>. This creates a policy that allows ECS to access your Artifactory credentials that are stored in the Secrets Manager.
+<img src="/images/inline-policy.png" alt="Inline Policy"></p>
+</li>
+<li>
+<p>Now go back to your role and search for your new policy <em>ecsAccessToSecrets</em> and attach it. You may need to refresh the policy list.</p>
+</li>
+<li>
+<p>Also attach the <strong>AmazonECSTaskExecutionRolePolicy</strong>. This policy allows the execution of Amazon ECS tasks.</p>
+</li>
+<li>
+<p>Click through the next steps and then create the role with the name <code>ecsWorkshop</code>.
+<img src="/images/iam-role.png" alt="IAM Role"></p>
+</li>
 </ol>
 <p>You have now created an IAM role that will allow ECS to deploy images from Artifactory.</p>
 
@@ -1582,19 +1589,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1605073175"></script>
-    <script src="/js/perfect-scrollbar.min.js?1605073175"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1605073175"></script>
-    <script src="/js/jquery.sticky.js?1605073175"></script>
-    <script src="/js/featherlight.min.js?1605073175"></script>
-    <script src="/js/highlight.pack.js?1605073175"></script>
+    <script src="/js/clipboard.min.js?1605488123"></script>
+    <script src="/js/perfect-scrollbar.min.js?1605488123"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1605488123"></script>
+    <script src="/js/jquery.sticky.js?1605488123"></script>
+    <script src="/js/featherlight.min.js?1605488123"></script>
+    <script src="/js/highlight.pack.js?1605488123"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1605073175"></script>
-    <script src="/js/learn.js?1605073175"></script>
-    <script src="/js/hugo-learn.js?1605073175"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1605488123"></script>
+    <script src="/js/learn.js?1605488123"></script>
+    <script src="/js/hugo-learn.js?1605488123"></script>
     
         
-            <script src="/mermaid/mermaid.js?1605073175"></script>
+            <script src="/mermaid/mermaid.js?1605488123"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

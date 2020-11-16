@@ -20,7 +20,7 @@ export image_name=<server name>.jfrog.io/docker-demo/npm-app:latest
 2. Now let's build a docker image with the following command.
 
 ``
-sudo docker build -t $image_name .
+docker build -t $image_name .
 ``
 
 This command should result in a successful Docker image build.
@@ -37,7 +37,7 @@ Artifactory can protect you from this by proxying and caching images! This reduc
 3. Now use the JFrog CLI to push the docker image.
 
 ``
-sudo jfrog rt docker-push $image_name docker-demo --build-name=npm_build --build-number=1
+jfrog rt docker-push $image_name docker-demo --build-name=npm_build --build-number=1
 ``
 
 4. Now trigger a Xray scan of the build.
