@@ -15,7 +15,7 @@ In this section, we will focus on the NPM package of our application by validati
 As we are building our NPM package and Docker image, the JFrog CLI is collecting build info along the way. Build info is referenced by the build name and build number. Build info is all the information collected during the build which includes details about the build itself. The build info includes the list of project modules, artifacts, dependencies, environment variables and more. When using one of the JFrog CLI to build the code, it can collect the build-info and publish it to Artifactory. When the build info is published to Artifactory, all the published details become visible in the Artifactory UI. 
 {{% /notice %}}
 
-1. In the Cloud9 terminal, change directory to _aws-modernization-with-jfrog/workshop-app_. This directory contains the code for our NPM application.
+1. In the Cloud9 terminal, change directory to  `` cd aws-modernization-with-jfrog/workshop-app ``. This directory contains the code for our NPM application.
 
 2. Configure the NPM repositories with the JFrog CLI. This sets the _npm-demo_ as the NPM repository for deploying and resolving packages.
 
