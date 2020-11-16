@@ -20,7 +20,7 @@ export image_name=<server name>.jfrog.io/docker-demo/npm-app:latest
 2. Now let's build a docker image with the following command.
 
 ``
-sudo docker build -t $image_name .
+docker build -t $image_name .
 ``
 
 This command should result in a successful Docker image build.
