@@ -2,7 +2,7 @@
 title: "Configure AWS Secrets Manager for ECS"
 chapter: false
 weight: 71
-pre: "<b>7.1 </b>"
+pre: "<b>5.1 </b>"
 ---
 In the previous sections, we set up the JFrog CLI to authenticate and publish Docker images to Artifactory. In the next sections, we will add the same Artifactory credentials to AWS Secrets Manager. We will then use an IAM Role to allow Amazon ECS to authenticate with Artifactory, pull the image and deploy it.
 

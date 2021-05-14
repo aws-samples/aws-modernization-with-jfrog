@@ -1,8 +1,8 @@
 ---
 title: "DevOps in the Cloud"
 chapter: false
-weight: 2
-pre: "<b>2 </b>"
+weight: 11
+pre: "<b>1.1 </b>"
 ---
 
 ![Cloud Devops](/images/cloud-devops.jpg)

@@ -1,8 +1,8 @@
 ---
 title: "Self-paced: Create an AWS account"
 chapter: false
-weight: 413
-pre: "<b>4.1.3 </b>"
+weight: 211
+pre: "<b>2.1.1 </b>"
 ---
 
 {{% notice warning %}}

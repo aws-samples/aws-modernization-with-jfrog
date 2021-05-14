@@ -1,8 +1,8 @@
 ﻿---
 title: "Install and Configure the JFrog CLI"
 chapter: false
-weight: 433
-pre: "<b>4.3.3 </b>"
+weight: 220
+pre: "<b>2.1.10 </b>"
 ---
 
 JFrog CLI is a client that provides a simple CLI interface that automates the management of JFrog products. JFrog CLI works with JFrog Artifactory, JFrog Mission Control, JFrog Bintray and JFrog Xray (through their respective [REST APIs](https://www.jfrog.com/confluence/display/JFROG/REST+API)) making your scripts more efficient and reliable. You can use the JFrog CLI to assist in your builds, create artifacts, promote artifacts, trigger security scans and much more. It is powerful to that you can use in your CI/CD process and general automation. You can learn more [here](https://www.jfrog.com/confluence/display/CLI/JFrog+CLI). 

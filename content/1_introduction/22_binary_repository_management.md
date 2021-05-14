@@ -1,8 +1,8 @@
 ---
 title: "Binary Repository Management"
 chapter: false
-weight: 22
-pre: "<b>2.2 </b>"
+weight: 13
+pre: "<b>1.3 </b>"
 ---
 
 ![Repositories](/images/repositories.png)

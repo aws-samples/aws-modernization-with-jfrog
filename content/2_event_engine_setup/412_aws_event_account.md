@@ -1,8 +1,8 @@
 ---
 title: "AWS Event: Create an AWS account"
 chapter: false
-weight: 412
-pre: "<b>4.1.2 </b>"
+weight: 211
+pre: "<b>2.1.1 </b>"
 ---
 
 {{% notice warning %}}

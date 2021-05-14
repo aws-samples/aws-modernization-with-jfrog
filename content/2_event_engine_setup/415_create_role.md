@@ -1,8 +1,8 @@
 ---
 title: "Create an IAM role for your workspace"
 chapter: false
-weight: 415
-pre: "<b>4.1.5 </b>"
+weight: 213
+pre: "<b>2.1.3 </b>"
 ---
 
 1. Follow [this link to create an IAM role with Administrator access.](https://console.aws.amazon.com/iam/home#/roles$new?step=review&commonUseCase=EC2%2BEC2&selectedUseCase=EC2&policies=arn:aws:iam::aws:policy%2FAdministratorAccess)

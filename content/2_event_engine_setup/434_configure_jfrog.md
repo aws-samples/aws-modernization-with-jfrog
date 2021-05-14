@@ -1,8 +1,9 @@
 ﻿---
 title: "Configure JFrog Artifactory and Xray"
 chapter: false
-weight: 434
-pre: "<b>4.3.4 </b>"
+weight: 220
+pre: "<b>2.1.10 </b>"
+disableNextPrev: true
 ---
 
 Now that we have the JFrog CLI installed and configured, we will use it to create the Artifactory NPM and docker repositories, Xray watches and policies. We will need these when we build and publish our NPM application later. The JFrog CLI uses the the [JFrog Platform REST APIs](https://www.jfrog.com/confluence/display/JFROG/REST+API). This is another way that you can manage and monitor the JFrog Platform. 

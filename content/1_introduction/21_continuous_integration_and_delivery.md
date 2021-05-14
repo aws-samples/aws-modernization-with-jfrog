@@ -1,8 +1,8 @@
 ---
 title: "Continuous Integration and Delivery"
 chapter: false
-weight: 21
-pre: "<b>2.1 </b>"
+weight: 12
+pre: "<b>1.2 </b>"
 ---
 
 ![CICD](/images/cicd.png)

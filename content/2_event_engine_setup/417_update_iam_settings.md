@@ -1,8 +1,8 @@
 ﻿---
 title: "Update IAM settings for your Workspace"
 chapter: false
-weight: 417
-pre: "<b>4.1.7 </b>"
+weight: 215
+pre: "<b>2.1.5 </b>"
 ---
 
 1. Return to your Cloud9 workspace and click the gear icon (in top right corner).

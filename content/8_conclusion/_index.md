@@ -2,7 +2,7 @@
 title: "Conclusion"
 chapter: false
 weight: 8
-pre: "<b>8 </b>"
+pre: "<b>6 </b>"
 ---
 
 In this workshop, we used the JFrog Platform to build an application, manage the artifacts, scan the artifacts for security vulnerabilities and license compliance, and publish the artifacts of your application to a staging repository. Then we used Amazon ECS to deploy your application so that end-users can access it. 

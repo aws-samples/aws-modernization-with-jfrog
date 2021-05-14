@@ -2,7 +2,7 @@
 title: "Build and Push the Docker Image"
 chapter: false
 weight: 52
-pre: "<b>5.2 </b>"
+pre: "<b>3.2 </b>"
 ---
 
 We will now build a Docker image with our NPM package and publish the image to our JFrog Artifactory repository.

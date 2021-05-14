@@ -1,8 +1,8 @@
 ---
 title: "DevSecOps"
 chapter: false
-weight: 23
-pre: "<b>2.3 </b>"
+weight: 14
+pre: "<b>1.4 </b>"
 ---
 
 ![DevSecOps](/images/devsecops.png)
