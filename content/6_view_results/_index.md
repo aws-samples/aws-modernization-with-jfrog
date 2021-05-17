@@ -1,8 +1,8 @@
 ---
 title: "View Results in JFrog"
 chapter: false
-weight: 6
-pre: "<b>6 </b>"
+weight: 5
+pre: "<b>4 </b>"
 ---
 
 We have built and published our NPM package and Docker image. Let's view these results in JFrog Artifactory.

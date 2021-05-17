@@ -2,7 +2,7 @@
 title: "View Your Application"
 chapter: false
 weight: 74
-pre: "<b>7.4 </b>"
+pre: "<b>5.4 </b>"
 ---
 In the previous section, you deployed your image with Amazon ECS. Now let's check it out!
 

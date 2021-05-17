@@ -2,7 +2,7 @@
 title: "Build and Publish the NPM Package"
 chapter: false
 weight: 51
-pre: "<b>5.1 </b>"
+pre: "<b>3.1 </b>"
 ---
 
 In this section, we will focus on the NPM package of our application by validating NPM dependencies and publishing the resulting NPM package.

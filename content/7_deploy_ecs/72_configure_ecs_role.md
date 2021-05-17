@@ -2,7 +2,7 @@
 title: "Configure an IAM Role for ECS"
 chapter: false
 weight: 72
-pre: "<b>7.2 </b>"
+pre: "<b>5.2 </b>"
 ---
 We now have our Artifactory credentials in the AWS Secrets Manager. Next, we must create an IAM role that will allow ECS to access our Artifactory secrets and deploy our image. 
 

@@ -2,7 +2,7 @@
 title: "Deploy Your Image with ECS"
 chapter: false
 weight: 73
-pre: "<b>7.3 </b>"
+pre: "<b>5.3 </b>"
 ---
 
 The Amazon ECS first-run wizard guides you through the process of getting started with Amazon ECS using the Fargate launch type. The wizard gives you the option of creating a cluster and launching your application. It is a great way to get started with deploying your application with Amazon ECS. We will use the wizard to deploy our NPM application Docker image from Artifactory.
