@@ -67,5 +67,8 @@ weight = 30
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
-page = [ "HTML", "AMP"]
 
+[markup]
+  defaultMarkdownHandler = "blackfriday"
+  [markup.blackFriday]
+    hrefTargetBlank = true

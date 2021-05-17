@@ -17,7 +17,7 @@ not receive an email confirmation, please check your company spam filter.
 If you're still having difficulty, please contact ajonsso@amazon.com.
   </td>
 
-  <td class="credit" style="width:30%"> <a href="https://pages.awscloud.com/awsmp-wsm-dev-workshop-series-credit-request.html?trk=lab_harness" target="_blank" class="credit-btn">Request AWS Credits</a>  </td>
+  <td class="credit" style="width:30%"> <a href="https://pages.awscloud.com/awsmp-wsm-dev-workshop-series-credit-request.html?trk=lab_jfrog" target="_blank" class="credit-btn">Request AWS Credits</a>  </td>
 </tr>
 </table>
 
