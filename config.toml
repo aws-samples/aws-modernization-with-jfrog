@@ -1,11 +1,11 @@
 baseURL = "/"
 languageCode = "en-US"
-defaultContentLanguage = "en"
+defaultContentLanguage = "oyo"
 
 title = "JFrog DevOps Modernization Workshop"
 theme = "hugo-theme-learn"
 metaDataFormat = "yaml"
-defaultContentLanguageInSubdir= "true"
+defaultContentLanguageInSubdir= "false"
 uglyurls = "true"
 enableEmoji = true
 sectionPagesMenu = "main"
@@ -35,7 +35,7 @@ canonifyurls = true
   # A title for shortcuts in menu is set by default. Set this to true to disable it. 
   disableShortcutsTitle = false
   # When using mulitlingual website, disable the switch language button.
-  disableLanguageSwitchingButton = true
+  disableLanguageSwitchingButton = false
   # Hide breadcrumbs in the header and only show the current page title
   disableBreadcrumb = false
   # Hide Next and Previous page buttons normally displayed full height beside content
@@ -72,3 +72,14 @@ home = [ "HTML", "RSS", "JSON"]
   defaultMarkdownHandler = "blackfriday"
   [markup.blackFriday]
     hrefTargetBlank = true
+
+[Languages]
+[Languages.oyo]
+title = "MP DevOps Series"
+weight = 1
+languageName = "MP DevOps Series"
+
+[Languages.ee]
+title = "Event Engine"
+weight = 2
+languageName = "Event Engine"

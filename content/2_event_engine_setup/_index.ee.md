@@ -1,9 +1,8 @@
 ---
-title: "AWS Hosted Event Setup"
+title: "Event Engine Setup"
 chapter: true
 draft: false
 weight: 2
-pre: "<b>2.1 </b>"
 ---
 
 # Event Engine
