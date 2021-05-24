@@ -26,7 +26,7 @@ There are slightly different setup instructions depending on your track so make 
 
 Down below are two buttons that will take you to different tracks:
 
-<a href="/2_event_engine_setup.html" class="credit-btn">You are at an AWS Hosted Event</a>    <a href="/3_self_guided_setup.html" class="credit-btn">You are doing this workshop by yourself</a>
+<a href="/2_event_engine_setup.html" class="credit-btn">You are at an AWS Hosted Event</a>    <a href="/2_self_guided_setup.html" class="credit-btn">You are doing this workshop by yourself</a>
 
 {{% children showhidden="false" %}}
 
