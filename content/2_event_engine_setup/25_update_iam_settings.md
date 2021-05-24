@@ -9,7 +9,7 @@ pre: "<b>2.5 </b>"
 2. Select **AWS Settings**.
 3. Turn off **AWS managed temporary credentials**.
 4. Close the **Preferences** tab.
-![c9disableiam](/images/c9disableiam.png)
+    ![c9disableiam](/images/c9disableiam.png)
 
 5. Copy and run the shell commands below in your Cloud9 terminal. These shell commands will: 
 

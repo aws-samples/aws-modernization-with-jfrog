@@ -9,19 +9,19 @@ pre: "<b>3.5 </b>"
 2. Select **AWS Settings**.
 3. Turn off **AWS managed temporary credentials**.
 4. Close the **Preferences** tab.
-![c9disableiam](/images/c9disableiam.png)
+    ![c9disableiam](/images/c9disableiam.png)
 
 5. Copy and run the shell commands below in your Cloud9 terminal. These shell commands will: 
 
-- Install jq- jq is a command-line tool for parsing JSON
-
-- Ensure temporary credentials aren’t already in place.
-
-- Remove any existing credentials file.
-
-- Set the region to work with our desired region.
-
-- Validate that our IAM role is valid. 
+    - Install jq- jq is a command-line tool for parsing JSON
+    
+    - Ensure temporary credentials aren’t already in place.
+    
+    - Remove any existing credentials file.
+    
+    - Set the region to work with our desired region.
+    
+    - Validate that our IAM role is valid. 
 
 ```sh
 sudo yum -y install jq

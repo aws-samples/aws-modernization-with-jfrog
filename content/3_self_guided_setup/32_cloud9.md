@@ -9,15 +9,15 @@ pre: "<b>3.2 </b>"
 
 1. Within the AWS console, use the region drop list to select **us-west-2 (Oregon)**.  The workshop script will provision the resources in this region.
 
-![image](/images/aws-pick-region.png)
+    ![image](/images/aws-pick-region.png)
 
 2. Navigate to the [Cloud9 console](https://console.aws.amazon.com/cloud9/home) or just search for it under the **AWS services** search.
 
-![image](/images/c9-search.png)
+    ![image](/images/c9-search.png)
 
 3. Click the **Create environment** button.
 
-![image](/images/c9-create.png)
+    ![image](/images/c9-create.png)
 
 4. For the name, enter `jfrog-workshop` and click **Next Step**.
 
@@ -27,23 +27,23 @@ pre: "<b>3.2 </b>"
 
 6. Leave all the other settings as default.
 
-![image](/images/c9-settings.png)
+    ![image](/images/c9-settings.png)
 
 7. Click **Next Step**.
 
 8. On the **Review** page, click **Create environment**. The Cloud9 environment will take a few minutes to provision.
 
-7. When the environment comes up, close the **Welcome** page tab.
+9. When the environment comes up, close the **Welcome** page tab.
 
-8. Close the lower work area tab.
+10. Close the lower work area tab.
 
-9. Open a new terminal tab in the main work area.
+11. Open a new terminal tab in the main work area.
 
-![c9before](/images/c9before.png)
+    ![c9before](/images/c9before.png)
 
 Your workspace should now look like this and can hide the left hand environment explorer by clicking on the left side **environment** tab.
 
-![c9after](/images/c9after.png)
+    ![c9after](/images/c9after.png)
 
 {{% notice tip %}}
 If you don't like this dark theme, you can change it from the **View** ► **Themes** menu.

@@ -10,4 +10,4 @@ pre: "<b>3.3 </b>"
 3. Confirm that **AdministratorAccess** is checked, then click **Next** through to **Review**.
 4. Enter `JFrog-Workshop-Admin` for the role name.
 5. Click **Create Role**.
-![createrole](/images/createrole.png)
+    ![createrole](/images/createrole.png)

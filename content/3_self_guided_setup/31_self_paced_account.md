@@ -13,17 +13,17 @@ Your account must have the ability to create new IAM roles and scope other IAM p
 1. If you don't already have an AWS account with Administrator access, create
 one now by going to [AWS Getting Started](https://aws.amazon.com/getting-started/).
 
-1. Once you have an AWS account, ensure you are using an IAM user with **Administrator Access** to the AWS account. Go to [AWS IAM](https://console.aws.amazon.com/iam/home?#/users$new) to create a new user.
+2. Once you have an AWS account, ensure you are using an IAM user with **Administrator Access** to the AWS account. Go to [AWS IAM](https://console.aws.amazon.com/iam/home?#/users$new) to create a new user.
 
-1. Enter the user details.
-![Create User](/images/iam-1-create-user.png)
+3. Enter the user details.
+    ![Create User](/images/iam-1-create-user.png)
 
-1. Attach the **AdministratorAccess** IAM Policy.
-![Attach Policy](/images/iam-2-attach-policy.png)
+4. Attach the **AdministratorAccess** IAM Policy.
+    ![Attach Policy](/images/iam-2-attach-policy.png)
 
-1. Click **Create user**.
-![Confirm User](/images/iam-3-create-user.png)
+5. Click **Create user**.
+    ![Confirm User](/images/iam-3-create-user.png)
 
-1. Copy and save the sign-in URL.
-![Login URL](/images/iam-4-save-url.png)
+6. Copy and save the sign-in URL.
+    ![Login URL](/images/iam-4-save-url.png)
 

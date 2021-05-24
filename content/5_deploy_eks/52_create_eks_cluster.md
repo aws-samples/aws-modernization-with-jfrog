@@ -14,52 +14,45 @@ Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that you can
 1. In your Cloud9 terminal, follow these [instructions](https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html) to install EKSCTL on Linux.
 2. Follow these [instructions](https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html) to install KUBECTL on Linux.
 3. Next, execute the following command to create your EKS cluster. It is that easy! This will take a few minutes.
-   
    ``
    eksctl create cluster --name jfrogeksworkshop --region us-west-2 --managed
    ``
    
 4. Update your kubeconfig to add the credentials for your new cluster.
-   
    ``
    aws eks update-kubeconfig --name jfrogeksworkshop --region us-west-2
    ``
    
 5. Execute the following command to print out your kubeconfig. Copy the output to your notepad. We will need this later to allow JFrog Pipeline to access the cluster.
-   
    ``
    cat /home/ec2-user/.kube/config
    ``
-
    ![Kubeconfig](/images/kubeconfig.png)
 
 6. Execute the following command to create a namespace where we will deploy our application.
+   ``
+   kubectl create namespace aws-eks-workshop
+   ``
+
+7. In your JFrog Platform instance, go to **Administration** > **Identity and Access** > **Access Tokens**.
+
+8. Click **+ Generate Admin Token**.
+   ![Generate Admin Token](/images/generate-access-token.png)
+
+9. Leave the defaults and click **Generate**.
+   ![Generate Admin Token](/images/generate-access-token.png)
+
+10. Copy the _Username_ and _Access Token_.
+
+11. Go back to your Cloud9 terminal, and execute the following command to create an image pull secret that will be used to pull and deploy your image.
+
+   ```
+   kubectl create secret docker-registry artifactory-secret --namespace aws-eks-workshop --docker-server=<your JFrog Platform instance domain> --docker-username=<username from above> --docker-password=<token from above>
+   ```
+
+   Example:
    
-``
-kubectl create namespace aws-eks-workshop
-``
-
-6. In your JFrog Platform instance, go to **Administration** > **Identity and Access** > **Access Tokens**.
-
-7. Click **+ Generate Admin Token**.
-
-![Generate Admin Token](/images/generate-access-token.png)
-
-8. Leave the defaults and click **Generate**.
-
-![Generate Admin Token](/images/generate-access-token.png)
-
-9. Copy the _Username_ and _Access Token_.
-
-10. Go back to your Cloud9 terminal, and execute the following command to create an image pull secret that will be used to pull and deploy your image.
-
-```
-kubectl create secret docker-registry artifactory-secret --namespace aws-eks-workshop --docker-server=<your JFrog Platform instance domain> --docker-username=<username from above> --docker-password=<token from above>
-```
-
-Example:
-
-```
-kubectl create secret docker-registry artifactory-secret --namespace aws-eks-workshop --docker-server=myjfrog.jfrog.io --docker-username=jefff --docker-password=xxxxx...
-```
+   ```
+   kubectl create secret docker-registry artifactory-secret --namespace aws-eks-workshop --docker-server=myjfrog.jfrog.io --docker-username=jefff --docker-password=xxxxx...
+   ```
 
