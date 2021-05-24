@@ -33,7 +33,7 @@ pre: "<b>5.4 </b>"
 
 ![My Pipelines](/images/my-pipelines.png)
 
-7. Click on your pipeline, **aws_ecs_docker_compose_workshop_app_build**.
+7. Click on your pipeline, **eks_workshop_app_build**.
 
 ![Workshop Pipeline](/images/workshop-pipeline-eks.png)
 

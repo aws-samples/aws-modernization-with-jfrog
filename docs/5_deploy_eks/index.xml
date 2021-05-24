@@ -8,11 +8,11 @@
     <language>en-US</language><atom:link href="https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Download the Workshop Code</title>
-      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks/51_download_workshop_code.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks/51_download_code.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks/51_download_workshop_code.html</guid>
-      <description>The workshop code is located at https://github.com/jfrogtraining/aws-eks-workshop GitHub repository. We will clone this repo locally in order to pull the required workshop files.
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks/51_download_code.html</guid>
+      <description>The code is located at https://github.com/jfrogtraining/aws-eks-workshop GitHub repository. We will clone this repo locally in order to pull the required workshop files.
  Go to https://github.com/jfrogtraining/aws-eks-workshop and fork this repository to your GitHub account.
  In your Cloud9 terminal, clone this repository to your local directory with the following command.
    git clone https://github.com/&amp;lt;github username&amp;gt;/aws-eks-workshop.git</description>

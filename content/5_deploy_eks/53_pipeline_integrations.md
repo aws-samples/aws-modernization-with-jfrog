@@ -13,9 +13,27 @@ Our CI/CD pipeline requires access to GitHub to pull our code, access to JFrog A
 An Integration connects Pipelines to an external service/tool. Each integration type defines the endpoint, credentials and any other configuration detail required for Pipelines to exchange information with the service. All credential information is encrypted and held in secure storage, in conformance with best security practices.
 {{% /notice %}}
 
+{{% notice warning %}}
+You may have already created these integrations in previous steps. If so, you can reuse them and do not need to recreate them. JFrog Pipelines allows you to share integrations and resources across pipelines.
+{{% /notice %}}
+
 1. In your JFrog Platform instance, go to **Administration** > **Pipelines** > **Integrations**.
 
 2. Click **Add an Integration**.
+
+3. For the **Name**, enter _artifactory\_integration_.
+
+4. For **Integration Type**, select **Artifactory**.
+
+5. Click **Get API Key** to generate an API key.
+
+6. Click **Test connection** to validate.
+
+7. Click **Create** to create the integration.
+
+![Artifactory Integration](/images/artifactory-integration.png)
+
+2. Click **Add an Integration** again.
 
 3. For the **Name**, enter _github\_integration_.
 

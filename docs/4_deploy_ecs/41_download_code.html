@@ -9,7 +9,7 @@
 
     <link rel="icon" href="https://jefferyfry.github.io/aws-modernization-with-jfrog/images/favicon.png" type="image/png">
 
-    <title>Add our Pipeline :: JFrog DevOps Modernization Workshop</title>
+    <title>Download the Code :: JFrog DevOps Modernization Workshop</title>
 
     
     <link href="https://jefferyfry.github.io/aws-modernization-with-jfrog/css/nucleus.css?1621875538" rel="stylesheet">
@@ -60,7 +60,7 @@
 <link rel="stylesheet" href="https://jefferyfry.github.io/aws-modernization-with-jfrog/css/mp-devops-series.css">
 <link rel="stylesheet" href="https://pages.awscloud.com/js/forms2/css/forms2.css">
   </head>
-  <body class="" data-url="https://jefferyfry.github.io/aws-modernization-with-jfrog/4_deploy_ecs/44_add_pipeline.html">
+  <body class="" data-url="https://jefferyfry.github.io/aws-modernization-with-jfrog/4_deploy_ecs/41_download_code.html">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -785,7 +785,7 @@
  
   
     
-      <li data-nav-id="/4_deploy_ecs/41_download_code.html" title="Download the Code" class="dd-item ">
+      <li data-nav-id="/4_deploy_ecs/41_download_code.html" title="Download the Code" class="dd-item active">
         <a href="https://jefferyfry.github.io/aws-modernization-with-jfrog/4_deploy_ecs/41_download_code.html">
         <b>4.1 </b>Download the Code
         <i class="fas fa-check read-icon"></i>
@@ -848,7 +848,7 @@
  
   
     
-      <li data-nav-id="/4_deploy_ecs/44_add_pipeline.html" title="Add our Pipeline" class="dd-item active">
+      <li data-nav-id="/4_deploy_ecs/44_add_pipeline.html" title="Add our Pipeline" class="dd-item ">
         <a href="https://jefferyfry.github.io/aws-modernization-with-jfrog/4_deploy_ecs/44_add_pipeline.html">
         <b>4.4 </b>Add our Pipeline
         <i class="fas fa-check read-icon"></i>
@@ -1142,7 +1142,7 @@
             
           
           
-            <a href='https://jefferyfry.github.io/aws-modernization-with-jfrog/'>JFrog DevOps Modernization Workshop</a> > <a href='https://jefferyfry.github.io/aws-modernization-with-jfrog/4_deploy_ecs.html'>JFrog Platform with Docker Compose & ECS</a> > Add our Pipeline
+            <a href='https://jefferyfry.github.io/aws-modernization-with-jfrog/'>JFrog DevOps Modernization Workshop</a> > <a href='https://jefferyfry.github.io/aws-modernization-with-jfrog/4_deploy_ecs.html'>JFrog Platform with Docker Compose & ECS</a> > Download the Code
           
         
           
@@ -1171,80 +1171,26 @@
           
             <h1>
               
-              Add our Pipeline
+              Download the Code
             </h1>
           
 
         
 
 
-<ol>
-<li>In your JFrog Platform instance, go to <strong>Application</strong> &gt; <strong>Pipelines</strong> &gt; <strong>Pipeline Sources</strong>.</li>
-</ol>
-
-<p><img src="https://jefferyfry.github.io/aws-modernization-with-jfrog/images/pipeline-sources.png" alt="Pipeline Sources" /></p>
+<p>The code is located at <a href="https://github.com/jfrogtraining/aws-ecs-docker-compose-workshop" target="_blank">https://github.com/jfrogtraining/aws-ecs-docker-compose-workshop</a> GitHub repository. We will clone this repo locally in order to pull the required workshop files and scripts.</p>
 
 <ol>
-<li><p>Click <strong>Add a pipeline source</strong>.</p></li>
+<li><p>Go to <a href="https://github.com/jfrogtraining/aws-ecs-docker-compose-workshop" target="_blank">https://github.com/jfrogtraining/aws-ecs-docker-compose-workshop</a> and fork this repository to your GitHub account.</p></li>
 
-<li><p>Click <strong>Add Pipeline Source</strong> at the top right and select <strong>From YAML</strong>.</p></li>
+<li><p>In your Cloud9 terminal, clone this repository to your local directory with the following command.</p></li>
 </ol>
 
-<p><img src="https://jefferyfry.github.io/aws-modernization-with-jfrog/images/pipeline-from-yaml.png" alt="Pipeline From YAML" /></p>
+<p><code>
+git clone https://github.com/&lt;github username&gt;/aws-ecs-docker-compose-workshop.git
+</code></p>
 
-<ol>
-<li><p>For <strong>SCM Provider Integration</strong>, select the <strong>github_integration</strong> that you created previously.</p></li>
-
-<li><p>For <strong>Repository Full Name</strong>, select your forked <strong><username>/aws-ecs-docker-compose-workshop</strong>.</p></li>
-
-<li><p>For <strong>Branch</strong>, select <strong>master</strong>.</p></li>
-
-<li><p>Leave <strong>Pipeline Config File Filter</strong> as <em>pipelines.yml</em>.</p></li>
-</ol>
-
-<p><img src="https://jefferyfry.github.io/aws-modernization-with-jfrog/images/create-pipeline-source-ecs.png" alt="Create Pipeline Source" /></p>
-
-<ol>
-<li>Click <strong>Create Source</strong>. JFrog Pipelines will process the CI/CD pipeline. The status should show <strong>Not Synced</strong> then <strong>Syncing</strong> and then <strong>Success</strong>.</li>
-</ol>
-
-<p><img src="https://jefferyfry.github.io/aws-modernization-with-jfrog/images/success-pipeline-source-ecs.png" alt="Success Pipeline Source" /></p>
-
-<ol>
-<li>Go to <strong>Application</strong> &gt; <strong>Pipelines</strong> &gt; <strong>My Pipelines</strong>. Notice that your pipeline has a status of <strong>Not Built</strong>.</li>
-</ol>
-
-<p><img src="https://jefferyfry.github.io/aws-modernization-with-jfrog/images/my-pipelines.png" alt="My Pipelines" /></p>
-
-<ol>
-<li>Click on your pipeline, <strong>aws_ecs_docker_compose_workshop_app_build</strong>.</li>
-</ol>
-
-<p><img src="https://jefferyfry.github.io/aws-modernization-with-jfrog/images/workshop-pipeline-ecs.png" alt="Workshop Pipeline" /></p>
-
-<ol>
-<li>Click on the <em>app_docker_build</em> step and trigger the step to execute the pipeline. JFrog Pipelines will allocate build nodes and execute your pipeline.</li>
-</ol>
-
-<p><img src="https://jefferyfry.github.io/aws-modernization-with-jfrog/images/trigger-pipeline.png" alt="Trigger Pipeline" /></p>
-
-<ol>
-<li><p>It will take a few minutes to execute. Click on the <em>Run</em> to monitor the status of each step.</p></li>
-
-<li><p>Use the pulldown to select each step and view the logs.</p></li>
-</ol>
-
-<p><img src="https://jefferyfry.github.io/aws-modernization-with-jfrog/images/pipeline-step-logs-ecs.png" alt="Pipeline Step Logs" /></p>
-
-<ol>
-<li><p>When the pipeline execution completes (approximately 5-10 minutes), view the log for the <em>ecs_deploy</em> step.</p></li>
-
-<li><p>While this pipeline is executing, go to the <a href="https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks" target="_blank">CloudFormation console</a> to watch the CloudFormation stack create the new ECS cluster. You can also go to the <a href="https://us-west-2.console.aws.amazon.com/ecs/home?region=us-west-2#/clusters" target="_blank">ECS console</a> to observe the new cluster.</p></li>
-
-<li><p>Scroll down to get the <em>PORTS</em> value. Enter the value into your browser to view the application!</p></li>
-</ol>
-
-<p><img src="https://jefferyfry.github.io/aws-modernization-with-jfrog/images/ecs-deploy-url.png" alt="ECS Deploy URL" /></p>
+<p><img src="https://jefferyfry.github.io/aws-modernization-with-jfrog/images/git-clone-ecs.png" alt="Git Clone" /></p>
 
 
 <footer class="footline">
@@ -1762,6 +1708,26 @@
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
                 
                 
 
@@ -1805,23 +1771,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -1829,9 +1778,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1965,10 +1911,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="https://jefferyfry.github.io/aws-modernization-with-jfrog/4_deploy_ecs/43_update_pipeline.html" title="Update our Pipeline"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="https://jefferyfry.github.io/aws-modernization-with-jfrog/4_deploy_ecs.html" title="JFrog Platform with Docker Compose &amp; ECS"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks.html" title="JFrog Platform with EKS" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="https://jefferyfry.github.io/aws-modernization-with-jfrog/4_deploy_ecs/42_pipeline_integrations.html" title="Set up our JFrog Pipelines Integrations" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

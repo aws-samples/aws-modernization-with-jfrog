@@ -5,7 +5,7 @@ weight: 51
 pre: "<b>5.1 </b>"
 ---
 
-The workshop code is located at [https://github.com/jfrogtraining/aws-eks-workshop](https://github.com/jfrogtraining/aws-eks-workshop) GitHub repository. We will clone this repo locally in order to pull the required workshop files.
+The code is located at [https://github.com/jfrogtraining/aws-eks-workshop](https://github.com/jfrogtraining/aws-eks-workshop) GitHub repository. We will clone this repo locally in order to pull the required workshop files.
 
 1. Go to [https://github.com/jfrogtraining/aws-eks-workshop](https://github.com/jfrogtraining/aws-eks-workshop) and fork this repository to your GitHub account.
 

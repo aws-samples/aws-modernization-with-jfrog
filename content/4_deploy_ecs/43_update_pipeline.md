@@ -26,7 +26,7 @@ git add .
 git commit -m 'Updated values.yml.'
 ```
 
-4. Next, push these updates. When prompted for a username and password, use your GitHub username and personal access token.
+4. Next, push these updates. When prompted for a username and password, use your GitHub username and personal access token/password.
 
 ``
 git push origin master

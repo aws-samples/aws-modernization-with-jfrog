@@ -13,33 +13,27 @@ Our CI/CD pipeline requires access to GitHub to pull our code, access to JFrog A
 An Integration connects Pipelines to an external service/tool. Each integration type defines the endpoint, credentials and any other configuration detail required for Pipelines to exchange information with the service. All credential information is encrypted and held in secure storage, in conformance with best security practices.
 {{% /notice %}}
 
-1. In your JFrog Platform instance, go to **Administration** > **Identity and Access** > **Access Tokens**.
+{{% notice warning %}}
+You may have already created these integrations in previous steps. If so, you can reuse them and do not need to recreate them. JFrog Pipelines allows you to share integrations and resources across pipelines.
+{{% /notice %}}
 
-2. Click **+ Generate Admin Token**.
-   
-![Generate Admin Token](/images/generate-access-token.png)
+1. In your JFrog Platform instance, go to **Administration** > **Pipelines** > **Integrations**.
 
-3. Leave the defaults and click **Generate**.
+2. Click **Add an Integration**.
 
-![Generate Admin Token](/images/generate-access-token.png)
+3. For the **Name**, enter _artifactory\_integration_.
 
-4. Copy the _Username_ and _Access Token_.
+4. For **Integration Type**, select **Artifactory**.
 
-5. In your JFrog Platform instance, go to **Administration** > **Pipelines** > **Integrations**.
+5. Click **Get API Key** to generate an API key.
 
-6. Click **Add an Integration**.
+6. Click **Test connection** to validate.
 
-7. For the **Name**, enter _pull\_secrets_.
+7. Click **Create** to create the integration.
 
-8. For **Integration Type**, select **Generic Integration**.
+![Artifactory Integration](/images/artifactory-integration.png)
 
-9. Under **Custom Environment Variables**, add key-value pairs for _username_ and _token_.  Enter the _username_ and _Access Token_ values that you copied from above.
-
-10. Click **Create** to create the integration.
-
-![Generic Integration](/images/generic-integration.png)
-
-11. Click **Add an Integration**.
+11. Click **Add an Integration** again.
 
 12. For the **Name**, enter _github\_integration_.
 
