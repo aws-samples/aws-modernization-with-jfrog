@@ -10,8 +10,7 @@ Before we get started on building, publishing and deploying our NPM application,
 
 - Set up our AWS account and IAM roles.
 - Provision a Cloud9 IDE instance.
-- Prepare our JFrog Platform instance.
-- Install and configure the JFrog CLI.
+- Get and prepare our JFrog Platform instance.
 - Clone our workshop GitHub repository which contains our code.
 
 There are two tracks for completing this workshop as follows. 

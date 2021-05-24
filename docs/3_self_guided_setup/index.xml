@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Self-Guided Setup on JFrog DevOps Modernization Workshop</title>
+    <link>/3_self_guided_setup.html</link>
+    <description>Recent content in Self-Guided Setup on JFrog DevOps Modernization Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/3_self_guided_setup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Self-paced: Create an AWS account</title>
+      <link>/3_self_guided_setup/31_self_paced_account.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_self_guided_setup/31_self_paced_account.html</guid>
+      <description>Only complete this section if you are running the workshop on your own. If you are at an AWS hosted event, go to Start the workshop at an AWS event. Your account must have the ability to create new IAM roles and scope other IAM permissions.
+  If you don&amp;rsquo;t already have an AWS account with Administrator access, create one now by going to AWS Getting Started.
+ Once you have an AWS account, ensure you are using an IAM user with Administrator Access to the AWS account.</description>
+    </item>
+    
+    <item>
+      <title>Set up your Cloud9 IDE</title>
+      <link>/3_self_guided_setup/32_cloud9.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_self_guided_setup/32_cloud9.html</guid>
+      <description>AWS Cloud9 is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser. It includes a code editor, debugger, and terminal. Cloud9 comes prepackaged with essential tools for popular programming languages, including JavaScript, Python, PHP, and more, so you don’t need to install files or configure your development machine to start new projects.
+ Within the AWS console, use the region drop list to select us-west-2 (Oregon).</description>
+    </item>
+    
+    <item>
+      <title>Create an IAM role for your workspace</title>
+      <link>/3_self_guided_setup/33_create_role.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_self_guided_setup/33_create_role.html</guid>
+      <description> Follow this link to create an IAM role with Administrator access. Confirm that AWS service and EC2 are selected, then click Next to view permissions. Confirm that AdministratorAccess is checked, then click Next through to Review. Enter JFrog-Workshop-Admin for the role name. Click Create Role.   </description>
+    </item>
+    
+    <item>
+      <title>Attach the IAM role to your Workspace</title>
+      <link>/3_self_guided_setup/34_attach_role_workspace.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_self_guided_setup/34_attach_role_workspace.html</guid>
+      <description> Follow this link to find your Cloud9 EC2 instance. Select the instance by clicking the checkbox, then choose Actions ► Security ► Modify IAM role.  Choose JFrog-Workshop-Admin from the IAM Role drop down, and click Save.   </description>
+    </item>
+    
+    <item>
+      <title>Update IAM settings for your Workspace</title>
+      <link>/3_self_guided_setup/35_update_iam_settings.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_self_guided_setup/35_update_iam_settings.html</guid>
+      <description>Return to your Cloud9 workspace and click the gear icon (in top right corner). Select AWS Settings. Turn off AWS managed temporary credentials. Close the Preferences tab.  Copy and run the shell commands below in your Cloud9 terminal. These shell commands will:
+ Install jq- jq is a command-line tool for parsing JSON
+ Ensure temporary credentials aren’t already in place.
+ Remove any existing credentials file.
+ Set the region to work with our desired region.</description>
+    </item>
+    
+    <item>
+      <title>Get a Free JFrog Platform Instance from AWS Marketplace</title>
+      <link>/3_self_guided_setup/36_jfrog_free.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_self_guided_setup/36_jfrog_free.html</guid>
+      <description>Go to https://aws.amazon.com/marketplace/pp/B085Y6HJ85?ref_=beagle&amp;amp;applicationId=AWS-Marketplace-Console and click on &amp;ldquo;Try For Free&amp;rdquo; button on the upper right hand corner .
+ Configure and create the contract. Ensure to select &amp;ldquo;Free Trial Option&amp;rdquo; to enable &amp;ldquo;Create Contract&amp;rdquo; button. Click on &amp;ldquo;Create Contract button&amp;rdquo;
+ Review and accept
+ Once done, click on &amp;ldquo;Setup your account&amp;rdquo;
+ Enter the AWS account ID, which you used in the previous steps above. Ensure to use the same AWS account ID as used above to subscribe</description>
+    </item>
+    
+    <item>
+      <title>AWS Credit Request</title>
+      <link>/3_self_guided_setup/37_request_credit.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_self_guided_setup/37_request_credit.html</guid>
+      <description>To help you cover the AWS service costs incurred by doing this tutorial, AWS Credits are available courtesy of AWS Marketplace. Submit the form and you will receive a confirmation email with an AWS Credit Code. Credits are available while supplies last. Please wait a few minutes to receive your AWS Credit Code via email. If you do not receive an email confirmation, please check your company spam filter. If you&#39;re still having difficulty, please contact ajonsso@amazon.</description>
+    </item>
+    
+    <item>
+      <title>Set Up Docker Repositories</title>
+      <link>/3_self_guided_setup/38_docker_repositories.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_self_guided_setup/38_docker_repositories.html</guid>
+      <description>In your JFrog Platform instance at the top right, enable the drop down menu and select Quick Setup.
+ On the Create Repositories dialog, choose Docker and click Next.
+ Next, enter workshop for the Repositories Prefix.
+ Click Create. This will create the following docker repositories:
+ workshop-docker-local workshop-docker-remote workshop-docker    Local repositories are physical, locally-managed repositories into which you can deploy artifacts. These are repositories that are local to the JFrog Artifactory instance.</description>
+    </item>
+    
+    <item>
+      <title>Set Up Xray Security</title>
+      <link>/3_self_guided_setup/39_xray_setup.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_self_guided_setup/39_xray_setup.html</guid>
+      <description>In your JFrog Platform instance, go to Administration &amp;gt; Xray &amp;gt; Watches &amp;amp; Policies.
+ Click Create a Policy.
+ Call the security policy, High-Severity.
+ Click on New Rule.
+ Name the rule High-Severity and select High for the Minimal Severity. Click Save.
+ Click Create to create this new security policy.
+ Click on the Watches tab under Watches &amp;amp; Policies.
+ Click on Set up a Watch.</description>
+    </item>
+    
+    <item>
+      <title>Workshop Next Steps</title>
+      <link>/3_self_guided_setup/310_workshop_next_steps.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_self_guided_setup/310_workshop_next_steps.html</guid>
+      <description>You are now ready to build an application with the JFrog Platform. Please choose which AWS service you wish to deploy to.
+Amazon ECS using Docker Compose Amazon EKS</description>
+    </item>
+    
+  </channel>
+</rss>

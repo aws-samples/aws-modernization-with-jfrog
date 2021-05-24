@@ -3,131 +3,175 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/1_introduction.html</loc>
+  </url>
+  
+  <url>
     <loc>/</loc>
   </url>
   
   <url>
-    <loc>/1_prerequisites.html</loc>
+    <loc>/2_event_engine_setup.html</loc>
   </url>
   
   <url>
-    <loc>/2_devops_cloud.html</loc>
+    <loc>/2_self_guided_setup.html</loc>
   </url>
   
   <url>
-    <loc>/3_workshop.html</loc>
+    <loc>/3_deploy_ecs.html</loc>
   </url>
   
   <url>
-    <loc>/4_workshop_setup.html</loc>
+    <loc>/4_deploy_eks.html</loc>
   </url>
   
   <url>
-    <loc>/5_build_publish_app.html</loc>
+    <loc>/5_view_results.html</loc>
   </url>
   
   <url>
-    <loc>/6_view_results.html</loc>
+    <loc>/6_conclusion.html</loc>
   </url>
   
   <url>
-    <loc>/7_deploy_ecs.html</loc>
+    <loc>/1_introduction/20_devops_in_cloud.html</loc>
   </url>
   
   <url>
-    <loc>/8_conclusion.html</loc>
+    <loc>/1_introduction/21_continuous_integration_and_delivery.html</loc>
   </url>
   
   <url>
-    <loc>/2_devops_cloud/21_continuous_integration_and_delivery.html</loc>
+    <loc>/1_introduction/22_binary_repository_management.html</loc>
   </url>
   
   <url>
-    <loc>/2_devops_cloud/22_binary_repository_management.html</loc>
+    <loc>/1_introduction/23_dev_sec_ops.html</loc>
   </url>
   
   <url>
-    <loc>/2_devops_cloud/23_dev_sec_ops.html</loc>
+    <loc>/1_introduction/24_jfrog_platform_overview.html</loc>
   </url>
   
   <url>
-    <loc>/2_devops_cloud/24_jfrog_platform_overview.html</loc>
+    <loc>/1_introduction/25_workshop_next_steps.html</loc>
   </url>
   
   <url>
-    <loc>/4_workshop_setup/41_aws_setup.html</loc>
+    <loc>/2_event_engine_setup/21_aws_event_account.html</loc>
   </url>
   
   <url>
-    <loc>/4_workshop_setup/42_code_setup.html</loc>
+    <loc>/2_self_guided_setup/21_self_paced_account.html</loc>
   </url>
   
   <url>
-    <loc>/4_workshop_setup/43_jfrog_setup.html</loc>
+    <loc>/2_event_engine_setup/22_cloud9.html</loc>
   </url>
   
   <url>
-    <loc>/5_build_publish_app/51_npm.html</loc>
+    <loc>/2_self_guided_setup/22_cloud9.html</loc>
   </url>
   
   <url>
-    <loc>/5_build_publish_app/52_docker.html</loc>
+    <loc>/2_event_engine_setup/23_create_role.html</loc>
   </url>
   
   <url>
-    <loc>/7_deploy_ecs/71_configure_ecs_secrets.html</loc>
+    <loc>/2_self_guided_setup/23_create_role.html</loc>
   </url>
   
   <url>
-    <loc>/7_deploy_ecs/72_configure_ecs_role.html</loc>
+    <loc>/2_event_engine_setup/24_attach_role_workspace.html</loc>
   </url>
   
   <url>
-    <loc>/7_deploy_ecs/73_deploy_your_image.html</loc>
+    <loc>/2_self_guided_setup/24_attach_role_workspace.html</loc>
   </url>
   
   <url>
-    <loc>/7_deploy_ecs/74_view_your_application.html</loc>
+    <loc>/2_event_engine_setup/25_update_iam_settings.html</loc>
   </url>
   
   <url>
-    <loc>/4_workshop_setup/41_aws_setup/412_aws_event_account.html</loc>
+    <loc>/2_self_guided_setup/25_update_iam_settings.html</loc>
   </url>
   
   <url>
-    <loc>/4_workshop_setup/41_aws_setup/413_self_paced_account.html</loc>
+    <loc>/2_event_engine_setup/26_jfrog_free.html</loc>
   </url>
   
   <url>
-    <loc>/4_workshop_setup/41_aws_setup/414_cloud9.html</loc>
+    <loc>/2_self_guided_setup/26_jfrog_free.html</loc>
   </url>
   
   <url>
-    <loc>/4_workshop_setup/41_aws_setup/415_create_role.html</loc>
+    <loc>/2_event_engine_setup/27_request_credit.html</loc>
   </url>
   
   <url>
-    <loc>/4_workshop_setup/41_aws_setup/416_attach_role_workspace.html</loc>
+    <loc>/2_self_guided_setup/27_request_credit.html</loc>
   </url>
   
   <url>
-    <loc>/4_workshop_setup/41_aws_setup/417_update_iam_settings.html</loc>
+    <loc>/2_event_engine_setup/28_docker_repositories.html</loc>
   </url>
   
   <url>
-    <loc>/4_workshop_setup/43_jfrog_setup/431_jfrog_free.html</loc>
+    <loc>/2_self_guided_setup/28_docker_repositories.html</loc>
   </url>
   
   <url>
-    <loc>/4_workshop_setup/43_jfrog_setup/432_api_key.html</loc>
+    <loc>/2_event_engine_setup/29_xray_setup.html</loc>
   </url>
   
   <url>
-    <loc>/4_workshop_setup/43_jfrog_setup/433_jfrog_cli.html</loc>
+    <loc>/2_self_guided_setup/29_xray_setup.html</loc>
   </url>
   
   <url>
-    <loc>/4_workshop_setup/43_jfrog_setup/434_configure_jfrog.html</loc>
+    <loc>/3_deploy_ecs/31_download_code.html</loc>
+  </url>
+  
+  <url>
+    <loc>/3_deploy_ecs/32_pipeline_integrations.html</loc>
+  </url>
+  
+  <url>
+    <loc>/3_deploy_ecs/33_update_pipeline.html</loc>
+  </url>
+  
+  <url>
+    <loc>/3_deploy_ecs/34_build_publish_deploy.html</loc>
+  </url>
+  
+  <url>
+    <loc>/4_deploy_eks/41_download_code.html</loc>
+  </url>
+  
+  <url>
+    <loc>/4_deploy_eks/42_create_eks_cluster.html</loc>
+  </url>
+  
+  <url>
+    <loc>/4_deploy_eks/43_pipeline_integrations.html</loc>
+  </url>
+  
+  <url>
+    <loc>/4_deploy_eks/44_update_pipeline.html</loc>
+  </url>
+  
+  <url>
+    <loc>/4_deploy_eks/45_build_publish_deploy.html</loc>
+  </url>
+  
+  <url>
+    <loc>/2_event_engine_setup/210_workshop_next_steps.html</loc>
+  </url>
+  
+  <url>
+    <loc>/2_self_guided_setup/210_workshop_next_steps.html</loc>
   </url>
   
   <url>
