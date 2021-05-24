@@ -5,7 +5,7 @@ weight: 26
 pre: "<b>2.6 </b>"
 ---
 
-1. Go to https://aws.amazon.com/marketplace/pp/B085Y6HJ85?ref_=beagle&applicationId=AWS-Marketplace-Console and click on "Try For Free" button on the upper right hand corner .
+1. Launch [JFrog Enterprise, Xray and Pipelines: Artifacts, DevSecOps, CI/CD](https://aws.amazon.com/marketplace/pp/prodview-2xngvj6xal2uw?&trk=el_a134p000003yrYeAAI&trkCampaign=AWSMP_pdp_dev_x_dg&sc_channel=el&sc_campaign=el_awsmp_mult&sc_outcome=Marketplace) and click on "Try For Free" button on the upper right hand corner .
 
     ![CICD](/images/step-1-try-for-free.png)
 
