@@ -2,17 +2,14 @@
 title: "View Results in JFrog"
 chapter: false
 weight: 5
-pre: "<b>4 </b>"
+pre: "<b>5 </b>"
 ---
 
-We have built and published our NPM package and Docker image. Let's view these results in JFrog Artifactory.
+We have built and published our Docker image. Let's view these results in the JFrog Platform.
 
 1. Go to your JFrog Platform instance and switch to the **Packages** view in Artifactory. Go to **Artifactory** ► **Packages**.
-2. Type ```workshop-app``` and search. This will show the NPM package that was published with the JFrog CLI.
-3. Click on it to view the details.
-![Npm Workshop App](/images/npm-workshop-app.png)
-2. Go back to the **Packages** view and search for  ```npm-app```. This shows the Docker image that was published.
-3. Click on the docker _npm-app_ listing.
+2. Search for the name of the Docker image that was built in your workshop. For the ECS build, search for ```ecs-docker-compose-workshop-app```. For the EKS build, search for ```eks-workshop-app```.
+3. Click on the Docker image listing.
 ![Npm App Package](/images/npm-app-package.png)
 4. This will show a list of the versions. Click on the _latest_ version that was built.
 ![Npm Build Published Modules](/images/npm-app-versions.png)
@@ -39,6 +36,5 @@ The comprehensive vulnerability intelligence databases are constantly updated gi
 12. In the **Published Modules** tab, view the set of artifacts and dependencies for your build.
 ![Npm Published Modules](/images/npm-published-modules.png)
 
-Our JFrog CLI CI/CD "pipeline" provided an overview of a typical build, docker build and push, security scan and promotion process using Artifactory and Xray.
+Our JFrog CI/CD "pipeline" provided an overview of a typical build, docker build and push, security scan and promotion process using JFrog Pipelines, Artifactory and Xray. With the JFrog Platform, you can view the results of your software build from versions to vulnerabilities.
 
-Next, we will deploy your docker image from the "staging" repository using ECS.
