@@ -4,7 +4,6 @@ chapter: false
 weight: 27
 pre: "<b>2.7 </b>"
 ---
-
 <table class="credit" style="width:100%">
 <tr class="credit">
   <td class="credit" style="width:70%">To help you cover the AWS service costs incurred by doing this tutorial,
@@ -38,10 +37,9 @@ If you're still having difficulty, please contact ajonsso@amazon.com.
 <table class="credit">
 <tr class="credit"><td class="credit" style="width:100%">
 {{% notice note %}}
-[AWS Marketplace](https://aws.amazon.com/marketplace) is a digital software catalog that makes it easy to find, try, buy, deploy, and manage 
+[AWS Marketplace](https://aws.amazon.com/marketplace/solutions/devops) is a digital software catalog that makes it easy to find, try, buy, deploy, and manage 
 software that works with AWS. AWS Marketplace has over 8,000 listings from 1,600+ ISV's that can
 help you master DevOps and drive modern application development in the cloud.
 {{% /notice %}}
 </td></tr>
 </table>
-
