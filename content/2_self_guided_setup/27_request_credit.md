@@ -10,10 +10,6 @@ pre: "<b>2.7 </b>"
 AWS Credits are available courtesy of AWS Marketplace. Submit the form and you
 will receive a confirmation email with an AWS Credit Code. Credits are 
 available while supplies last.
-
-Please wait a few minutes to receive your AWS Credit Code via email. If you do
-not receive an email confirmation, please check your company spam filter.
-If you're still having difficulty, please contact ajonsso@amazon.com.
   </td>
 
   <td class="credit" style="width:30%"> <a href="https://pages.awscloud.com/awsmp-wsm-dev-workshop-series-credit-request.html?trk=lab_jfrog" target="_blank" class="credit-btn">Request AWS Credits</a>  </td>
@@ -23,7 +19,7 @@ If you're still having difficulty, please contact ajonsso@amazon.com.
 <table class="credit" style="width:100%">
 <tr class="credit">
   <td class="credit" style="width:40%"> 
-      <a href="https://aws.amazon.com/marketplace" target="_blank"><img src="/images/20_prerequisites/available-in-awsmp-badge.png"></a>
+      <a href="https://aws.amazon.com/marketplace/pp/prodview-2xngvj6xal2uw?&trk=el_a134p000003yrYeAAI&trkCampaign=AWSMP_pdp_dev_x_dg&sc_channel=el&sc_campaign=el_awsmp_mult&sc_outcome=Marketplace" target="_blank"><img src="/images/20_prerequisites/available-in-awsmp-badge.png"></a>
   </td>
 
   <td class="credit" style="width:60%">
