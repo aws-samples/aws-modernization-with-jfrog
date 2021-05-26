@@ -76,9 +76,9 @@ home = [ "HTML", "RSS", "JSON"]
 
 [Languages]
 [Languages.oyo]
-title = "Self paced Setup"
+title = "On Your Own Setup"
 weight = 1
-languageName = "Self paced Setup"
+languageName = "On Your Own Setup"
 
 [Languages.ee]
 title = "AWS Hosted Event Setup"
