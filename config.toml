@@ -1,12 +1,12 @@
 baseURL = "/"
 #baseURL = "https://jefferyfry.github.io/aws-modernization-with-jfrog/"
 languageCode = "en-US"
-defaultContentLanguage = "en"
+defaultContentLanguage = "oyo"
 
 title = "JFrog DevOps Modernization Workshop"
 theme = "hugo-theme-learn"
 metaDataFormat = "yaml"
-defaultContentLanguageInSubdir= "true"
+defaultContentLanguageInSubdir= "false"
 uglyurls = "true"
 enableEmoji = true
 sectionPagesMenu = "main"
@@ -36,7 +36,7 @@ canonifyurls = true
   # A title for shortcuts in menu is set by default. Set this to true to disable it. 
   disableShortcutsTitle = false
   # When using mulitlingual website, disable the switch language button.
-  disableLanguageSwitchingButton = true
+  disableLanguageSwitchingButton = false
   # Hide breadcrumbs in the header and only show the current page title
   disableBreadcrumb = false
   # Hide Next and Previous page buttons normally displayed full height beside content
@@ -73,3 +73,14 @@ home = [ "HTML", "RSS", "JSON"]
   defaultMarkdownHandler = "blackfriday"
   [markup.blackFriday]
     hrefTargetBlank = true
+
+[Languages]
+[Languages.oyo]
+title = "On Your Own Setup"
+weight = 1
+languageName = "On Your Own Setup"
+
+[Languages.ee]
+title = "AWS Hosted Event Setup"
+weight = 2
+languageName = "AWS Hosted Event Setup" 
