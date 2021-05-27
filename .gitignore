@@ -24,6 +24,7 @@ bld/
 msbuild.log
 msbuild.err
 msbuild.wrn
+public/*
 
 # Visual Studio
 .vs/
