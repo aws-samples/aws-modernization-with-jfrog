@@ -1,8 +1,8 @@
 ---
 title: "Workshop Next Steps"
 chapter: false
-weight: 210
-pre: "<b>2.10 </b>"
+weight: 29
+pre: "<b>2.9 </b>"
 disableNextPrev: true
 ---
 
