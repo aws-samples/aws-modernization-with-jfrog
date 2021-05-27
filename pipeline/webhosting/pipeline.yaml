@@ -62,7 +62,9 @@ Resources:
                   - s3:GetObject
                   - s3:PutObject
                   - s3:GetObjectVersion
-              - Resource: !Sub arn:aws:s3:::${WebsiteBucket}/*
+              - Resource: 
+                - !Sub arn:aws:s3:::${WebsiteBucket}/*
+                - !Sub arn:aws:s3:::${WebsiteBucket}
                 Effect: Allow
                 Action:
                   - s3:*
