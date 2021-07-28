@@ -1,88 +1,74 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>JFrog DevOps Modernization Workshop</title>
-    <link>/</link>
-    <description>Recent content on JFrog DevOps Modernization Workshop</description>
+    <title>JFrog DevOps Modernization Workshop on On Your Own Setup</title>
+    <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/</link>
+    <description>Recent content in JFrog DevOps Modernization Workshop on On Your Own Setup</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language><atom:link href="https://jefferyfry.github.io/aws-modernization-with-jfrog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DevOps in the Cloud</title>
-      <link>/1_introduction/20_devops_in_cloud.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/1_introduction/20_devops_in_cloud.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/1_introduction/20_devops_in_cloud.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/1_introduction/20_devops_in_cloud.html</guid>
       <description>The goal of DevOps is to allow your development teams to deliver quality software faster to your customers through continuous process improvement, leveraging the best of breed development tools and infrastructure, and utilizing software development and IT operations best practices. Your team must deliver software faster than your competitors in order to get features and fixes to your customers sooner. JFrog terms this ideal as liquid software.
  Looking forward, as release cycles get shorter and microservices get smaller, we can imagine a world in which at any one time, our systems’ software is being updated.</description>
     </item>
     
     <item>
       <title>Continuous Integration and Delivery</title>
-      <link>/1_introduction/21_continuous_integration_and_delivery.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/1_introduction/21_continuous_integration_and_delivery.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/1_introduction/21_continuous_integration_and_delivery.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/1_introduction/21_continuous_integration_and_delivery.html</guid>
       <description>Continuous integration and delivery (CI/CD) is the process for which your software components are built from code, integrated, tested, released, deployed and ultimately delivered to end-users. CI/CD pipelines are the software assembly line that orchestrates the building of your software. This CI/CD pipeline line requires infrastructure. Cloud computing has allowed this infrastructure to become dynamic and ephemeral. On cloud infrastructure, your CI/CD pipelines scale up and down to meet your software delivery demands.</description>
     </item>
     
     <item>
       <title>Binary Repository Management</title>
-      <link>/1_introduction/22_binary_repository_management.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/1_introduction/22_binary_repository_management.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/1_introduction/22_binary_repository_management.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/1_introduction/22_binary_repository_management.html</guid>
       <description>A Binary Repository Manager is a software hub that simplifies the development process for different teams across an organization by helping them to collaborate on building coherent and compatible software components. It does this by centralizing the management of all the binary artifacts generated and used by the organization, thereby overcoming the incredible complexity arising from diverse binary artifact types, their position in the overall workflow and the set of dependencies between them.</description>
     </item>
     
     <item>
       <title>DevSecOps</title>
-      <link>/1_introduction/23_dev_sec_ops.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/1_introduction/23_dev_sec_ops.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/1_introduction/23_dev_sec_ops.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/1_introduction/23_dev_sec_ops.html</guid>
       <description>Any security issue identified by a security scanning may be reviewed by a small security team that may lack the technical knowledge. This challenge can be reduced by shifting left to the developer and operations teams, making them also responsible for security and compliance. This moves security earlier in the software delivery process. Source code, dependency and artifact security scanning are some examples of moving security into the development process. Implementing the identification of security issues earlier in the CI/CD pipeline, as well as automating security and compliance policies in the Software Development Lifecycle (SDLC), rather than using manual processes, is crucial.</description>
     </item>
     
     <item>
       <title>JFrog Platform for DevOps in the Cloud</title>
-      <link>/1_introduction/24_jfrog_platform_overview.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/1_introduction/24_jfrog_platform_overview.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/1_introduction/24_jfrog_platform_overview.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/1_introduction/24_jfrog_platform_overview.html</guid>
       <description>The JFrog Platform is designed to meet the growing needs of companies to develop and distribute software in the cloud. It provides DevOps teams with the tools needed to create, manage, secure and deploy software with ease. These tools cover everything from continuous integration and delivery (CI/CD), binary repository management, artifact maturity, security and vulnerability protection (DevSecOps), release management, analytics and distribution.
 JFrog Artifactory is an Artifact Repository Manager that fully supports software packages created by any language or technology.</description>
     </item>
     
     <item>
       <title>Workshop Setup</title>
-      <link>/1_introduction/25_workshop_next_steps.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/1_introduction/25_workshop_next_steps.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/1_introduction/25_workshop_next_steps.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/1_introduction/25_workshop_next_steps.html</guid>
       <description>Before we get started on building, publishing and deploying our NPM application, we must set up our workshop environment. In this setup section, we will:
- Set up our AWS account and IAM roles. Provision a Cloud9 IDE instance. Get and prepare our JFrog Platform instance. Clone our workshop GitHub repository which contains our code.  There are two tracks for completing this workshop as follows.
- You are at an AWS-hosted event  This will be powered by Event Engine  You are doing this workshop by yourself  You will need to use your own AWS account   There are slightly different setup instructions depending on your track so make sure you are on the correct one!</description>
-    </item>
-    
-    <item>
-      <title>AWS Event: Create an AWS account</title>
-      <link>/2_event_engine_setup/21_aws_event_account.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/2_event_engine_setup/21_aws_event_account.html</guid>
-      <description>Only complete this section if you are running the workshop through an AWS hosted event.
- For an AWS hosted event, you are provided with an AWS account through the AWS Event Engine service using a 12-digit hash by event staff. This is your unique access code.
-1 . Go to https://dashboard.eventengine.run/.
- Enter the provided hash code in the text box.
- Click on the Accept Terms &amp;amp; Login button.</description>
+ Set up our AWS account and IAM roles. Provision a Cloud9 IDE instance. Get and prepare our JFrog Platform instance. Clone our workshop GitHub repository which contains our code.  </description>
     </item>
     
     <item>
       <title>Self-paced: Create an AWS account</title>
-      <link>/2_self_guided_setup/21_self_paced_account.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/21_self_paced_account.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/2_self_guided_setup/21_self_paced_account.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/21_self_paced_account.html</guid>
       <description>Only complete this section if you are running the workshop on your own. If you are at an AWS hosted event, go to Start the workshop at an AWS event. Your account must have the ability to create new IAM roles and scope other IAM permissions.
   If you don&amp;rsquo;t already have an AWS account with Administrator access, create one now by going to AWS Getting Started.
  Once you have an AWS account, ensure you are using an IAM user with Administrator Access to the AWS account.</description>
@@ -90,78 +76,38 @@ JFrog Artifactory is an Artifact Repository Manager that fully supports software
     
     <item>
       <title>Set up your Cloud9 IDE</title>
-      <link>/2_event_engine_setup/22_cloud9.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/22_cloud9.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/2_event_engine_setup/22_cloud9.html</guid>
-      <description>AWS Cloud9 is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser. It includes a code editor, debugger, and terminal. Cloud9 comes prepackaged with essential tools for popular programming languages, including JavaScript, Python, PHP, and more, so you don’t need to install files or configure your development machine to start new projects.
- Within the AWS console, use the region drop list to select us-west-2 (Oregon).</description>
-    </item>
-    
-    <item>
-      <title>Set up your Cloud9 IDE</title>
-      <link>/2_self_guided_setup/22_cloud9.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/2_self_guided_setup/22_cloud9.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/22_cloud9.html</guid>
       <description>AWS Cloud9 is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser. It includes a code editor, debugger, and terminal. Cloud9 comes prepackaged with essential tools for popular programming languages, including JavaScript, Python, PHP, and more, so you don’t need to install files or configure your development machine to start new projects.
  Within the AWS console, use the region drop list to select us-west-2 (Oregon).</description>
     </item>
     
     <item>
       <title>Create an IAM role for your workspace</title>
-      <link>/2_event_engine_setup/23_create_role.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/23_create_role.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/2_event_engine_setup/23_create_role.html</guid>
-      <description> Follow this link to create an IAM role with Administrator access. Confirm that AWS service and EC2 are selected, then click Next to view permissions. Confirm that AdministratorAccess is checked, then click Next through to Review. Enter JFrog-Workshop-Admin for the role name. Click Create Role.   </description>
-    </item>
-    
-    <item>
-      <title>Create an IAM role for your workspace</title>
-      <link>/2_self_guided_setup/23_create_role.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/2_self_guided_setup/23_create_role.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/23_create_role.html</guid>
       <description> Follow this link to create an IAM role with Administrator access. Confirm that AWS service and EC2 are selected, then click Next to view permissions. Confirm that AdministratorAccess is checked, then click Next through to Review. Enter JFrog-Workshop-Admin for the role name. Click Create Role.   </description>
     </item>
     
     <item>
       <title>Attach the IAM role to your Workspace</title>
-      <link>/2_event_engine_setup/24_attach_role_workspace.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/24_attach_role_workspace.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/2_event_engine_setup/24_attach_role_workspace.html</guid>
-      <description> Follow this link to find your Cloud9 EC2 instance. Select the instance by clicking the checkbox, then choose Actions ► Security ► Modify IAM role.  Choose JFrog-Workshop-Admin from the IAM Role drop down, and click Save.   </description>
-    </item>
-    
-    <item>
-      <title>Attach the IAM role to your Workspace</title>
-      <link>/2_self_guided_setup/24_attach_role_workspace.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/2_self_guided_setup/24_attach_role_workspace.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/24_attach_role_workspace.html</guid>
       <description> Follow this link to find your Cloud9 EC2 instance. Select the instance by clicking the checkbox, then choose Actions ► Security ► Modify IAM role.  Choose JFrog-Workshop-Admin from the IAM Role drop down, and click Save.   </description>
     </item>
     
     <item>
       <title>Update IAM settings for your Workspace</title>
-      <link>/2_event_engine_setup/25_update_iam_settings.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/25_update_iam_settings.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/2_event_engine_setup/25_update_iam_settings.html</guid>
-      <description>Return to your Cloud9 workspace and click the gear icon (in top right corner). Select AWS Settings. Turn off AWS managed temporary credentials. Close the Preferences tab.  Copy and run the shell commands below in your Cloud9 terminal. These shell commands will:
-   Install jq- jq is a command-line tool for parsing JSON
- Ensure temporary credentials aren’t already in place.
- Remove any existing credentials file.</description>
-    </item>
-    
-    <item>
-      <title>Update IAM settings for your Workspace</title>
-      <link>/2_self_guided_setup/25_update_iam_settings.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/2_self_guided_setup/25_update_iam_settings.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/25_update_iam_settings.html</guid>
       <description>Return to your Cloud9 workspace and click the gear icon (in top right corner). Select AWS Settings. Turn off AWS managed temporary credentials. Close the Preferences tab.  Copy and run the shell commands below in your Cloud9 terminal. These shell commands will:
  Install jq- jq is a command-line tool for parsing JSON
  Ensure temporary credentials aren’t already in place.
@@ -171,67 +117,32 @@ JFrog Artifactory is an Artifact Repository Manager that fully supports software
     
     <item>
       <title>Get a Free JFrog Platform Instance from AWS Marketplace</title>
-      <link>/2_event_engine_setup/26_jfrog_free.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/26_jfrog_free.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/2_event_engine_setup/26_jfrog_free.html</guid>
-      <description>Go to https://aws.amazon.com/marketplace/pp/B085Y6HJ85?ref_=beagle&amp;amp;applicationId=AWS-Marketplace-Console and click on &amp;ldquo;Try For Free&amp;rdquo; button on the upper right hand corner .
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/26_jfrog_free.html</guid>
+      <description>Launch JFrog Enterprise, Xray and Pipelines: Artifacts, DevSecOps, CI/CD and click on &amp;ldquo;Try For Free&amp;rdquo; button on the upper right hand corner .
  Configure and create the contract. Ensure to select &amp;ldquo;Free Trial Option&amp;rdquo; to enable &amp;ldquo;Create Contract&amp;rdquo; button. Click on &amp;ldquo;Create Contract button&amp;rdquo;
  Review and accept
  Once done, click on &amp;ldquo;Setup your account&amp;rdquo;
- Enter the AWS account ID, which you used in the previous steps above. Ensure to use the same AWS account ID as used above to subscribe</description>
-    </item>
-    
-    <item>
-      <title>Get a Free JFrog Platform Instance from AWS Marketplace</title>
-      <link>/2_self_guided_setup/26_jfrog_free.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/2_self_guided_setup/26_jfrog_free.html</guid>
-      <description>Go to https://aws.amazon.com/marketplace/pp/B085Y6HJ85?ref_=beagle&amp;amp;applicationId=AWS-Marketplace-Console and click on &amp;ldquo;Try For Free&amp;rdquo; button on the upper right hand corner .
- Configure and create the contract. Ensure to select &amp;ldquo;Free Trial Option&amp;rdquo; to enable &amp;ldquo;Create Contract&amp;rdquo; button. Click on &amp;ldquo;Create Contract button&amp;rdquo;
- Review and accept
- Once done, click on &amp;ldquo;Setup your account&amp;rdquo;
- Enter the AWS account ID, which you used in the previous steps above. Ensure to use the same AWS account ID as used above to subscribe</description>
+ Enter the AWS account ID, which you used in the previous steps above.</description>
     </item>
     
     <item>
       <title>AWS Credit Request</title>
-      <link>/2_event_engine_setup/27_request_credit.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/27_request_credit.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/2_event_engine_setup/27_request_credit.html</guid>
-      <description>To help you cover the AWS service costs incurred by doing this tutorial, AWS Credits are available courtesy of AWS Marketplace. Submit the form and you will receive a confirmation email with an AWS Credit Code. Credits are available while supplies last. Please wait a few minutes to receive your AWS Credit Code via email. If you do not receive an email confirmation, please check your company spam filter. If you&#39;re still having difficulty, please contact ajonsso@amazon.</description>
-    </item>
-    
-    <item>
-      <title>AWS Credit Request</title>
-      <link>/2_self_guided_setup/27_request_credit.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/2_self_guided_setup/27_request_credit.html</guid>
-      <description>To help you cover the AWS service costs incurred by doing this tutorial, AWS Credits are available courtesy of AWS Marketplace. Submit the form and you will receive a confirmation email with an AWS Credit Code. Credits are available while supplies last. Please wait a few minutes to receive your AWS Credit Code via email. If you do not receive an email confirmation, please check your company spam filter. If you&#39;re still having difficulty, please contact ajonsso@amazon.</description>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/27_request_credit.html</guid>
+      <description>To help you cover the AWS service costs incurred by doing this tutorial, AWS Credits are available courtesy of AWS Marketplace. Submit the form and you will receive a confirmation email with an AWS Credit Code. Credits are available while supplies last.  Request AWS Credits         AWS Marketplace is a digital software catalog that makes it easy to find, try, buy, deploy, and manage software that works with AWS.</description>
     </item>
     
     <item>
       <title>Set Up Docker Repositories</title>
-      <link>/2_event_engine_setup/28_docker_repositories.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/28_docker_repositories.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/2_event_engine_setup/28_docker_repositories.html</guid>
-      <description>In your JFrog Platform instance at the top right, enable the drop down menu and select Quick Setup.
- On the Create Repositories dialog, choose Docker and click Next.
- Next, enter workshop for the Repositories Prefix.
- Click Create. This will create the following docker repositories:
- workshop-docker-local workshop-docker-remote workshop-docker   Local repositories are physical, locally-managed repositories into which you can deploy artifacts. These are repositories that are local to the JFrog Artifactory instance.</description>
-    </item>
-    
-    <item>
-      <title>Set Up Docker Repositories</title>
-      <link>/2_self_guided_setup/28_docker_repositories.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/2_self_guided_setup/28_docker_repositories.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/28_docker_repositories.html</guid>
       <description>In your JFrog Platform instance at the top right, enable the drop down menu and select Quick Setup.
  On the Create Repositories dialog, choose Docker and click Next.
  Next, enter workshop for the Repositories Prefix.
@@ -241,26 +152,10 @@ JFrog Artifactory is an Artifact Repository Manager that fully supports software
     
     <item>
       <title>Set Up Xray Security</title>
-      <link>/2_event_engine_setup/29_xray_setup.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/29_xray_setup.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/2_event_engine_setup/29_xray_setup.html</guid>
-      <description>In your JFrog Platform instance, go to Administration &amp;gt; Xray &amp;gt; Watches &amp;amp; Policies.
- Click Create a Policy.
- Call the security policy, High-Severity.
- Click on New Rule.
- Name the rule High-Severity and select High for the Minimal Severity. Click Save.
- Click Create to create this new security policy.
- Click on the Watches tab under Watches &amp;amp; Policies.
- Click on Set up a Watch.</description>
-    </item>
-    
-    <item>
-      <title>Set Up Xray Security</title>
-      <link>/2_self_guided_setup/29_xray_setup.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/2_self_guided_setup/29_xray_setup.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/29_xray_setup.html</guid>
       <description>In your JFrog Platform instance, go to Administration &amp;gt; Xray &amp;gt; Watches &amp;amp; Policies.
  Click Create a Policy.
  Call the security policy, High-Severity.
@@ -273,10 +168,10 @@ JFrog Artifactory is an Artifact Repository Manager that fully supports software
     
     <item>
       <title>Download the Code</title>
-      <link>/3_deploy_ecs/31_download_code.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/3_deploy_ecs/31_download_code.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/3_deploy_ecs/31_download_code.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/3_deploy_ecs/31_download_code.html</guid>
       <description>The code is located at https://github.com/jfrogtraining/aws-ecs-docker-compose-workshop GitHub repository. We will clone this repo locally in order to pull the required workshop files and scripts.
  Go to https://github.com/jfrogtraining/aws-ecs-docker-compose-workshop and fork this repository to your GitHub account.
  In your Cloud9 terminal, clone this repository to your local directory with the following command.
@@ -285,20 +180,20 @@ JFrog Artifactory is an Artifact Repository Manager that fully supports software
     
     <item>
       <title>Set up our JFrog Pipelines Integrations</title>
-      <link>/3_deploy_ecs/32_pipeline_integrations.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/3_deploy_ecs/32_pipeline_integrations.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/3_deploy_ecs/32_pipeline_integrations.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/3_deploy_ecs/32_pipeline_integrations.html</guid>
       <description>Our CI/CD pipeline requires access to GitHub to pull our code, access to JFrog Artifactory to deploy our Docker image and access to AWS to deploy to ECS. We will set up JFrog Pipelines integrations to enable these.
 ![Pipelines Integration](/images/pipeline-integrations-diagram.png) An Integration connects Pipelines to an external service/tool. Each integration type defines the endpoint, credentials and any other configuration detail required for Pipelines to exchange information with the service. All credential information is encrypted and held in secure storage, in conformance with best security practices.</description>
     </item>
     
     <item>
       <title>Update our Pipeline</title>
-      <link>/3_deploy_ecs/33_update_pipeline.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/3_deploy_ecs/33_update_pipeline.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/3_deploy_ecs/33_update_pipeline.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/3_deploy_ecs/33_update_pipeline.html</guid>
       <description>We need to make an update to our CI/CD pipeline in order to use your JFrog Platform instance. The CI/CD pipeline is defined in pipelines.yml. This pipeline file is parameterized with a values.yml file. We need to update this file.
  In your Cloud9 terminal, use the editor and view the pipelines.yml file. View and understand the steps. Note the parameterized values.
  The last step in the pipeline, ecs_deploy, deploys our application to an ECS cluster using docker compose with a special ECS context.</description>
@@ -306,10 +201,10 @@ JFrog Artifactory is an Artifact Repository Manager that fully supports software
     
     <item>
       <title>Build, Publish and Deploy to ECS</title>
-      <link>/3_deploy_ecs/34_build_publish_deploy.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/3_deploy_ecs/34_build_publish_deploy.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/3_deploy_ecs/34_build_publish_deploy.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/3_deploy_ecs/34_build_publish_deploy.html</guid>
       <description>In your JFrog Platform instance, go to Application &amp;gt; Pipelines &amp;gt; Pipeline Sources.
  Click Add a pipeline source.
  Click Add Pipeline Source at the top right and select From YAML.
@@ -321,53 +216,63 @@ JFrog Artifactory is an Artifact Repository Manager that fully supports software
     </item>
     
     <item>
-      <title>Download the Workshop Code</title>
-      <link>/4_deploy_eks/41_download_code.html</link>
+      <title>View Results in JFrog</title>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/3_deploy_ecs/35_view_results.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/4_deploy_eks/41_download_code.html</guid>
-      <description>The code is located at https://github.com/jfrogtraining/aws-eks-workshop GitHub repository. We will clone this repo locally in order to pull the required workshop files.
- Go to https://github.com/jfrogtraining/aws-eks-workshop and fork this repository to your GitHub account.
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/3_deploy_ecs/35_view_results.html</guid>
+      <description>We have built and published our Docker image. Let&amp;rsquo;s view these results in the JFrog Platform.
+ Go to your JFrog Platform instance and switch to the Packages view in Artifactory. Go to Artifactory ► Packages. Search for the name of the Docker image that was built in your workshop. For the ECS build, search for ecs-docker-compose-workshop-app. For the EKS build, search for eks-workshop-app. Click on the Docker image listing.  This will show a list of the versions.</description>
+    </item>
+    
+    <item>
+      <title>Download the Workshop Code</title>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/4_deploy_eks/41_download_code.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/4_deploy_eks/41_download_code.html</guid>
+      <description>The code is located at https://github.com/jfrogtraining/pagerduty-workshop GitHub repository. We will clone this repo locally in order to pull the required workshop files.
+ Go to https://github.com/jfrogtraining/pagerduty-workshop and fork this repository to your GitHub account.
  In your Cloud9 terminal, clone this repository to your local directory with the following command.
-   git clone https://github.com/&amp;lt;github username&amp;gt;/aws-eks-workshop.git</description>
+   git clone https://github.com/&amp;lt;github username&amp;gt;/pagerduty-workshop.git</description>
     </item>
     
     <item>
       <title>Create Your EKS Cluster</title>
-      <link>/4_deploy_eks/42_create_eks_cluster.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/4_deploy_eks/42_create_eks_cluster.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/4_deploy_eks/42_create_eks_cluster.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/4_deploy_eks/42_create_eks_cluster.html</guid>
       <description>We will use the EKSCTL command line tool to create an Amazon Elastic Kubernetes (EKS) cluster. This powerful tool allows you to manage many aspects of your EKS cluster through simple commands. When using EKSCTL, you can still manage your cluster in the Amazon EKS dashboard in the AWS console.
 Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that you can use to run Kubernetes on AWS without needing to install, operate, and maintain your own Kubernetes control plane or nodes.</description>
     </item>
     
     <item>
       <title>Set up our JFrog Pipelines Integrations</title>
-      <link>/4_deploy_eks/43_pipeline_integrations.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/4_deploy_eks/43_pipeline_integrations.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/4_deploy_eks/43_pipeline_integrations.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/4_deploy_eks/43_pipeline_integrations.html</guid>
       <description>Our CI/CD pipeline requires access to GitHub to pull our code, access to JFrog Artifactory to deploy our Docker image and access to AWS to deploy to EKS. We will set up JFrog Pipelines integrations to enable these.
 An Integration connects Pipelines to an external service/tool. Each integration type defines the endpoint, credentials and any other configuration detail required for Pipelines to exchange information with the service. All credential information is encrypted and held in secure storage, in conformance with best security practices.</description>
     </item>
     
     <item>
       <title>Update our Pipeline</title>
-      <link>/4_deploy_eks/44_update_pipeline.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/4_deploy_eks/44_update_pipeline.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/4_deploy_eks/44_update_pipeline.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/4_deploy_eks/44_update_pipeline.html</guid>
       <description>We need to make an update to our CI/CD pipeline in order to use your JFrog Platform instance. The CI/CD pipeline is defined in pipelines.yml. This pipeline file is parameterized with a values.yml file. We need to update this file.
  In your Cloud9 terminal, use the editor and view the pipelines.yml file. View and understand the steps. Note the parameterized values.  The last step in the pipeline, eks_deploy, deploys our application to the EKS cluster we created earlier.</description>
     </item>
     
     <item>
       <title>Build, Publish and Deploy to EKS</title>
-      <link>/4_deploy_eks/45_build_publish_deploy.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/4_deploy_eks/45_build_publish_deploy.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/4_deploy_eks/45_build_publish_deploy.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/4_deploy_eks/45_build_publish_deploy.html</guid>
       <description>In your JFrog Platform instance, go to Application &amp;gt; Pipelines &amp;gt; Pipeline Sources.  Click Add a pipeline source.
  Click Add Pipeline Source at the top right and select From YAML.  For SCM Provider Integration, select the github_integration that you created previously.
  For Repository Full Name, select your forked /aws-eks-workshop.
@@ -376,41 +281,125 @@ An Integration connects Pipelines to an external service/tool. Each integration 
     </item>
     
     <item>
-      <title>Workshop Next Steps</title>
-      <link>/2_event_engine_setup/210_workshop_next_steps.html</link>
+      <title>View Results in JFrog</title>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/4_deploy_eks/46_view_results.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/2_event_engine_setup/210_workshop_next_steps.html</guid>
-      <description>You are now ready to build an application with the JFrog Platform. Please choose which AWS service you wish to deploy to.
-Amazon ECS using Docker Compose Amazon EKS</description>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/4_deploy_eks/46_view_results.html</guid>
+      <description>We have built and published our Docker image. Let&amp;rsquo;s view these results in the JFrog Platform.
+ Go to your JFrog Platform instance and switch to the Packages view in Artifactory. Go to Artifactory ► Packages. Search for the name of the Docker image that was built in your workshop. For the ECS build, search for ecs-docker-compose-workshop-app. For the EKS build, search for eks-workshop-app. Click on the Docker image listing.  This will show a list of the versions.</description>
+    </item>
+    
+    <item>
+      <title>Download the Workshop Code</title>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/51_download_code.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/51_download_code.html</guid>
+      <description>The code is located at https://github.com/jfrogtraining/aws-eks-workshop GitHub repository. We will clone this repo locally in order to pull the required workshop files.
+ Go to https://github.com/jfrogtraining/aws-eks-workshop and fork this repository to your GitHub account.
+ In your Cloud9 terminal, clone this repository to your local directory with the following command.
+   git clone https://github.com/&amp;lt;github username&amp;gt;/aws-eks-workshop.git</description>
+    </item>
+    
+    <item>
+      <title>Create Your EKS Cluster</title>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/52_create_eks_cluster.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/52_create_eks_cluster.html</guid>
+      <description>We will use the EKSCTL command line tool to create an Amazon Elastic Kubernetes (EKS) cluster. This powerful tool allows you to manage many aspects of your EKS cluster through simple commands. When using EKSCTL, you can still manage your cluster in the Amazon EKS dashboard in the AWS console.
+Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that you can use to run Kubernetes on AWS without needing to install, operate, and maintain your own Kubernetes control plane or nodes.</description>
+    </item>
+    
+    <item>
+      <title>Create Your EKS Cluster</title>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/53_setup_pagerduty.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/53_setup_pagerduty.html</guid>
+      <description>We will use the EKSCTL command line tool to create an Amazon Elastic Kubernetes (EKS) cluster. This powerful tool allows you to manage many aspects of your EKS cluster through simple commands. When using EKSCTL, you can still manage your cluster in the Amazon EKS dashboard in the AWS console.
+Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that you can use to run Kubernetes on AWS without needing to install, operate, and maintain your own Kubernetes control plane or nodes.</description>
+    </item>
+    
+    <item>
+      <title>Set up our JFrog Pipelines Integrations</title>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/54_pipeline_integrations.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/54_pipeline_integrations.html</guid>
+      <description>Our CI/CD pipeline requires access to GitHub to pull our code, access to JFrog Artifactory to deploy our Docker image and access to AWS to deploy to EKS. We will set up JFrog Pipelines integrations to enable these.
+An Integration connects Pipelines to an external service/tool. Each integration type defines the endpoint, credentials and any other configuration detail required for Pipelines to exchange information with the service. All credential information is encrypted and held in secure storage, in conformance with best security practices.</description>
+    </item>
+    
+    <item>
+      <title>Build, Publish and Deploy to EKS</title>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/56_build_publish_deploy.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/56_build_publish_deploy.html</guid>
+      <description>In your JFrog Platform instance, go to Application &amp;gt; Pipelines &amp;gt; Pipeline Sources.  Click Add a pipeline source.
+ Click Add Pipeline Source at the top right and select From YAML.  For SCM Provider Integration, select the github_integration that you created previously.
+ For Repository Full Name, select your forked /aws-eks-workshop.
+ For Branch, select master.
+ Leave Pipeline Config File Filter as pipelines.yml.  Click Create Source.</description>
+    </item>
+    
+    <item>
+      <title>Update our Pipeline</title>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/55_update_pipeline.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/55_update_pipeline.html</guid>
+      <description>We need to make an update to our CI/CD pipeline in order to use your JFrog Platform instance. The CI/CD pipeline is defined in pipelines.yml. This pipeline file is parameterized with a values.yml file. We need to update this file.
+ In your Cloud9 terminal, use the editor and view the pipelines.yml file. View and understand the steps. Note the parameterized values.  The last step in the pipeline, eks_deploy, deploys our application to the EKS cluster we created earlier.</description>
+    </item>
+    
+    <item>
+      <title>View Results in JFrog</title>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/57_view_results.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/57_view_results.html</guid>
+      <description>We have built and published our Docker image. Let&amp;rsquo;s view these results in the JFrog Platform.
+ Go to your JFrog Platform instance and switch to the Packages view in Artifactory. Go to Artifactory ► Packages. Search for the name of the Docker image that was built in your workshop. For the ECS build, search for ecs-docker-compose-workshop-app. For the EKS build, search for eks-workshop-app. Click on the Docker image listing.  This will show a list of the versions.</description>
+    </item>
+    
+    <item>
+      <title>View Events in PagerDuty</title>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/58_view_pagerduty.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/58_view_pagerduty.html</guid>
+      <description>We have&amp;hellip;</description>
     </item>
     
     <item>
       <title>Workshop Next Steps</title>
-      <link>/2_self_guided_setup/210_workshop_next_steps.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/210_workshop_next_steps.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/2_self_guided_setup/210_workshop_next_steps.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/210_workshop_next_steps.html</guid>
       <description>You are now ready to build an application with the JFrog Platform. Please choose which AWS service you wish to deploy to.
-Amazon ECS using Docker Compose Amazon EKS</description>
+Amazon ECS using Docker Compose Amazon EKS JFrog Platform with PagerDuty DevOps Observability on EKS</description>
     </item>
     
     <item>
       <title>Cleanup</title>
-      <link>/cleanup.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/cleanup.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/cleanup.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/cleanup.html</guid>
       <description>Your JFrog Platform Instance - The JFrog Platform instance that you used in this workshop will automatically be destroyed after the workshop. There isn&amp;rsquo;t anything you need to do. If you would like keep it, you can upgrade to one of the premium plans. Do this by clicking on the Upgrade button.  Amazon Resources
  Amazon ECS Resources - To cleanup your Amazon ECS resources, go to your npm-app-cluster in your Amazon ECS console and click Delete Cluster.</description>
     </item>
     
     <item>
       <title>Resources</title>
-      <link>/resources.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/resources.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/resources.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/resources.html</guid>
       <description>JFrog Platform Documentation - The full documentation of the JFrog Platform, the universal, hybrid, end-to-end DevOps automation solution. It is designed to take you through all the JFrog Products. Including user, administration and developer guides, installation and upgrade procedures, system architecture and configuration, and working with the JFrog application. JFrog Academy - Learn more about the JFrog Platform at your own pace with JFrog Academy free courses taught by our experts.</description>
     </item>
     

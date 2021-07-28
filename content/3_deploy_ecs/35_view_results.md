@@ -1,8 +1,8 @@
 ---
 title: "View Results in JFrog"
 chapter: false
-weight: 5
-pre: "<b>5 </b>"
+weight: 35
+pre: "<b>3.5 </b>"
 ---
 
 We have built and published our Docker image. Let's view these results in the JFrog Platform.
