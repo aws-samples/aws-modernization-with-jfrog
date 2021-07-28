@@ -1,5 +1,5 @@
 ---
-title: "Create Your EKS Cluster"
+title: "Set up PagerDuty"
 chapter: false
 weight: 53
 pre: "<b>5.3 </b>"
@@ -17,12 +17,12 @@ Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that you can
    ``
    eksctl create cluster --name jfrogeksworkshop --region us-west-2 --managed
    ``
-   
+
 4. Update your kubeconfig to add the credentials for your new cluster.
    ``
    aws eks update-kubeconfig --name jfrogeksworkshop --region us-west-2
    ``
-   
+
 5. Execute the following command to print out your kubeconfig. Copy the output to your notepad. We will need this later to allow JFrog Pipeline to access the cluster.
    ``
    cat /home/ec2-user/.kube/config
@@ -46,13 +46,13 @@ Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that you can
 
 11. Go back to your Cloud9 terminal, and execute the following command to create an image pull secret that will be used to pull and deploy your image.
 
-   ```
-   kubectl create secret docker-registry artifactory-secret --namespace aws-eks-workshop --docker-server=<your JFrog Platform instance domain> --docker-username=<username from above> --docker-password=<token from above>
-   ```
+```
+kubectl create secret docker-registry artifactory-secret --namespace aws-eks-workshop --docker-server=<your JFrog Platform instance domain> --docker-username=<username from above> --docker-password=<token from above>
+```
 
-   Example:
-   
-   ```
-   kubectl create secret docker-registry artifactory-secret --namespace aws-eks-workshop --docker-server=myjfrog.jfrog.io --docker-username=jefff --docker-password=xxxxx...
-   ```
+Example:
+
+```
+kubectl create secret docker-registry artifactory-secret --namespace aws-eks-workshop --docker-server=myjfrog.jfrog.io --docker-username=jefff --docker-password=xxxxx...
+```
 

@@ -1,5 +1,5 @@
 ---
-title: "Create Your EKS Cluster"
+title: "Set up PagerDuty"
 chapter: false
 weight: 53
 pre: "<b>5.3 </b>"

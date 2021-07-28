@@ -379,20 +379,6 @@
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/53_setup_pagerduty.html</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ee"
-                href="https://jefferyfry.github.io/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/53_setup_pagerduty.html"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="oyo"
-                href="https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/53_setup_pagerduty.html"
-                />
-  </url>
-  
-  <url>
     <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/54_pipeline_integrations.html</loc>
     <xhtml:link
                 rel="alternate"
@@ -403,6 +389,20 @@
                 rel="alternate"
                 hreflang="oyo"
                 href="https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/54_pipeline_integrations.html"
+                />
+  </url>
+  
+  <url>
+    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/53_set_up_pagerduty.html</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ee"
+                href="https://jefferyfry.github.io/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/53_set_up_pagerduty.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="oyo"
+                href="https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/53_set_up_pagerduty.html"
                 />
   </url>
   

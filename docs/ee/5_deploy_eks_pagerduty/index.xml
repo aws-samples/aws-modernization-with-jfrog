@@ -29,11 +29,11 @@ Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that you can
     </item>
     
     <item>
-      <title>Create Your EKS Cluster</title>
-      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/53_setup_pagerduty.html</link>
+      <title>Set up PagerDuty</title>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/53_set_up_pagerduty.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/53_setup_pagerduty.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/53_set_up_pagerduty.html</guid>
       <description>We will use the EKSCTL command line tool to create an Amazon Elastic Kubernetes (EKS) cluster. This powerful tool allows you to manage many aspects of your EKS cluster through simple commands. When using EKSCTL, you can still manage your cluster in the Amazon EKS dashboard in the AWS console.
 Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that you can use to run Kubernetes on AWS without needing to install, operate, and maintain your own Kubernetes control plane or nodes.</description>
     </item>
