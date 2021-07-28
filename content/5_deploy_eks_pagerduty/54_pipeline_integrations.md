@@ -1,7 +1,7 @@
 ---
 title: "Set up our JFrog Pipelines Integrations"
 chapter: false
-weight: 53
+weight: 54
 pre: "<b>5.4 </b>"
 ---
 
