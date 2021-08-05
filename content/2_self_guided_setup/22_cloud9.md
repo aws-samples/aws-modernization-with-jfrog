@@ -42,7 +42,6 @@ pre: "<b>2.2 </b>"
     ![c9before](/images/c9before.png)
 
 Your workspace should now look like this and can hide the left hand environment explorer by clicking on the left side **environment** tab.
-
     ![c9after](/images/c9after.png)
 
 {{% notice tip %}}

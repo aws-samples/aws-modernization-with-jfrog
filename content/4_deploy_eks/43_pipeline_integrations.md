@@ -53,6 +53,7 @@ You may have already created these integrations in previous steps. If so, you ca
 
 ```
 aws iam create-user --user-name workshopuser
+aws iam attach-user-policy --user-name workshopuser --policy-arn arn:aws:iam::aws:policy/AdministratorAccess
 aws iam create-access-key --user-name workshopuser
 ```
 
@@ -71,5 +72,10 @@ aws iam create-access-key --user-name workshopuser
 
 21. Click **Create** to create the integration.
    ![AWS Integration](/images/aws-integration.png)
-
+22. Click **Add an Integration** again.
+23. For the **Name**, enter _eks\_integration_.
+24. For **Integration Type**, select **Kubernetes**.
+25. Paste in the Kubeconfig output from the steps where you created your EKS cluster.
+26. Click **Create** to create the integration.
+    ![EKS Integration](/images/eks-integration.png)
 Congratulations! We have created the integrations that are required for our CI/CD pipeline.

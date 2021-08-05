@@ -116,7 +116,7 @@ Move onto the next step while JFrog Pipelines activates.</description>
       
       <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/210_workshop_next_steps.html</guid>
       <description>You are now ready to build an application with the JFrog Platform. Please choose which AWS service you wish to deploy to.
-Amazon ECS using Docker Compose Amazon EKS</description>
+Amazon ECS using Docker Compose Amazon EKS JFrog Platform with PagerDuty DevOps Observability on EKS</description>
     </item>
     
   </channel>

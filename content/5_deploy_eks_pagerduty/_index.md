@@ -8,15 +8,16 @@ pre: "<b>5 </b>"
 
 # JFrog Platform with PagerDuty DevOps Observability with EKS
 
-In this section, we will set up our CI/CD pipeline with JFrog Pipelines. Our pipeline, will take our application and build a docker image. Push it to a Docker repository. Scan it for security vulnerabilities. Then it will promote it. Finally, it will deploy it to our AWS EKS cluster.
+In this section, we will set up our CI/CD pipeline with JFrog Pipelines. Our pipeline, will take our application and build a docker image. Push it to a Docker repository. Scan it for security vulnerabilities. Then it will promote it. Finally, it will deploy it to our AWS EKS cluster. All along the way we will send events to PagerDuty and provide visibility to our software delivery process.
 
-![Workshop Architecture](/images/workshop-architecture-eks.png)
+![Workshop Architecture](/images/workshop-architecture-eks-pagerduty.png)
 
 We will:
 
 - Set up the workshop code.
 - Create an Amazon EKS cluster with EKSCTL and KUBECTL.
-- Set up our JFrog Pipelines integrations to connect to GitHub, AWS and our Artifactory repositories.
+- Set up out PageDuty instance to integrate with JFrog Xray and Pipelines.
+- Set up our JFrog Pipelines integrations to connect to GitHub, AWS, our Artifactory repositories and PagerDuty.
 - Add our CI/CD pipeline to JFrog Pipelines. Then build and deploy our app.
 - Automatically deploy our app to our EKS cluster.
 

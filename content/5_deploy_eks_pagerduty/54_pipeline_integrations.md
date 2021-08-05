@@ -53,6 +53,7 @@ You may have already created these integrations in previous steps. If so, you ca
 
 ```
 aws iam create-user --user-name workshopuser
+aws iam attach-user-policy --user-name workshopuser --policy-arn arn:aws:iam::aws:policy/AdministratorAccess
 aws iam create-access-key --user-name workshopuser
 ```
 
@@ -72,16 +73,32 @@ aws iam create-access-key --user-name workshopuser
 21. Click **Create** to create the integration.
    ![AWS Integration](/images/aws-integration.png)
 22. Click **Add an Integration** again.
-23. For the **Name**, enter _pagerduty\_integration_.
-24. For **Integration Type**, select **PagerDuty Events**.
-25. Enter a name for this integration which will be used in the pipeline yaml. ex: `MyPagerDutyIntegration`
-26. Enter the PagerDuty API token created in prior steps for **Token**.
+23. For the **Name**, enter _eks\_integration_.
+24. For **Integration Type**, select **Kubernetes**.
+25. Paste in the Kubeconfig output from the steps where you created your EKS cluster.
+26. Click **Create** to create the integration.
+   ![EKS Integration](/images/eks-integration.png)
+27. Click **Add an Integration** again.
+28. For the **Name**, enter _pagerduty\_integration_.
+29. For **Integration Type**, select **PagerDuty Events**.
+30. Enter the PagerDuty Pipelines Integration Key created in the prior steps for **Service Integration/routing key**.
     ![PagerDuty Integration](/images/addpagerdutyintegration.png)
-27. Go to **Administration** > **Xray** > **Settings**.
-28. Click on **Webhooks** in the **General** tile.
-29. Create a **New Webhook**.
-30. Enter _Xray PagerDuty_ for the **Webhook Name**
-31. Enter the PagerDuty Xray Integration URL for the **URL**.  _ex: https://events.pagerduty.com/integration/<integration_id>/enqueue_
-32. Click **Create**.
+31. Click **Create**.
+32. Go to **Administration** > **Xray** > **Settings**.
+33. Click on **Webhooks** in the **General** tile.
+34. Create a **New Webhook**.
+35. Enter _Xray PagerDuty_ for the **Webhook Name**
+36. Enter the PagerDuty Xray Integration URL for the **URL**.  _ex: https://events.pagerduty.com/integration/< integration id >/enqueue_
+37. Click **Create**.
+    ![PagerDuty Xray Webhook](/images/pdxraywebhook.png)
+38. Go to **Administration** > **Xray** > **Watches & Policies**.
+39. Click on the **High-Severity** policy that you created earlier.
+40. Then click on the edit icon for the **High-Severity** rule that you created earlier.
+    ![PagerDuty Edit Xray Rule](/images/pdeditxrayrule.png)
+41. Scroll down and enable **Trigger Webhook** and select **Xray Pagerduty**, the webhook that you created in the previous steps.
+42. Click **Save** to save the rule.
+    ![PagerDuty Xray Webhook](/images/pdxraywebhookrule.png)
+43. Click **Save** to save the policy.
+    
 
 Congratulations! We have created the integrations that are required for our CI/CD pipeline.

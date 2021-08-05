@@ -293,7 +293,7 @@ An Integration connects Pipelines to an external service/tool. Each integration 
       <description>The code is located at https://github.com/jfrogtraining/aws-eks-workshop GitHub repository. We will clone this repo locally in order to pull the required workshop files.
  Go to https://github.com/jfrogtraining/pagerduty-workshop and fork this repository to your GitHub account.
  In your Cloud9 terminal, clone this repository to your local directory with the following command.
-   git clone https://github.com/&amp;lt;github username&amp;gt;/aws-eks-workshop.git</description>
+   git clone https://github.com/&amp;lt;github username&amp;gt;/pagerduty-workshop.git</description>
     </item>
     
     <item>
@@ -328,6 +328,16 @@ An Integration connects Pipelines to an external service/tool. Each integration 
     </item>
     
     <item>
+      <title>Update our Pipeline</title>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/55_update_pipeline.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/55_update_pipeline.html</guid>
+      <description>We need to make an update to our CI/CD pipeline in order to use your JFrog Platform instance. The CI/CD pipeline is defined in pipelines.yml. This pipeline file is parameterized with a values.yml file. We need to update this file.
+ In your Cloud9 terminal, use the editor and view the pipelines.yml file. View and understand the steps. Note the parameterized values.  The last step in the pipeline, eks_deploy, deploys our application to the EKS cluster we created earlier.</description>
+    </item>
+    
+    <item>
       <title>Build, Publish and Deploy to EKS</title>
       <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/56_build_publish_deploy.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -338,16 +348,6 @@ An Integration connects Pipelines to an external service/tool. Each integration 
  For Repository Full Name, select your forked /aws-eks-workshop.
  For Branch, select master.
  Leave Pipeline Config File Filter as pipelines.yml.  Click Create Source.</description>
-    </item>
-    
-    <item>
-      <title>Update our Pipeline</title>
-      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/55_update_pipeline.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/55_update_pipeline.html</guid>
-      <description>We need to make an update to our CI/CD pipeline in order to use your JFrog Platform instance. The CI/CD pipeline is defined in pipelines.yml. This pipeline file is parameterized with a values.yml file. We need to update this file.
- In your Cloud9 terminal, use the editor and view the pipelines.yml file. View and understand the steps. Note the parameterized values.  The last step in the pipeline, eks_deploy, deploys our application to the EKS cluster we created earlier.</description>
     </item>
     
     <item>

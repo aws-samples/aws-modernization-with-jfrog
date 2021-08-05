@@ -1,7 +1,7 @@
 ---
 title: "Build, Publish and Deploy to EKS"
 chapter: false
-weight: 55
+weight: 56
 pre: "<b>5.6 </b>"
 ---
 
@@ -15,7 +15,7 @@ pre: "<b>5.6 </b>"
 
 4. For **SCM Provider Integration**, select the **github_integration** that you created previously.
 
-5. For **Repository Full Name**, select your forked **<username>/aws-eks-workshop**.
+5. For **Repository Full Name**, select your forked **<username>/pagerduty-workshop**.
 
 6. For **Branch**, select **master**.
 
@@ -26,10 +26,10 @@ pre: "<b>5.6 </b>"
     ![Success Pipeline Source](/images/success-pipeline-source-eks.png)
 
 9. Go to **Application** > **Pipelines** > **My Pipelines**. Notice that your pipeline has a status of **Not Built**.
-    ![My Pipelines](/images/my-pipelines.png)
+    ![My Pipelines](/images/pagerduty-my-pipelines.png)
 
-10. Click on your pipeline, **eks_workshop_app_build**.
-    ![Workshop Pipeline](/images/workshop-pipeline-eks.png)
+10. Click on your pipeline, **workshop_app_build**.
+    ![Workshop Pipeline](/images/pagerduty-workshop-pipeline-eks.png)
 
 11. Click on the _app\_docker\_build_ step and trigger the step to execute the pipeline. JFrog Pipelines will allocate build nodes and execute your pipeline.
     ![Trigger Pipeline](/images/trigger-pipeline.png)

@@ -56,6 +56,7 @@ You may have already created these integrations in previous steps. If so, you ca
 
 ```
 aws iam create-user --user-name workshopuser
+aws iam attach-user-policy --user-name workshopuser --policy-arn arn:aws:iam::aws:policy/AdministratorAccess
 aws iam create-access-key --user-name workshopuser
 ```
 
