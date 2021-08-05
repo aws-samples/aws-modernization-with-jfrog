@@ -67,7 +67,7 @@ An Integration connects Pipelines to an external service/tool. Each integration 
       <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/56_build_publish_deploy.html</guid>
       <description>In your JFrog Platform instance, go to Application &amp;gt; Pipelines &amp;gt; Pipeline Sources.  Click Add a pipeline source.
  Click Add Pipeline Source at the top right and select From YAML.  For SCM Provider Integration, select the github_integration that you created previously.
- For Repository Full Name, select your forked /aws-eks-workshop.
+ For Repository Full Name, select your forked /pagerduty-workshop.
  For Branch, select master.
  Leave Pipeline Config File Filter as pipelines.yml.  Click Create Source.</description>
     </item>
