@@ -5,54 +5,34 @@ weight: 53
 pre: "<b>5.3 </b>"
 ---
 
-We will use the [EKSCTL command line tool](https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html) to create an [Amazon Elastic Kubernetes (EKS)](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html) cluster. This powerful tool allows you to manage many aspects of your EKS cluster through simple commands. When using EKSCTL, you can still manage your cluster in the Amazon EKS dashboard in the AWS console.
+Next we will set up your PagerDuty Developer Platform. If you do not yet have a developer platform, you can sign up and get a free developer platform instance [here](https://developer.pagerduty.com/sign-up/).
 
 {{% notice info %}}
-Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that you can use to run Kubernetes on AWS without needing to install, operate, and maintain your own Kubernetes control plane or nodes. Kubernetes is an open-source system for automating the deployment, scaling, and management of containerized applications. Amazon Elastic Kubernetes Service (Amazon EKS) gives you the flexibility to start, run, and scale Kubernetes applications in the AWS cloud or on-premises. Amazon EKS helps you provide highly-available and secure clusters and automates key tasks such as patching, node provisioning, and updates.
+PagerDuty provides many ways for developers to integrate with their platform. You can learn more through their [developer documentation](https://developer.pagerduty.com/docs/get-started/getting-started/).
 {{% /notice %}}
 
-1. In your Cloud9 terminal, follow these [instructions](https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html) to install EKSCTL on Linux.
-2. Follow these [instructions](https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html) to install KUBECTL on Linux.
-3. Next, execute the following command to create your EKS cluster. It is that easy! This will take a few minutes.
-   ``
-   eksctl create cluster --name jfrogeksworkshop --region us-west-2 --managed
-   ``
-
-4. Update your kubeconfig to add the credentials for your new cluster.
-   ``
-   aws eks update-kubeconfig --name jfrogeksworkshop --region us-west-2
-   ``
-
-5. Execute the following command to print out your kubeconfig. Copy the output to your notepad. We will need this later to allow JFrog Pipeline to access the cluster.
-   ``
-   cat /home/ec2-user/.kube/config
-   ``
-   ![Kubeconfig](/images/kubeconfig.png)
-
-6. Execute the following command to create a namespace where we will deploy our application.
-   ``
-   kubectl create namespace aws-eks-workshop
-   ``
-
-7. In your JFrog Platform instance, go to **Administration** > **Identity and Access** > **Access Tokens**.
-
-8. Click **+ Generate Admin Token**.
-   ![Generate Admin Token](/images/generate-access-token.png)
-
-9. Leave the defaults and click **Generate**.
-   ![Generate Admin Token](/images/generate-access-token.png)
-
-10. Copy the _Username_ and _Access Token_.
-
-11. Go back to your Cloud9 terminal, and execute the following command to create an image pull secret that will be used to pull and deploy your image.
-
-```
-kubectl create secret docker-registry artifactory-secret --namespace aws-eks-workshop --docker-server=<your JFrog Platform instance domain> --docker-username=<username from above> --docker-password=<token from above>
-```
-
-Example:
-
-```
-kubectl create secret docker-registry artifactory-secret --namespace aws-eks-workshop --docker-server=myjfrog.jfrog.io --docker-username=jefff --docker-password=xxxxx...
-```
-
+1. In your PagerDuty, go to **Services** > **Service Directory**.
+{{% notice info %}}
+A service may represent an application, component, or team you wish to open incidents against. Services contain integrations, as well as determine the routing and incident settings for events triggered by integrations associated with the service.
+{{% /notice %}}
+2. We will create two services: (1) Xray Vulnerabilities and (2) JFrog Pipelines Events. Click **+ New Service **.
+3. Name the service _Xray Vulnerabilities_ and click **Next**.
+   ![New PD Service](/images/newpdservice.png)
+4. Choose **Generate an Escalation Policy** and click **Next**.
+   ![New PD Escalation](/images/newpdescalation.png)
+5. Choose **Intelligent** for the **Alert Grouping** and click **Next**.
+   ![New PD Alert](/images/pdalertgrouping.png)
+6. For **Integrations**, search for _JFrog Xray + PagerDuty Notifications_ and click **Create Service**.
+   ![New PD Alert](/images/pdxray.png)
+7. Copy the **Integration URL** for later.
+   ![New PD Xray Key](/images/pdxraykey.png)
+8. Let's now create a service for JFrog Pipelines events. Click **+ New Service **.
+9. Name the service _Pipelines Events_ and click **Next**.
+10. Choose **Generate an Escalation Policy** and click **Next**.
+11. Choose **Intelligent** for the **Alert Grouping** and click **Next**.
+12. For **Integrations**, search for _JFrog Pipelines Changes_ and click **Create Service**.
+   ![New PD Alert](/images/pdpipelines.png)
+13. Copy the **Integration Key** and **Integration URL** for later.
+   ![New PD Pipeline Key](/images/pdpipelinekey.png)
+    
+Congratulations! You have set up PagerDuty with the JFrog Xray and Pipelines integrations.

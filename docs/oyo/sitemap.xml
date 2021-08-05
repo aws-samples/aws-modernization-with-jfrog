@@ -189,11 +189,11 @@
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/28_docker_repositories.html</loc>
+    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/28_pipelines_setup.html</loc>
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/29_xray_setup.html</loc>
+    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/29_docker_repositories.html</loc>
   </url>
   
   <url>
@@ -477,7 +477,11 @@
   </url>
   
   <url>
-    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/210_workshop_next_steps.html</loc>
+    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/210_xray_setup.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/211_workshop_next_steps.html</loc>
   </url>
   
   <url>

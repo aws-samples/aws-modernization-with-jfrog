@@ -15,12 +15,12 @@ Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that you can
 2. Follow these [instructions](https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html) to install KUBECTL on Linux.
 3. Next, execute the following command to create your EKS cluster. It is that easy! This will take a few minutes.
    ``
-   eksctl create cluster --name jfrogeksworkshop --region us-west-2 --managed
+   eksctl create cluster --name workshop --region us-west-2 --managed
    ``
    
 4. Update your kubeconfig to add the credentials for your new cluster.
    ``
-   aws eks update-kubeconfig --name jfrogeksworkshop --region us-west-2
+   aws eks update-kubeconfig --name workshop --region us-west-2
    ``
    
 5. Execute the following command to print out your kubeconfig. Copy the output to your notepad. We will need this later to allow JFrog Pipeline to access the cluster.
@@ -31,7 +31,7 @@ Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that you can
 
 6. Execute the following command to create a namespace where we will deploy our application.
    ``
-   kubectl create namespace aws-eks-workshop
+   kubectl create namespace workshop
    ``
 
 7. In your JFrog Platform instance, go to **Administration** > **Identity and Access** > **Access Tokens**.
@@ -47,12 +47,12 @@ Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that you can
 11. Go back to your Cloud9 terminal, and execute the following command to create an image pull secret that will be used to pull and deploy your image.
 
    ```
-   kubectl create secret docker-registry artifactory-secret --namespace aws-eks-workshop --docker-server=<your JFrog Platform instance domain> --docker-username=<username from above> --docker-password=<token from above>
+   kubectl create secret docker-registry artifactory-secret --namespace workshop --docker-server=<your JFrog Platform instance domain> --docker-username=<username from above> --docker-password=<token from above>
    ```
 
    Example:
    
    ```
-   kubectl create secret docker-registry artifactory-secret --namespace aws-eks-workshop --docker-server=myjfrog.jfrog.io --docker-username=jefff --docker-password=xxxxx...
+   kubectl create secret docker-registry artifactory-secret --namespace workshop --docker-server=myjfrog.jfrog.io --docker-username=jefff --docker-password=xxxxx...
    ```
 

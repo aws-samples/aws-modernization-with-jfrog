@@ -81,11 +81,21 @@
     </item>
     
     <item>
-      <title>Set Up Docker Repositories</title>
-      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/28_docker_repositories.html</link>
+      <title>Set Up Pipelines</title>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/28_pipelines_setup.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/28_docker_repositories.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/28_pipelines_setup.html</guid>
+      <description>In your JFrog Platform instance, go to Application &amp;gt; Pipelines and follow the instructions to activate JFrog Pipelines. This will take a few minutes.
+Move onto the next step while JFrog Pipelines activates.</description>
+    </item>
+    
+    <item>
+      <title>Set Up Docker Repositories</title>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/29_docker_repositories.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/29_docker_repositories.html</guid>
       <description>In your JFrog Platform instance at the top right, enable the drop down menu and select Quick Setup.
  On the Create Repositories dialog, choose Docker and click Next.
  Next, enter workshop for the Repositories Prefix.
@@ -95,10 +105,10 @@
     
     <item>
       <title>Set Up Xray Security</title>
-      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/29_xray_setup.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/210_xray_setup.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/29_xray_setup.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/210_xray_setup.html</guid>
       <description>In your JFrog Platform instance, go to Administration &amp;gt; Xray &amp;gt; Watches &amp;amp; Policies.
  Click Create a Policy.
  Call the security policy, High-Severity.
@@ -111,10 +121,10 @@
     
     <item>
       <title>Workshop Next Steps</title>
-      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/210_workshop_next_steps.html</link>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/211_workshop_next_steps.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/210_workshop_next_steps.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/211_workshop_next_steps.html</guid>
       <description>You are now ready to build an application with the JFrog Platform. Please choose which AWS service you wish to deploy to.
 Amazon ECS using Docker Compose Amazon EKS JFrog Platform with PagerDuty DevOps Observability on EKS</description>
     </item>

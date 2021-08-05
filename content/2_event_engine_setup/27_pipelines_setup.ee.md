@@ -1,0 +1,13 @@
+﻿---
+title: "Set Up Pipelines"
+chapter: false
+weight: 27
+pre: "<b>2.7 </b>"
+---
+
+In your JFrog Platform instance, go to **Application** > **Pipelines** and follow the instructions to activate JFrog Pipelines. This will take a few minutes.
+
+![Activate Pipelines](/images/activate-pipelines.png)
+
+Move onto the next step while JFrog Pipelines activates.
+

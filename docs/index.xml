@@ -138,32 +138,26 @@ JFrog Artifactory is an Artifact Repository Manager that fully supports software
     </item>
     
     <item>
-      <title>Set Up Docker Repositories</title>
-      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/28_docker_repositories.html</link>
+      <title>Set Up Pipelines</title>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/28_pipelines_setup.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/28_docker_repositories.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/28_pipelines_setup.html</guid>
+      <description>In your JFrog Platform instance, go to Application &amp;gt; Pipelines and follow the instructions to activate JFrog Pipelines. This will take a few minutes.
+Move onto the next step while JFrog Pipelines activates.</description>
+    </item>
+    
+    <item>
+      <title>Set Up Docker Repositories</title>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/29_docker_repositories.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/29_docker_repositories.html</guid>
       <description>In your JFrog Platform instance at the top right, enable the drop down menu and select Quick Setup.
  On the Create Repositories dialog, choose Docker and click Next.
  Next, enter workshop for the Repositories Prefix.
  Click Create. This will create the following docker repositories:
  workshop-docker-local workshop-docker-remote workshop-docker    Local repositories are physical, locally-managed repositories into which you can deploy artifacts. These are repositories that are local to the JFrog Artifactory instance.</description>
-    </item>
-    
-    <item>
-      <title>Set Up Xray Security</title>
-      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/29_xray_setup.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/29_xray_setup.html</guid>
-      <description>In your JFrog Platform instance, go to Administration &amp;gt; Xray &amp;gt; Watches &amp;amp; Policies.
- Click Create a Policy.
- Call the security policy, High-Severity.
- Click on New Rule.
- Name the rule High-Severity and select High for the Minimal Severity. Click Save.
- Click Create to create this new security policy.
- Click on the Watches tab under Watches &amp;amp; Policies.
- Click on Set up a Watch.</description>
     </item>
     
     <item>
@@ -231,10 +225,10 @@ JFrog Artifactory is an Artifact Repository Manager that fully supports software
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/4_deploy_eks/41_download_code.html</guid>
-      <description>The code is located at https://github.com/jfrogtraining/pagerduty-workshop GitHub repository. We will clone this repo locally in order to pull the required workshop files.
- Go to https://github.com/jfrogtraining/pagerduty-workshop and fork this repository to your GitHub account.
+      <description>The code is located at https://github.com/jfrogtraining/aws-eks-workshop GitHub repository. We will clone this repo locally in order to pull the required workshop files.
+ Go to https://github.com/jfrogtraining/aws-eks-workshop and fork this repository to your GitHub account.
  In your Cloud9 terminal, clone this repository to your local directory with the following command.
-   git clone https://github.com/&amp;lt;github username&amp;gt;/pagerduty-workshop.git</description>
+   git clone https://github.com/&amp;lt;github username&amp;gt;/aws-eks-workshop.git</description>
     </item>
     
     <item>
@@ -297,7 +291,7 @@ An Integration connects Pipelines to an external service/tool. Each integration 
       
       <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/51_download_code.html</guid>
       <description>The code is located at https://github.com/jfrogtraining/aws-eks-workshop GitHub repository. We will clone this repo locally in order to pull the required workshop files.
- Go to https://github.com/jfrogtraining/aws-eks-workshop and fork this repository to your GitHub account.
+ Go to https://github.com/jfrogtraining/pagerduty-workshop and fork this repository to your GitHub account.
  In your Cloud9 terminal, clone this repository to your local directory with the following command.
    git clone https://github.com/&amp;lt;github username&amp;gt;/aws-eks-workshop.git</description>
     </item>
@@ -318,8 +312,9 @@ Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that you can
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/53_set_up_pagerduty.html</guid>
-      <description>We will use the EKSCTL command line tool to create an Amazon Elastic Kubernetes (EKS) cluster. This powerful tool allows you to manage many aspects of your EKS cluster through simple commands. When using EKSCTL, you can still manage your cluster in the Amazon EKS dashboard in the AWS console.
-Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that you can use to run Kubernetes on AWS without needing to install, operate, and maintain your own Kubernetes control plane or nodes.</description>
+      <description>Next we will set up your PagerDuty Developer Platform. If you do not yet have a developer platform, you can sign up and get a free developer platform instance here.
+PagerDuty provides many ways for developers to integrate with their platform. You can learn more through their developer documentation.
+  In your PagerDuty, go to Services &amp;gt; Service Directory. A service may represent an application, component, or team you wish to open incidents against.</description>
     </item>
     
     <item>
@@ -375,11 +370,27 @@ An Integration connects Pipelines to an external service/tool. Each integration 
     </item>
     
     <item>
-      <title>Workshop Next Steps</title>
-      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/210_workshop_next_steps.html</link>
+      <title>Set Up Xray Security</title>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/210_xray_setup.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/210_workshop_next_steps.html</guid>
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/210_xray_setup.html</guid>
+      <description>In your JFrog Platform instance, go to Administration &amp;gt; Xray &amp;gt; Watches &amp;amp; Policies.
+ Click Create a Policy.
+ Call the security policy, High-Severity.
+ Click on New Rule.
+ Name the rule High-Severity and select High for the Minimal Severity. Click Save.
+ Click Create to create this new security policy.
+ Click on the Watches tab under Watches &amp;amp; Policies.
+ Click on Set up a Watch.</description>
+    </item>
+    
+    <item>
+      <title>Workshop Next Steps</title>
+      <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/211_workshop_next_steps.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jefferyfry.github.io/aws-modernization-with-jfrog/2_self_guided_setup/211_workshop_next_steps.html</guid>
       <description>You are now ready to build an application with the JFrog Platform. Please choose which AWS service you wish to deploy to.
 Amazon ECS using Docker Compose Amazon EKS JFrog Platform with PagerDuty DevOps Observability on EKS</description>
     </item>
