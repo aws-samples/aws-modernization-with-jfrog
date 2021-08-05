@@ -32,7 +32,13 @@ A service may represent an application, component, or team you wish to open inci
 11. Choose **Intelligent** for the **Alert Grouping** and click **Next**.
 12. For **Integrations**, search for _JFrog Pipelines Changes_ and click **Create Service**.
    ![New PD Alert](/images/pdpipelines.png)
-13. Copy the **Integration Key** and **Integration URL** for later.
+13. Copy the **Integration Key** for later.
    ![New PD Pipeline Key](/images/pdpipelinekey.png)
+14. An API token is also required for the JFrog Pipelines + Pagerduty Notifications integration.
+15. Click on your avatar in the top right and **My Profile**.
+   ![MyProfile](/images/MyProfile.png)
+17. Click on the **User Settings** tab and inside the **API Access** section click on **Create API User Token**.
+   ![APIToken](/images/APIToken.png)
+18. Copy the token. We will use this when creating the integration in JFrog Pipelines for PagerDuty.
     
 Congratulations! You have set up PagerDuty with the JFrog Xray and Pipelines integrations.

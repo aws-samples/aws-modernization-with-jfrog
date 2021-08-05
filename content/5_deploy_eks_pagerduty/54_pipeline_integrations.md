@@ -71,5 +71,17 @@ aws iam create-access-key --user-name workshopuser
 
 21. Click **Create** to create the integration.
    ![AWS Integration](/images/aws-integration.png)
+22. Click **Add an Integration** again.
+23. For the **Name**, enter _pagerduty\_integration_.
+24. For **Integration Type**, select **PagerDuty Events**.
+25. Enter a name for this integration which will be used in the pipeline yaml. ex: `MyPagerDutyIntegration`
+26. Enter the PagerDuty API token created in prior steps for **Token**.
+    ![PagerDuty Integration](/images/addpagerdutyintegration.png)
+27. Go to **Administration** > **Xray** > **Settings**.
+28. Click on **Webhooks** in the **General** tile.
+29. Create a **New Webhook**.
+30. Enter _Xray PagerDuty_ for the **Webhook Name**
+31. Enter the PagerDuty Xray Integration URL for the **URL**.  _ex: https://events.pagerduty.com/integration/<integration_id>/enqueue_
+32. Click **Create**.
 
 Congratulations! We have created the integrations that are required for our CI/CD pipeline.
