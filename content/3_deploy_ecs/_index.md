@@ -1,7 +1,7 @@
 ---
 title: "JFrog Platform with Docker Compose & ECS"
 chapter: true
-draft: false
+draft: true
 weight: 3
 pre: "<b>3 </b>"
 ---
