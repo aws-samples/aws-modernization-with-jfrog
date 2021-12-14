@@ -23,7 +23,7 @@ canonifyurls = true
   # Author of the site, will be used in meta information
   author = "JFrog"
   # Description of the site, will be used in meta information
-  description = "AWS Modernization Workshop"
+  description = "JFrog Pagerduty DevOps Modernization Workshop"
   # Shows a checkmark for visited pages on the menu
   showVisitedLinks = true
   # Disable search function. It will hide search bar
@@ -44,7 +44,7 @@ canonifyurls = true
   # Order sections in menu by "weight" or "title". Default to "weight"
   ordersectionsby = "weight"
   # Change default color scheme with a variant one. Can be "red", "blue", "green".
-  themeVariant = "mine"
+  themeVariant = "green"
   assetDir = "static"
 
 [[menu.shortcuts]]
@@ -81,6 +81,6 @@ weight = 1
 languageName = "On Your Own Setup"
 
 [Languages.ee]
-title = "AWS Hosted Event Setup"
+title = "Pagerduty Hosted Event Setup"
 weight = 2
-languageName = "AWS Hosted Event Setup" 
+languageName = "Pagerduty Hosted Event Setup" 
