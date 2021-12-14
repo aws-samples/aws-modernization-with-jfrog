@@ -1,9 +1,9 @@
 #baseURL = "/"
-baseURL = "https://jefferyfry.github.io/aws-modernization-with-jfrog/"
+baseURL = "https://mitalib.github.io/jfrog-platform-with-pagerduty/"
 languageCode = "en-US"
 defaultContentLanguage = "oyo"
 
-title = "JFrog DevOps Modernization Workshop"
+title = "JFrog Pagerduty DevOps Modernization Workshop"
 theme = "hugo-theme-learn"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= "false"
