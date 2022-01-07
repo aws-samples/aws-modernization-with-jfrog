@@ -1,8 +1,8 @@
 ---
 title: "Create Your EKS Cluster"
 chapter: false
-weight: 52
-pre: "<b>5.2 </b>"
+weight: 32
+pre: "<b>3.2 </b>"
 ---
 
 We will use the [EKSCTL command line tool](https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html) to create an [Amazon Elastic Kubernetes (EKS)](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html) cluster. This powerful tool allows you to manage many aspects of your EKS cluster through simple commands. When using EKSCTL, you can still manage your cluster in the Amazon EKS dashboard in the AWS console.
@@ -34,11 +34,11 @@ Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that you can
 
 7. In your JFrog Platform instance, go to **Administration** > **Identity and Access** > **Access Tokens**.
 
-8. Click **+ Generate Admin Token**.
-   ![Generate Admin Token](/images/generate-access-token.png)
+8. Click **+ Generate Token**.
+   ![Generate Admin Token](/images/jpd-generate-token.png)
 
-9. Leave the defaults and click **Generate**.
-   ![Generate Admin Token](/images/generate-access-token.png)
+9. Select **Token Scope** > **Admin** and put the **UserName**. Leave the defaults and click **Generate**.
+   ![Generate Admin Token](/images/jpd-generate-token.png)
 
 10. Copy the _Username_ and _Access Token_.
 

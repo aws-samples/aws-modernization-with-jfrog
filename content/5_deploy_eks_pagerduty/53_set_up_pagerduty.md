@@ -1,8 +1,8 @@
 ---
 title: "Set up PagerDuty"
 chapter: false
-weight: 53
-pre: "<b>5.3 </b>"
+weight: 33
+pre: "<b>3.3 </b>"
 ---
 
 Next we will set up your PagerDuty Developer Platform. If you do not yet have a developer platform, you can sign up and get a free developer platform instance [here](https://developer.pagerduty.com/sign-up/).

@@ -1,8 +1,8 @@
 ---
 title: "Set up our JFrog Pipelines Integrations"
 chapter: false
-weight: 54
-pre: "<b>5.4 </b>"
+weight: 34
+pre: "<b>3.4 </b>"
 ---
 
 Our CI/CD pipeline requires access to GitHub to pull our code, access to JFrog Artifactory to deploy our Docker image and access to AWS to deploy to EKS. We will set up JFrog Pipelines integrations to enable these.
@@ -57,48 +57,56 @@ aws iam attach-user-policy --user-name workshopuser --policy-arn arn:aws:iam::aw
 aws iam create-access-key --user-name workshopuser
 ```
 
-15. Copy the output of these commands.
+15. Copy the output of these commands and save it somewhere to put in Jfrog Platform.
    ![AWS Access Key](/images/aws-access-key.png)
 
-16. Go back to your JFrog Platform instance and go to **Administration** > **Pipelines** > **Integrations**.
+16. Now you will also have to update the configmap with the above user created in order to have access to EKS clusters in JFrog Platform. In Cloud9 terminal execute the following command to edit configmap.
 
-17. Click **Add an Integration** again.
+```
+kubectl edit -n kube-system configmap/aws-auth
+```
+17. Add the **MapUsers** section as shown in highlighted red box
+    ![AWS ConfigMap](/images/aws-edit-configmap.png)
 
-18. For the **Name**, enter _aws\_integration_.
+18. Go back to your JFrog Platform instance and go to **Administration** > **Pipelines** > **Integrations**.
 
-19. For **Integration Type**, select **AWS**.
+19. Click **Add an Integration** again.
 
-20. For the **Access Key Id** and the **Secret Access Key**, enter the values from above.
+20. For the **Name**, enter _aws\_integration_.
 
-21. Click **Create** to create the integration.
+21. For **Integration Type**, select **AWS**.
+
+22. For the **Access Key Id** and the **Secret Access Key**, enter the values from above.
+
+23. Click **Create** to create the integration.
    ![AWS Integration](/images/aws-integration.png)
-22. Click **Add an Integration** again.
-23. For the **Name**, enter _eks\_integration_.
-24. For **Integration Type**, select **Kubernetes**.
-25. Paste in the Kubeconfig output from the steps where you created your EKS cluster.
-26. Click **Create** to create the integration.
+24. Click **Add an Integration** again.
+25. For the **Name**, enter _eks\_integration_.
+26. For **Integration Type**, select **Kubernetes**.
+27. Paste in the Kubeconfig output from the steps where you created your EKS cluster.
+28. Click **Create** to create the integration.
    ![EKS Integration](/images/eks-integration.png)
-27. Click **Add an Integration** again.
-28. For the **Name**, enter _pagerduty\_integration_.
-29. For **Integration Type**, select **PagerDuty Events**.
-30. Enter the PagerDuty Pipelines Integration Key created in the prior steps for **Service Integration/routing key**.
+29. Click **Add an Integration** again.
+30. For the **Name**, enter _pagerduty\_integration_.
+31. For **Integration Type**, select **PagerDuty Events**.
+32. Enter the PagerDuty Pipelines Integration Key created in the prior steps for **Service Integration/routing key**.
     ![PagerDuty Integration](/images/addpagerdutyintegration.png)
-31. Click **Create**.
-32. Go to **Administration** > **Xray** > **Settings**.
-33. Click on **Webhooks** in the **General** tile.
-34. Create a **New Webhook**.
-35. Enter _Xray PagerDuty_ for the **Webhook Name**
-36. Enter the PagerDuty Xray Integration URL for the **URL**.  _ex: https://events.pagerduty.com/integration/< integration id >/enqueue_
-37. Click **Create**.
+33. Click **Create**.
+34. Go to **Administration** > **Xray** > **Settings**.
+35. Click on **Webhooks** in the **General** tile.
+36. Create a **New Webhook**.
+37. Enter _Xray PagerDuty_ for the **Webhook Name**
+38. Enter the PagerDuty Xray Integration URL for the **URL**.  _ex: https://events.pagerduty.com/integration/< integration id >/enqueue_
+39. Click **Create**.
     ![PagerDuty Xray Webhook](/images/pdxraywebhook.png)
-38. Go to **Administration** > **Xray** > **Watches & Policies**.
-39. Click on the **High-Severity** policy that you created earlier.
-40. Then click on the edit icon for the **High-Severity** rule that you created earlier.
+40. Go to **Administration** > **Xray** > **Watches & Policies**.
+41. Click on the **High-Severity** policy that you created earlier.
+42. Then click on the edit icon for the **High-Severity** rule that you created earlier.
     ![PagerDuty Edit Xray Rule](/images/pdeditxrayrule.png)
-41. Scroll down and enable **Trigger Webhook** and select **Xray Pagerduty**, the webhook that you created in the previous steps.
-42. Click **Save** to save the rule.
+43. Scroll down and enable **Trigger Webhook** and select **Xray Pagerduty**, the webhook that you created in the previous steps.
+44. Click **Save** to save the rule.
     ![PagerDuty Xray Webhook](/images/pdxraywebhookrule.png)
-43. Click **Save** to save the policy.
+45. Click **Save** to save the policy.
     
 
 Congratulations! We have created the integrations that are required for our CI/CD pipeline.
