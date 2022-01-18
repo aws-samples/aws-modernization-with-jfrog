@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Survey on AWS Hosted Event Setup</title>
-    <link>https://jefferyfry.github.io/aws-modernization-with-jfrog/ee/099_survey.html</link>
-    <description>Recent content in Survey on AWS Hosted Event Setup</description>
+    <title>Survey on Pagerduty Hosted Event Setup</title>
+    <link>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/099_survey.html</link>
+    <description>Recent content in Survey on Pagerduty Hosted Event Setup</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language><atom:link href="https://jefferyfry.github.io/aws-modernization-with-jfrog/ee/099_survey/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language><atom:link href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/099_survey/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

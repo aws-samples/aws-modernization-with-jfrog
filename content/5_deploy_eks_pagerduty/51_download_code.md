@@ -11,9 +11,9 @@ The code is located at [https://github.com/jfrogtraining/pagerduty-workshop](htt
 
 2. In your Cloud9 terminal, clone this repository to your local directory with the following command.
 
-``
-git clone https://github.com/<github username>/pagerduty-workshop.git
-``
+```
+git clone git@github.com:<github username>/pagerduty-workshop.git
+```
 
 
 ![Git Clone](/images/git-clone-eks-pagerduty.png)
