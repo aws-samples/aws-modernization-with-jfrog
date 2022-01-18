@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="ee" class="js csstransforms3d">
-  <head>
+  <head><script src="/aws-modernization-with-jfrog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=aws-modernization-with-jfrog/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.90.1" />
     <meta name="description" content="JFrog Pagerduty DevOps Modernization Workshop">
 <meta name="author" content="JFrog">
 
-    <link rel="icon" href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/images/favicon.png" type="image/png">
+    <link rel="icon" href="http://localhost:1313/aws-modernization-with-jfrog/images/favicon.png" type="image/png">
 
     <title>Set up PagerDuty :: Pagerduty Hosted Event Setup</title>
 
     
-    <link href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/css/nucleus.css?1642486742" rel="stylesheet">
-    <link href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/css/fontawesome-all.min.css?1642486742" rel="stylesheet">
-    <link href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/css/hybrid.css?1642486742" rel="stylesheet">
-    <link href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/css/featherlight.min.css?1642486742" rel="stylesheet">
-    <link href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/css/perfect-scrollbar.min.css?1642486742" rel="stylesheet">
-    <link href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/css/auto-complete.css?1642486742" rel="stylesheet">
-    <link href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/css/atom-one-dark-reasonable.css?1642486742" rel="stylesheet">
-    <link href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/css/theme.css?1642486742" rel="stylesheet">
-    <link href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/css/hugo-theme.css?1642486742" rel="stylesheet">
+    <link href="http://localhost:1313/aws-modernization-with-jfrog/css/nucleus.css?1642490166" rel="stylesheet">
+    <link href="http://localhost:1313/aws-modernization-with-jfrog/css/fontawesome-all.min.css?1642490166" rel="stylesheet">
+    <link href="http://localhost:1313/aws-modernization-with-jfrog/css/hybrid.css?1642490166" rel="stylesheet">
+    <link href="http://localhost:1313/aws-modernization-with-jfrog/css/featherlight.min.css?1642490166" rel="stylesheet">
+    <link href="http://localhost:1313/aws-modernization-with-jfrog/css/perfect-scrollbar.min.css?1642490166" rel="stylesheet">
+    <link href="http://localhost:1313/aws-modernization-with-jfrog/css/auto-complete.css?1642490166" rel="stylesheet">
+    <link href="http://localhost:1313/aws-modernization-with-jfrog/css/atom-one-dark-reasonable.css?1642490166" rel="stylesheet">
+    <link href="http://localhost:1313/aws-modernization-with-jfrog/css/theme.css?1642490166" rel="stylesheet">
+    <link href="http://localhost:1313/aws-modernization-with-jfrog/css/hugo-theme.css?1642490166" rel="stylesheet">
     
-    <link href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/css/theme-green.css?1642486742" rel="stylesheet">
+    <link href="http://localhost:1313/aws-modernization-with-jfrog/css/theme-green.css?1642490166" rel="stylesheet">
     
     
 
-    <script src="https://mitalibo.github.io/jfrog-platform-with-pagerduty/js/jquery-3.3.1.min.js?1642486742"></script>
+    <script src="http://localhost:1313/aws-modernization-with-jfrog/js/jquery-3.3.1.min.js?1642490166"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,17 +57,17 @@
     })();
 </script>
 
-<link rel="stylesheet" href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/css/mp-devops-series.css">
+<link rel="stylesheet" href="http://localhost:1313/aws-modernization-with-jfrog/css/mp-devops-series.css">
 <link rel="stylesheet" href="https://pages.awscloud.com/js/forms2/css/forms2.css">
   </head>
-  <body class="" data-url="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/53_set_up_pagerduty.html">
+  <body class="" data-url="http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/53_set_up_pagerduty.html">
     <nav id="sidebar" class="showVisitedLinks">
 
 
 
   <div id="header-wrapper">
     <div id="header">
-      <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/" title="Go home"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2.77937in" height="1.48795in" version="1.0" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+      <a href="http://localhost:1313/aws-modernization-with-jfrog/" title="Go home"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2.77937in" height="1.48795in" version="1.0" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
     viewBox="0 0 1014.42 981.05"
      xmlns:xlink="http://www.w3.org/1999/xlink">
      <defs>
@@ -90,14 +90,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="https://mitalibo.github.io/jfrog-platform-with-pagerduty/js/lunr.min.js?1642486742"></script>
-<script type="text/javascript" src="https://mitalibo.github.io/jfrog-platform-with-pagerduty/js/auto-complete.js?1642486742"></script>
+<script type="text/javascript" src="http://localhost:1313/aws-modernization-with-jfrog/js/lunr.min.js?1642490166"></script>
+<script type="text/javascript" src="http://localhost:1313/aws-modernization-with-jfrog/js/auto-complete.js?1642490166"></script>
 <script type="text/javascript">
     
-        var baseurl = "https:\/\/mitalibo.github.io\/jfrog-platform-with-pagerduty\/\/ee";
+        var baseurl = "http:\/\/localhost:1313\/aws-modernization-with-jfrog\/\/ee";
     
 </script>
-<script type="text/javascript" src="https://mitalibo.github.io/jfrog-platform-with-pagerduty/js/search.js?1642486742"></script>
+<script type="text/javascript" src="http://localhost:1313/aws-modernization-with-jfrog/js/search.js?1642490166"></script>
 
     
   </div>
@@ -120,7 +120,7 @@
         
         
         ">
-      <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/1_introduction.html">
+      <a href="http://localhost:1313/aws-modernization-with-jfrog/ee/1_introduction.html">
           <b>1 </b>Introduction
           
             <i class="fas fa-check read-icon"></i>
@@ -145,7 +145,7 @@
   
     
       <li data-nav-id="/ee/1_introduction/20_devops_in_cloud.html" title="DevOps in the Cloud" class="dd-item ">
-        <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/1_introduction/20_devops_in_cloud.html">
+        <a href="http://localhost:1313/aws-modernization-with-jfrog/ee/1_introduction/20_devops_in_cloud.html">
         <b>1.1 </b>DevOps in the Cloud
         <i class="fas fa-check read-icon"></i>
         </a>
@@ -166,7 +166,7 @@
   
     
       <li data-nav-id="/ee/1_introduction/21_continuous_integration_and_delivery.html" title="Continuous Integration and Delivery" class="dd-item ">
-        <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/1_introduction/21_continuous_integration_and_delivery.html">
+        <a href="http://localhost:1313/aws-modernization-with-jfrog/ee/1_introduction/21_continuous_integration_and_delivery.html">
         <b>1.2 </b>Continuous Integration and Delivery
         <i class="fas fa-check read-icon"></i>
         </a>
@@ -187,7 +187,7 @@
   
     
       <li data-nav-id="/ee/1_introduction/22_binary_repository_management.html" title="Binary Repository Management" class="dd-item ">
-        <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/1_introduction/22_binary_repository_management.html">
+        <a href="http://localhost:1313/aws-modernization-with-jfrog/ee/1_introduction/22_binary_repository_management.html">
         <b>1.3 </b>Binary Repository Management
         <i class="fas fa-check read-icon"></i>
         </a>
@@ -208,7 +208,7 @@
   
     
       <li data-nav-id="/ee/1_introduction/23_dev_sec_ops.html" title="DevSecOps" class="dd-item ">
-        <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/1_introduction/23_dev_sec_ops.html">
+        <a href="http://localhost:1313/aws-modernization-with-jfrog/ee/1_introduction/23_dev_sec_ops.html">
         <b>1.4 </b>DevSecOps
         <i class="fas fa-check read-icon"></i>
         </a>
@@ -229,7 +229,7 @@
   
     
       <li data-nav-id="/ee/1_introduction/24_jfrog_platform_overview.html" title="JFrog Platform for DevOps in the Cloud" class="dd-item ">
-        <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/1_introduction/24_jfrog_platform_overview.html">
+        <a href="http://localhost:1313/aws-modernization-with-jfrog/ee/1_introduction/24_jfrog_platform_overview.html">
         <b>1.5 </b>JFrog Platform for DevOps in the Cloud
         <i class="fas fa-check read-icon"></i>
         </a>
@@ -250,7 +250,7 @@
   
     
       <li data-nav-id="/ee/1_introduction/25_workshop_next_steps.html" title="Workshop Setup" class="dd-item ">
-        <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/1_introduction/25_workshop_next_steps.html">
+        <a href="http://localhost:1313/aws-modernization-with-jfrog/ee/1_introduction/25_workshop_next_steps.html">
         <b>1.6 </b>Workshop Setup
         <i class="fas fa-check read-icon"></i>
         </a>
@@ -282,7 +282,7 @@
         
         
         ">
-      <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup.html">
+      <a href="http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup.html">
           <b>2 </b>AWS Hosted Event Setup
           
             <i class="fas fa-check read-icon"></i>
@@ -307,7 +307,7 @@
   
     
       <li data-nav-id="/ee/2_event_engine_setup/21_aws_event_account.html" title="AWS Event: Create an AWS account" class="dd-item ">
-        <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup/21_aws_event_account.html">
+        <a href="http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/21_aws_event_account.html">
         <b>2.1 </b>AWS Event: Create an AWS account
         <i class="fas fa-check read-icon"></i>
         </a>
@@ -328,7 +328,7 @@
   
     
       <li data-nav-id="/ee/2_event_engine_setup/22_cloud9.html" title="Set up your Cloud9 IDE" class="dd-item ">
-        <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup/22_cloud9.html">
+        <a href="http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/22_cloud9.html">
         <b>2.2 </b>Set up your Cloud9 IDE
         <i class="fas fa-check read-icon"></i>
         </a>
@@ -349,7 +349,7 @@
   
     
       <li data-nav-id="/ee/2_event_engine_setup/23_create_role.html" title="Create an IAM role for your workspace" class="dd-item ">
-        <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup/23_create_role.html">
+        <a href="http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/23_create_role.html">
         <b>2.3 </b>Create an IAM role for your workspace
         <i class="fas fa-check read-icon"></i>
         </a>
@@ -370,7 +370,7 @@
   
     
       <li data-nav-id="/ee/2_event_engine_setup/24_attach_role_workspace.html" title="Attach the IAM role to your Workspace" class="dd-item ">
-        <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup/24_attach_role_workspace.html">
+        <a href="http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/24_attach_role_workspace.html">
         <b>2.4 </b>Attach the IAM role to your Workspace
         <i class="fas fa-check read-icon"></i>
         </a>
@@ -391,7 +391,7 @@
   
     
       <li data-nav-id="/ee/2_event_engine_setup/25_update_iam_settings.html" title="Update IAM settings for your Workspace" class="dd-item ">
-        <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup/25_update_iam_settings.html">
+        <a href="http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/25_update_iam_settings.html">
         <b>2.5 </b>Update IAM settings for your Workspace
         <i class="fas fa-check read-icon"></i>
         </a>
@@ -412,7 +412,7 @@
   
     
       <li data-nav-id="/ee/2_event_engine_setup/26_jfrog_free.html" title="Get a Free JFrog Platform Instance" class="dd-item ">
-        <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup/26_jfrog_free.html">
+        <a href="http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/26_jfrog_free.html">
         <b>2.6 </b>Get a Free JFrog Platform Instance
         <i class="fas fa-check read-icon"></i>
         </a>
@@ -433,7 +433,7 @@
   
     
       <li data-nav-id="/ee/2_event_engine_setup/27_docker_repositories.html" title="Set Up Docker Repositories" class="dd-item ">
-        <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup/27_docker_repositories.html">
+        <a href="http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/27_docker_repositories.html">
         <b>2.7 </b>Set Up Docker Repositories
         <i class="fas fa-check read-icon"></i>
         </a>
@@ -454,7 +454,7 @@
   
     
       <li data-nav-id="/ee/2_event_engine_setup/28_xray_setup.html" title="Set Up Xray Security" class="dd-item ">
-        <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup/28_xray_setup.html">
+        <a href="http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/28_xray_setup.html">
         <b>2.8 </b>Set Up Xray Security
         <i class="fas fa-check read-icon"></i>
         </a>
@@ -475,7 +475,7 @@
   
     
       <li data-nav-id="/ee/2_event_engine_setup/29_workshop_next_steps.html" title="Workshop Next Steps" class="dd-item ">
-        <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup/29_workshop_next_steps.html">
+        <a href="http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/29_workshop_next_steps.html">
         <b>2.9 </b>Workshop Next Steps
         <i class="fas fa-check read-icon"></i>
         </a>
@@ -507,7 +507,7 @@
         
         
         ">
-      <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty.html">
+      <a href="http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty.html">
           <b>3 </b>JFrog Platform with PagerDuty DevOps Observability with EKS
           
             <i class="fas fa-check read-icon"></i>
@@ -532,7 +532,7 @@
   
     
       <li data-nav-id="/ee/5_deploy_eks_pagerduty/51_download_code.html" title="Download the Workshop Code" class="dd-item ">
-        <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/51_download_code.html">
+        <a href="http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/51_download_code.html">
         <b>3.1 </b>Download the Workshop Code
         <i class="fas fa-check read-icon"></i>
         </a>
@@ -553,7 +553,7 @@
   
     
       <li data-nav-id="/ee/5_deploy_eks_pagerduty/52_create_eks_cluster.html" title="Create Your EKS Cluster" class="dd-item ">
-        <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/52_create_eks_cluster.html">
+        <a href="http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/52_create_eks_cluster.html">
         <b>3.2 </b>Create Your EKS Cluster
         <i class="fas fa-check read-icon"></i>
         </a>
@@ -574,7 +574,7 @@
   
     
       <li data-nav-id="/ee/5_deploy_eks_pagerduty/53_set_up_pagerduty.html" title="Set up PagerDuty" class="dd-item active">
-        <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/53_set_up_pagerduty.html">
+        <a href="http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/53_set_up_pagerduty.html">
         <b>3.3 </b>Set up PagerDuty
         <i class="fas fa-check read-icon"></i>
         </a>
@@ -595,7 +595,7 @@
   
     
       <li data-nav-id="/ee/5_deploy_eks_pagerduty/54_pipeline_integrations.html" title="Set up our JFrog Pipelines Integrations" class="dd-item ">
-        <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/54_pipeline_integrations.html">
+        <a href="http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/54_pipeline_integrations.html">
         <b>3.4 </b>Set up our JFrog Pipelines Integrations
         <i class="fas fa-check read-icon"></i>
         </a>
@@ -616,7 +616,7 @@
   
     
       <li data-nav-id="/ee/5_deploy_eks_pagerduty/55_update_pipeline.html" title="Update our Pipeline" class="dd-item ">
-        <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/55_update_pipeline.html">
+        <a href="http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/55_update_pipeline.html">
         <b>3.5 </b>Update our Pipeline
         <i class="fas fa-check read-icon"></i>
         </a>
@@ -637,7 +637,7 @@
   
     
       <li data-nav-id="/ee/5_deploy_eks_pagerduty/56_build_publish_deploy.html" title="Build, Publish and Deploy to EKS" class="dd-item ">
-        <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/56_build_publish_deploy.html">
+        <a href="http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/56_build_publish_deploy.html">
         <b>3.6 </b>Build, Publish and Deploy to EKS
         <i class="fas fa-check read-icon"></i>
         </a>
@@ -658,7 +658,7 @@
   
     
       <li data-nav-id="/ee/5_deploy_eks_pagerduty/57_view_results.html" title="View Results in JFrog" class="dd-item ">
-        <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/57_view_results.html">
+        <a href="http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/57_view_results.html">
         <b>3.7 </b>View Results in JFrog
         <i class="fas fa-check read-icon"></i>
         </a>
@@ -679,7 +679,7 @@
   
     
       <li data-nav-id="/ee/5_deploy_eks_pagerduty/58_view_pagerduty.html" title="View Events in PagerDuty" class="dd-item ">
-        <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/58_view_pagerduty.html">
+        <a href="http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/58_view_pagerduty.html">
         <b>3.8 </b>View Events in PagerDuty
         <i class="fas fa-check read-icon"></i>
         </a>
@@ -711,7 +711,7 @@
         
         
         ">
-      <a href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/099_survey.html">
+      <a href="http://localhost:1313/aws-modernization-with-jfrog/ee/099_survey.html">
           Survey
           
             <i class="fas fa-check read-icon"></i>
@@ -734,7 +734,7 @@
         <ul>
           
               <li> 
-                  <a class="padding" href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/cleanup.html"><i class='fas fa-trash-alt'></i> Cleanup</a>
+                  <a class="padding" href="http://localhost:1313/aws-modernization-with-jfrog/ee/cleanup.html"><i class='fas fa-trash-alt'></i> Cleanup</a>
               </li>
           
               <li> 
@@ -742,7 +742,7 @@
               </li>
           
               <li> 
-                  <a class="padding" href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/resources.html"><i class='fab fa-readme'></i> Resources</a>
+                  <a class="padding" href="http://localhost:1313/aws-modernization-with-jfrog/ee/resources.html"><i class='fab fa-readme'></i> Resources</a>
               </li>
           
         </ul>
@@ -767,7 +767,7 @@
                   
                     
                     
-                      <option id="oyo" value="https://mitalibo.github.io/jfrog-platform-with-pagerduty/5_deploy_eks_pagerduty/53_set_up_pagerduty.html">On Your Own Setup</option>
+                      <option id="oyo" value="http://localhost:1313/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/53_set_up_pagerduty.html">On Your Own Setup</option>
                     
                   
               
@@ -781,7 +781,7 @@
                   
                     
                     
-                      <option id="ee" value="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/53_set_up_pagerduty.html" selected>Pagerduty Hosted Event Setup</option>
+                      <option id="ee" value="http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/53_set_up_pagerduty.html" selected>Pagerduty Hosted Event Setup</option>
                     
                   
               
@@ -850,7 +850,7 @@
             
           
           
-            <a href='https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/'>JFrog DevOps Modernization Workshop</a> > <a href='https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty.html'>JFrog Platform with PagerDuty DevOps Observability with EKS</a> > Set up PagerDuty
+            <a href='http://localhost:1313/aws-modernization-with-jfrog/ee/'>JFrog DevOps Modernization Workshop</a> > <a href='http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty.html'>JFrog Platform with PagerDuty DevOps Observability with EKS</a> > Set up PagerDuty
           
         
           
@@ -901,23 +901,23 @@
 </li>
 <li>We will create two services: (1) Xray Vulnerabilities and (2) JFrog Pipelines Events. Click **+ New Service **.</li>
 <li>Name the service <em>Xray Vulnerabilities</em> and click <strong>Next</strong>.
-<img src="https://mitalibo.github.io/jfrog-platform-with-pagerduty/images/newpdservice.png" alt="New PD Service" /></li>
+<img src="http://localhost:1313/aws-modernization-with-jfrog/images/newpdservice.png" alt="New PD Service" /></li>
 <li>Choose <strong>Generate an Escalation Policy</strong> and click <strong>Next</strong>.
-<img src="https://mitalibo.github.io/jfrog-platform-with-pagerduty/images/newpdescalation.png" alt="New PD Escalation" /></li>
+<img src="http://localhost:1313/aws-modernization-with-jfrog/images/newpdescalation.png" alt="New PD Escalation" /></li>
 <li>Choose <strong>Intelligent</strong> for the <strong>Alert Grouping</strong> and click <strong>Next</strong>.
-<img src="https://mitalibo.github.io/jfrog-platform-with-pagerduty/images/pdalertgrouping.png" alt="New PD Alert" /></li>
+<img src="http://localhost:1313/aws-modernization-with-jfrog/images/pdalertgrouping.png" alt="New PD Alert" /></li>
 <li>For <strong>Integrations</strong>, search for <em>JFrog Xray + PagerDuty Notifications</em> and click <strong>Create Service</strong>.
-<img src="https://mitalibo.github.io/jfrog-platform-with-pagerduty/images/pdxray.png" alt="New PD Alert" /></li>
+<img src="http://localhost:1313/aws-modernization-with-jfrog/images/pdxray.png" alt="New PD Alert" /></li>
 <li>Copy the <strong>Integration URL</strong> for later.
-<img src="https://mitalibo.github.io/jfrog-platform-with-pagerduty/images/pdxraykey.png" alt="New PD Xray Key" /></li>
+<img src="http://localhost:1313/aws-modernization-with-jfrog/images/pdxraykey.png" alt="New PD Xray Key" /></li>
 <li>Let&rsquo;s now create a service for JFrog Pipelines events. Click **+ New Service **.</li>
 <li>Name the service <em>Pipelines Events</em> and click <strong>Next</strong>.</li>
 <li>Choose <strong>Generate an Escalation Policy</strong> and click <strong>Next</strong>.</li>
 <li>Choose <strong>Intelligent</strong> for the <strong>Alert Grouping</strong> and click <strong>Next</strong>.</li>
 <li>For <strong>Integrations</strong>, search for <em>JFrog Pipelines Changes</em> and click <strong>Create Service</strong>.
-<img src="https://mitalibo.github.io/jfrog-platform-with-pagerduty/images/pdpipelines.png" alt="New PD Alert" /></li>
+<img src="http://localhost:1313/aws-modernization-with-jfrog/images/pdpipelines.png" alt="New PD Alert" /></li>
 <li>Copy the <strong>Integration Key</strong> for later.
-<img src="https://mitalibo.github.io/jfrog-platform-with-pagerduty/images/pdpipelinekey.png" alt="New PD Pipeline Key" />
+<img src="http://localhost:1313/aws-modernization-with-jfrog/images/pdpipelinekey.png" alt="New PD Pipeline Key" />
 <br /></li>
 </ol>
 
@@ -1402,10 +1402,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/52_create_eks_cluster.html" title="Create Your EKS Cluster"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/52_create_eks_cluster.html" title="Create Your EKS Cluster"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/54_pipeline_integrations.html" title="Set up our JFrog Pipelines Integrations" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/54_pipeline_integrations.html" title="Set up our JFrog Pipelines Integrations" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1415,19 +1415,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://mitalibo.github.io/jfrog-platform-with-pagerduty/js/clipboard.min.js?1642486742"></script>
-    <script src="https://mitalibo.github.io/jfrog-platform-with-pagerduty/js/perfect-scrollbar.min.js?1642486742"></script>
-    <script src="https://mitalibo.github.io/jfrog-platform-with-pagerduty/js/perfect-scrollbar.jquery.min.js?1642486742"></script>
-    <script src="https://mitalibo.github.io/jfrog-platform-with-pagerduty/js/jquery.sticky.js?1642486742"></script>
-    <script src="https://mitalibo.github.io/jfrog-platform-with-pagerduty/js/featherlight.min.js?1642486742"></script>
-    <script src="https://mitalibo.github.io/jfrog-platform-with-pagerduty/js/highlight.pack.js?1642486742"></script>
+    <script src="http://localhost:1313/aws-modernization-with-jfrog/js/clipboard.min.js?1642490166"></script>
+    <script src="http://localhost:1313/aws-modernization-with-jfrog/js/perfect-scrollbar.min.js?1642490166"></script>
+    <script src="http://localhost:1313/aws-modernization-with-jfrog/js/perfect-scrollbar.jquery.min.js?1642490166"></script>
+    <script src="http://localhost:1313/aws-modernization-with-jfrog/js/jquery.sticky.js?1642490166"></script>
+    <script src="http://localhost:1313/aws-modernization-with-jfrog/js/featherlight.min.js?1642490166"></script>
+    <script src="http://localhost:1313/aws-modernization-with-jfrog/js/highlight.pack.js?1642490166"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://mitalibo.github.io/jfrog-platform-with-pagerduty/js/modernizr.custom-3.6.0.js?1642486742"></script>
-    <script src="https://mitalibo.github.io/jfrog-platform-with-pagerduty/js/learn.js?1642486742"></script>
-    <script src="https://mitalibo.github.io/jfrog-platform-with-pagerduty/js/hugo-learn.js?1642486742"></script>
+    <script src="http://localhost:1313/aws-modernization-with-jfrog/js/modernizr.custom-3.6.0.js?1642490166"></script>
+    <script src="http://localhost:1313/aws-modernization-with-jfrog/js/learn.js?1642490166"></script>
+    <script src="http://localhost:1313/aws-modernization-with-jfrog/js/hugo-learn.js?1642490166"></script>
     
         
-            <script src="https://mitalibo.github.io/jfrog-platform-with-pagerduty/mermaid/mermaid.js?1642486742"></script>
+            <script src="http://localhost:1313/aws-modernization-with-jfrog/mermaid/mermaid.js?1642490166"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

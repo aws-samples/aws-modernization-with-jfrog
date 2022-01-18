@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JFrog DevOps Modernization Workshop on Pagerduty Hosted Event Setup</title>
-    <link>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/</link>
+    <link>http://localhost:1313/aws-modernization-with-jfrog/ee/</link>
     <description>Recent content in JFrog DevOps Modernization Workshop on Pagerduty Hosted Event Setup</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language><atom:link href="https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language><atom:link href="http://localhost:1313/aws-modernization-with-jfrog/ee/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DevOps in the Cloud</title>
-      <link>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/1_introduction/20_devops_in_cloud.html</link>
+      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/1_introduction/20_devops_in_cloud.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/1_introduction/20_devops_in_cloud.html</guid>
+      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/1_introduction/20_devops_in_cloud.html</guid>
       <description>The goal of DevOps is to allow your development teams to deliver quality software faster to your customers through continuous process improvement, leveraging the best of breed development tools and infrastructure, and utilizing software development and IT operations best practices. Your team must deliver software faster than your competitors in order to get features and fixes to your customers sooner. JFrog terms this ideal as liquid software.
  Looking forward, as release cycles get shorter and microservices get smaller, we can imagine a world in which at any one time, our systems’ software is being updated.</description>
     </item>
     
     <item>
       <title>Continuous Integration and Delivery</title>
-      <link>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/1_introduction/21_continuous_integration_and_delivery.html</link>
+      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/1_introduction/21_continuous_integration_and_delivery.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/1_introduction/21_continuous_integration_and_delivery.html</guid>
+      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/1_introduction/21_continuous_integration_and_delivery.html</guid>
       <description>Continuous integration and delivery (CI/CD) is the process for which your software components are built from code, integrated, tested, released, deployed and ultimately delivered to end-users. CI/CD pipelines are the software assembly line that orchestrates the building of your software. This CI/CD pipeline line requires infrastructure. Cloud computing has allowed this infrastructure to become dynamic and ephemeral. On cloud infrastructure, your CI/CD pipelines scale up and down to meet your software delivery demands.</description>
     </item>
     
     <item>
       <title>Binary Repository Management</title>
-      <link>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/1_introduction/22_binary_repository_management.html</link>
+      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/1_introduction/22_binary_repository_management.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/1_introduction/22_binary_repository_management.html</guid>
+      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/1_introduction/22_binary_repository_management.html</guid>
       <description>A Binary Repository Manager is a software hub that simplifies the development process for different teams across an organization by helping them to collaborate on building coherent and compatible software components. It does this by centralizing the management of all the binary artifacts generated and used by the organization, thereby overcoming the incredible complexity arising from diverse binary artifact types, their position in the overall workflow and the set of dependencies between them.</description>
     </item>
     
     <item>
       <title>DevSecOps</title>
-      <link>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/1_introduction/23_dev_sec_ops.html</link>
+      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/1_introduction/23_dev_sec_ops.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/1_introduction/23_dev_sec_ops.html</guid>
+      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/1_introduction/23_dev_sec_ops.html</guid>
       <description>Any security issue identified by a security scanning may be reviewed by a small security team that may lack the technical knowledge. This challenge can be reduced by shifting left to the developer and operations teams, making them also responsible for security and compliance. This moves security earlier in the software delivery process. Source code, dependency and artifact security scanning are some examples of moving security into the development process. Implementing the identification of security issues earlier in the CI/CD pipeline, as well as automating security and compliance policies in the Software Development Lifecycle (SDLC), rather than using manual processes, is crucial.</description>
     </item>
     
     <item>
       <title>JFrog Platform for DevOps in the Cloud</title>
-      <link>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/1_introduction/24_jfrog_platform_overview.html</link>
+      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/1_introduction/24_jfrog_platform_overview.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/1_introduction/24_jfrog_platform_overview.html</guid>
+      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/1_introduction/24_jfrog_platform_overview.html</guid>
       <description>The JFrog Platform is designed to meet the growing needs of companies to develop and distribute software in the cloud. It provides DevOps teams with the tools needed to create, manage, secure and deploy software with ease. These tools cover everything from continuous integration and delivery (CI/CD), binary repository management, artifact maturity, security and vulnerability protection (DevSecOps), release management, analytics and distribution.
 JFrog Artifactory is an Artifact Repository Manager that fully supports software packages created by any language or technology.</description>
     </item>
     
     <item>
       <title>Workshop Setup</title>
-      <link>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/1_introduction/25_workshop_next_steps.html</link>
+      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/1_introduction/25_workshop_next_steps.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/1_introduction/25_workshop_next_steps.html</guid>
+      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/1_introduction/25_workshop_next_steps.html</guid>
       <description>Before we get started on building, publishing and deploying our NPM application, we must set up our workshop environment. In this setup section, we will:
  Set up our AWS account and IAM roles. Provision a Cloud9 IDE instance. Get and prepare our JFrog Platform instance. Clone our workshop GitHub repository which contains our code.  </description>
     </item>
     
     <item>
       <title>AWS Event: Create an AWS account</title>
-      <link>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup/21_aws_event_account.html</link>
+      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/21_aws_event_account.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup/21_aws_event_account.html</guid>
+      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/21_aws_event_account.html</guid>
       <description>Only complete this section if you are running the workshop through an AWS hosted event.
  For an AWS hosted event, you are provided with an AWS account through the AWS Event Engine service using a 12-digit hash by event staff. This is your unique access code.
 1 . Go to https://dashboard.eventengine.run/.
@@ -78,38 +78,38 @@ JFrog Artifactory is an Artifact Repository Manager that fully supports software
     
     <item>
       <title>Set up your Cloud9 IDE</title>
-      <link>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup/22_cloud9.html</link>
+      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/22_cloud9.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup/22_cloud9.html</guid>
+      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/22_cloud9.html</guid>
       <description>AWS Cloud9 is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser. It includes a code editor, debugger, and terminal. Cloud9 comes prepackaged with essential tools for popular programming languages, including JavaScript, Python, PHP, and more, so you don’t need to install files or configure your development machine to start new projects.
  Within the AWS console, use the region drop list to select us-west-2 (Oregon).</description>
     </item>
     
     <item>
       <title>Create an IAM role for your workspace</title>
-      <link>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup/23_create_role.html</link>
+      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/23_create_role.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup/23_create_role.html</guid>
+      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/23_create_role.html</guid>
       <description> Follow this link to create an IAM role with Administrator access. Confirm that AWS service and EC2 are selected, then click Next to view permissions. Confirm that AdministratorAccess is checked, then click Next through to Review. Enter JFrog-Workshop-Admin for the role name. Click Create Role.   </description>
     </item>
     
     <item>
       <title>Attach the IAM role to your Workspace</title>
-      <link>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup/24_attach_role_workspace.html</link>
+      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/24_attach_role_workspace.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup/24_attach_role_workspace.html</guid>
+      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/24_attach_role_workspace.html</guid>
       <description> Follow this link to find your Cloud9 EC2 instance. Select the instance by clicking the checkbox, then choose Actions ► Security ► Modify IAM role.  Choose JFrog-Workshop-Admin from the IAM Role drop down, and click Save.   </description>
     </item>
     
     <item>
       <title>Update IAM settings for your Workspace</title>
-      <link>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup/25_update_iam_settings.html</link>
+      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/25_update_iam_settings.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup/25_update_iam_settings.html</guid>
+      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/25_update_iam_settings.html</guid>
       <description>Return to your Cloud9 workspace and click the gear icon (in top right corner). Select AWS Settings. Turn off AWS managed temporary credentials. Close the Preferences tab.  Copy and run the shell commands below in your Cloud9 terminal. These shell commands will:
    Install jq- jq is a command-line tool for parsing JSON
  Ensure temporary credentials aren’t already in place.
@@ -118,10 +118,10 @@ JFrog Artifactory is an Artifact Repository Manager that fully supports software
     
     <item>
       <title>Get a Free JFrog Platform Instance</title>
-      <link>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup/26_jfrog_free.html</link>
+      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/26_jfrog_free.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup/26_jfrog_free.html</guid>
+      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/26_jfrog_free.html</guid>
       <description>If you do not have access to a JFrog Platform instance, use the JFrog Platform Cloud Free Tier to get your own JFrog Platform instance with Artifactory and Xray.
 When signing up for the JFrog Platform Cloud Free Tier, ensure that you select AWS and the US West 2 (Oregon) region.
   JFrog Platform Cloud Free Tier   </description>
@@ -129,10 +129,10 @@ When signing up for the JFrog Platform Cloud Free Tier, ensure that you select A
     
     <item>
       <title>Set Up Docker Repositories</title>
-      <link>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup/27_docker_repositories.html</link>
+      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/27_docker_repositories.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup/27_docker_repositories.html</guid>
+      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/27_docker_repositories.html</guid>
       <description>In your JFrog Platform instance at the top right, enable the drop down menu and select Quick Setup.
  On the Create Repositories dialog, choose Docker and click Next.
  Next, enter workshop for the Repositories Prefix.
@@ -142,10 +142,10 @@ When signing up for the JFrog Platform Cloud Free Tier, ensure that you select A
     
     <item>
       <title>Set Up Xray Security</title>
-      <link>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup/28_xray_setup.html</link>
+      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/28_xray_setup.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup/28_xray_setup.html</guid>
+      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/28_xray_setup.html</guid>
       <description>In your JFrog Platform instance, go to Administration &amp;gt; Xray &amp;gt; Watches &amp;amp; Policies.
  Click Create a Policy.
  Call the security policy, High-Severity.
@@ -158,20 +158,20 @@ When signing up for the JFrog Platform Cloud Free Tier, ensure that you select A
     
     <item>
       <title>Workshop Next Steps</title>
-      <link>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup/29_workshop_next_steps.html</link>
+      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/29_workshop_next_steps.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/2_event_engine_setup/29_workshop_next_steps.html</guid>
+      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/29_workshop_next_steps.html</guid>
       <description>You are now ready to build an application with the JFrog Platform. Please choose which AWS service you wish to deploy to.
 Amazon ECS using Docker Compose Amazon EKS JFrog Platform with PagerDuty DevOps Observability on EKS</description>
     </item>
     
     <item>
       <title>Download the Workshop Code</title>
-      <link>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/51_download_code.html</link>
+      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/51_download_code.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/51_download_code.html</guid>
+      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/51_download_code.html</guid>
       <description>The code is located at https://github.com/jfrogtraining/pagerduty-workshop GitHub repository. We will clone this repo locally in order to pull the required workshop files.
  Go to https://github.com/jfrogtraining/pagerduty-workshop and fork this repository to your GitHub account.
  In your Cloud9 terminal, clone this repository to your local directory with the following command.
@@ -180,20 +180,20 @@ git clone git@github.com:&amp;lt;github username&amp;gt;/pagerduty-workshop.git 
     
     <item>
       <title>Create Your EKS Cluster</title>
-      <link>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/52_create_eks_cluster.html</link>
+      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/52_create_eks_cluster.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/52_create_eks_cluster.html</guid>
+      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/52_create_eks_cluster.html</guid>
       <description>We will use the EKSCTL command line tool to create an Amazon Elastic Kubernetes (EKS) cluster. This powerful tool allows you to manage many aspects of your EKS cluster through simple commands. When using EKSCTL, you can still manage your cluster in the Amazon EKS dashboard in the AWS console.
 Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that you can use to run Kubernetes on AWS without needing to install, operate, and maintain your own Kubernetes control plane or nodes.</description>
     </item>
     
     <item>
       <title>Set up PagerDuty</title>
-      <link>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/53_set_up_pagerduty.html</link>
+      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/53_set_up_pagerduty.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/53_set_up_pagerduty.html</guid>
+      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/53_set_up_pagerduty.html</guid>
       <description>Next we will set up your PagerDuty Developer Platform. If you do not yet have a developer platform, you can sign up and get a free developer platform instance here.
 PagerDuty provides many ways for developers to integrate with their platform. You can learn more through their developer documentation.
   In your PagerDuty, go to Services &amp;gt; Service Directory. A service may represent an application, component, or team you wish to open incidents against.</description>
@@ -201,30 +201,30 @@ PagerDuty provides many ways for developers to integrate with their platform. Yo
     
     <item>
       <title>Set up our JFrog Pipelines Integrations</title>
-      <link>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/54_pipeline_integrations.html</link>
+      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/54_pipeline_integrations.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/54_pipeline_integrations.html</guid>
+      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/54_pipeline_integrations.html</guid>
       <description>Our CI/CD pipeline requires access to GitHub to pull our code, access to JFrog Artifactory to deploy our Docker image and access to AWS to deploy to EKS. We will set up JFrog Pipelines integrations to enable these.
 An Integration connects Pipelines to an external service/tool. Each integration type defines the endpoint, credentials and any other configuration detail required for Pipelines to exchange information with the service. All credential information is encrypted and held in secure storage, in conformance with best security practices.</description>
     </item>
     
     <item>
       <title>Update our Pipeline</title>
-      <link>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/55_update_pipeline.html</link>
+      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/55_update_pipeline.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/55_update_pipeline.html</guid>
+      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/55_update_pipeline.html</guid>
       <description>We need to make an update to our CI/CD pipeline in order to use your JFrog Platform instance. The CI/CD pipeline is defined in pipelines.yml. This pipeline file is parameterized with a values.yml file. We need to update this file.
  In your Cloud9 terminal, use the editor and view the pipelines.yml file. View and understand the steps. Note the parameterized values.  The last step in the pipeline, eks_deploy, deploys our application to the EKS cluster we created earlier.</description>
     </item>
     
     <item>
       <title>Build, Publish and Deploy to EKS</title>
-      <link>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/56_build_publish_deploy.html</link>
+      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/56_build_publish_deploy.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/56_build_publish_deploy.html</guid>
+      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/56_build_publish_deploy.html</guid>
       <description>In your JFrog Platform instance, go to Application &amp;gt; Pipelines &amp;gt; Pipeline Sources.  Click Add a pipeline source.
  Click Add Pipeline Source at the top right and select From YAML.  For SCM Provider Integration, select the github_integration that you created previously.
  For Repository Full Name, select your forked /pagerduty-workshop.
@@ -234,39 +234,39 @@ An Integration connects Pipelines to an external service/tool. Each integration 
     
     <item>
       <title>View Results in JFrog</title>
-      <link>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/57_view_results.html</link>
+      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/57_view_results.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/57_view_results.html</guid>
+      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/57_view_results.html</guid>
       <description>We have built and published our Docker image. Let&amp;rsquo;s view these results in the JFrog Platform.
  Go to your JFrog Platform instance and switch to the Packages view in Artifactory. Go to Artifactory ► Packages. Search for the name of the Docker image that was built in your workshop eks-workshop-app. Click on the Docker image listing.  This will show a list of the versions. Click on the latest version that was built.</description>
     </item>
     
     <item>
       <title>View Events in PagerDuty</title>
-      <link>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/58_view_pagerduty.html</link>
+      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/58_view_pagerduty.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/5_deploy_eks_pagerduty/58_view_pagerduty.html</guid>
+      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/58_view_pagerduty.html</guid>
       <description>We have&amp;hellip;</description>
     </item>
     
     <item>
       <title>Cleanup</title>
-      <link>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/cleanup.html</link>
+      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/cleanup.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/cleanup.html</guid>
+      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/cleanup.html</guid>
       <description>Your JFrog Platform Instance - The JFrog Platform instance that you used in this workshop will automatically be destroyed after the workshop. There isn&amp;rsquo;t anything you need to do. If you would like keep it, you can upgrade to one of the premium plans. Do this by clicking on the Upgrade button.  Amazon Resources
  Amazon ECS Resources - To cleanup your Amazon ECS resources, go to your npm-app-cluster in your Amazon ECS console and click Delete Cluster.</description>
     </item>
     
     <item>
       <title>Resources</title>
-      <link>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/resources.html</link>
+      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/resources.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/jfrog-platform-with-pagerduty/ee/resources.html</guid>
+      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/resources.html</guid>
       <description>JFrog Platform Documentation - The full documentation of the JFrog Platform, the universal, hybrid, end-to-end DevOps automation solution. It is designed to take you through all the JFrog Products. Including user, administration and developer guides, installation and upgrade procedures, system architecture and configuration, and working with the JFrog application. JFrog Academy - Learn more about the JFrog Platform at your own pace with JFrog Academy free courses taught by our experts.</description>
     </item>
     
