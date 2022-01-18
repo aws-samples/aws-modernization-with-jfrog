@@ -1,5 +1,5 @@
 #baseURL = "/"
-baseURL = "https://mitalibo.github.io/aws-modernization-with-jfrog/"
+baseURL = "https://jfrog-pagerduty-workshop.onrender.com/"
 languageCode = "en-US"
 defaultContentLanguage = "oyo"
 
