@@ -160,11 +160,11 @@
   </url><url>
     <loc>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/26_jfrog_free.html</loc>
   </url><url>
-    <loc>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/27_docker_repositories.html</loc>
+    <loc>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/28_docker_repositories.html</loc>
   </url><url>
-    <loc>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/28_xray_setup.html</loc>
+    <loc>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/27_pipelines_setup.html</loc>
   </url><url>
-    <loc>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/29_workshop_next_steps.html</loc>
+    <loc>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/29_xray_setup.html</loc>
   </url><url>
     <loc>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/3_deploy_ecs/31_download_code.html</loc>
     <xhtml:link
@@ -393,6 +393,8 @@
                 hreflang="ee"
                 href="https://mitalibo.github.io/aws-modernization-with-jfrog/ee/099_survey.html"
                 />
+  </url><url>
+    <loc>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/210_workshop_next_steps.html</loc>
   </url><url>
     <loc>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/categories.html</loc>
     <xhtml:link

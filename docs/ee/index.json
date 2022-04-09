@@ -116,7 +116,7 @@
 	"title": "Attach the IAM role to your Workspace",
 	"tags": [],
 	"description": "",
-	"content": " Follow this link to find your Cloud9 EC2 instance. Select the instance by clicking the checkbox, then choose Actions ► Security ► Modify IAM role.  Choose JFrog-Workshop-Admin from the IAM Role drop down, and click Save.   "
+	"content": " Follow this link to find your Cloud9 EC2 instance. Select the instance by clicking the checkbox, then choose Actions ► Security ► Modify IAM role.  Select your zone from top if that is not the one. Choose JFrog-Workshop-Admin from the IAM Role drop down, and click Save.   "
 },
 {
 	"uri": "https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/25_update_iam_settings.html",
@@ -133,25 +133,25 @@
 	"content": "If you do not have access to a JFrog Platform instance, use the JFrog Platform Cloud Free Tier to get your own JFrog Platform instance with Artifactory and Xray.\nWhen signing up for the JFrog Platform Cloud Free Tier, ensure that you select AWS and the US West 2 (Oregon) region.\n  JFrog Platform Cloud Free Tier   "
 },
 {
-	"uri": "https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/27_docker_repositories.html",
+	"uri": "https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/28_docker_repositories.html",
 	"title": "Set Up Docker Repositories",
 	"tags": [],
 	"description": "",
 	"content": " In your JFrog Platform instance at the top right, enable the drop down menu and select Quick Setup.\n On the Create Repositories dialog, choose Docker and click Next.\n Next, enter workshop for the Repositories Prefix.\n Click Create. This will create the following docker repositories:\n workshop-docker-local workshop-docker-remote workshop-docker   Local repositories are physical, locally-managed repositories into which you can deploy artifacts. These are repositories that are local to the JFrog Artifactory instance. A remote repository serves as a caching proxy for a repository managed at a remote URL (which may itself be another Artifactory remote repository). A virtual repository (or \u0026ldquo;repository group\u0026rdquo;) aggregates several repositories with the same package type under a common URL. A virtual repository can aggregate local and remote repositories.  Next, let\u0026rsquo;s create another docker repository to represent production images. Click the Add Repositories button and select Local Repository.\n Select Docker for the Package Type.\n Name this docker repository workshop-docker-prod-local. Click Save \u0026amp; Finish.\n Click on the Virtual tab under Repositories.\n Click on the workshop-docker virtual repository.\n Move the new workshop-docker-prod-local repository under Selected Repositories.\n Under Default Deployment Repository, select workshop-docker-prod-local as the default deployment repository. This means that image deployments from virtual repository workshop-docker will actually deploy from the local repository workshop-docker-prod-local.\n Click Save \u0026amp; Finish.\n Under the Local tab under Repositories, select the workshop-docker-local repository.\n Scroll down and check Enable Indexing in Xray. This tells Xray to automatically scan this repository.\n Click Save \u0026amp; Finish.\n  Congratulations! You have set up your Docker repositories. Now let\u0026rsquo;s configure our security policies for Xray.\n"
 },
 {
-	"uri": "https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/28_xray_setup.html",
+	"uri": "https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/27_pipelines_setup.html",
+	"title": "Set Up Pipelines",
+	"tags": [],
+	"description": "",
+	"content": "In your JFrog Platform instance, go to Application \u0026gt; Pipelines and follow the instructions to activate JFrog Pipelines. This will take a few minutes.\nNote: You might have to put your credit card info which is just for verification, it will not get charged.\nMove onto the next step while JFrog Pipelines activates.\n"
+},
+{
+	"uri": "https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/29_xray_setup.html",
 	"title": "Set Up Xray Security",
 	"tags": [],
 	"description": "",
 	"content": " In your JFrog Platform instance, go to Administration \u0026gt; Xray \u0026gt; Watches \u0026amp; Policies.\n Click Create a Policy.\n Call the security policy, High-Severity.\n Click on New Rule.\n Name the rule High-Severity and select High for the Minimal Severity. Click Save.\n Click Create to create this new security policy.\n Click on the Watches tab under Watches \u0026amp; Policies.\n Click on Set up a Watch.\n Name the new watch Docker-Scanning.\n Click Add Repositories.\n Move the repositories workshop-docker-local and workshop-docker-prod-local to the Included Repositories.\n Click Save.\n Click Manage Policies.\n Move the High-Severity policy to the Included Policy.\n Click Save.\n Click Create to create the new watch. This watch will scan the workshop-docker-local and workshop-docker-prod-local Docker repositories for new images and check for high severity security vulnerabilities.\n  JFrog Xray scans your artifacts, builds and release bundles for OSS components, and detects security vulnerabilities and licenses in your software components. Policies and Watches allow you to enforce your organization governance standards. Setup up your Policies and Watches to reflect standard governance behaviour specifications for your organization across your software components.\n "
-},
-{
-	"uri": "https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/29_workshop_next_steps.html",
-	"title": "Workshop Next Steps",
-	"tags": [],
-	"description": "",
-	"content": "You are now ready to build an application with the JFrog Platform. Please choose which AWS service you wish to deploy to.\nAmazon ECS using Docker Compose Amazon EKS JFrog Platform with PagerDuty DevOps Observability on EKS\n"
 },
 {
 	"uri": "https://mitalibo.github.io/aws-modernization-with-jfrog/ee/3_deploy_ecs/31_download_code.html",
@@ -242,7 +242,7 @@
 	"title": "Set up PagerDuty",
 	"tags": [],
 	"description": "",
-	"content": "Next we will set up your PagerDuty Developer Platform. If you do not yet have a developer platform, you can sign up and get a free developer platform instance here.\nPagerDuty provides many ways for developers to integrate with their platform. You can learn more through their developer documentation.\n  In your PagerDuty, go to Services \u0026gt; Service Directory. A service may represent an application, component, or team you wish to open incidents against. Services contain integrations, as well as determine the routing and incident settings for events triggered by integrations associated with the service.\n  We will create two services: (1) Xray Vulnerabilities and (2) JFrog Pipelines Events. Click **+ New Service **. Name the service Xray Vulnerabilities and click Next.  Choose Generate an Escalation Policy and click Next.  Choose Intelligent for the Alert Grouping and click Next.  For Integrations, search for JFrog Xray Notifications and click Create Service.  Copy the Integration URL for later.  Let\u0026rsquo;s now create a service for JFrog Pipelines and Artifactory events. Click **+ New Service **. Name the service Artifactory and Pipelines Events and click Next. Choose Generate an Escalation Policy and click Next. Choose Intelligent for the Alert Grouping and click Next. For Integrations, search and select JFrog Pipelines Changes and JFrog Artifactory Notifications click Create Service.  Copy the Integration Key for pipelines and Integration URL for artifactory to use later.   Congratulations! You have set up PagerDuty with the JFrog Xray and Pipelines integrations.\n"
+	"content": "Next we will set up your PagerDuty Developer Platform. If you do not yet have a developer platform, you can sign up and get a free developer platform instance here.\nPagerDuty provides many ways for developers to integrate with their platform. You can learn more through their developer documentation.\n  In your PagerDuty, go to Services \u0026gt; Service Directory. A service may represent an application, component, or team you wish to open incidents against. Services contain integrations, as well as determine the routing and incident settings for events triggered by integrations associated with the service.\n  We will create two services: (1) Xray Vulnerabilities and (2) JFrog Pipelines and Artifactory Events. Click **+ New Service **. Name the service Xray Vulnerabilities and click Next.  Choose Generate an Escalation Policy and click Next.  Choose Intelligent for the Alert Grouping and click Next.  For Integrations, search for JFrog Xray Notifications and click Create Service.  Copy the Integration URL for later.  Let\u0026rsquo;s now create a service for JFrog Pipelines and Artifactory events. Click **+ New Service **. Name the service Artifactory and Pipelines Events and click Next. Choose Generate an Escalation Policy and click Next. Choose Intelligent for the Alert Grouping and click Next. For Integrations, search and select JFrog Pipelines Changes and JFrog Artifactory Notifications click Create Service.  Copy the Integration Key for pipelines and Integration URL for artifactory to use later.   Congratulations! You have set up PagerDuty with the JFrog Xray and Pipelines integrations.\n"
 },
 {
 	"uri": "https://mitalibo.github.io/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/54_pipeline_integrations.html",
@@ -285,6 +285,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Survey To help us improve this product, please take some time to fill out the  Survey  "
+},
+{
+	"uri": "https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/210_workshop_next_steps.html",
+	"title": "Workshop Next Steps",
+	"tags": [],
+	"description": "",
+	"content": "You are now ready to build an application with the JFrog Platform. Please choose which AWS service you wish to deploy to.\nAmazon ECS using Docker Compose Amazon EKS JFrog Platform with PagerDuty DevOps Observability on EKS\n"
 },
 {
 	"uri": "https://mitalibo.github.io/aws-modernization-with-jfrog/ee/categories.html",

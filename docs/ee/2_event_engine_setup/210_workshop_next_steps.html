@@ -9,7 +9,7 @@
 
     <link rel="icon" href="https://mitalibo.github.io/aws-modernization-with-jfrog/images/favicon.png" type="image/png">
 
-    <title>Create Your EKS Cluster :: AWS Hosted Event Setup</title>
+    <title>Workshop Next Steps :: AWS Hosted Event Setup</title>
 
     
     <link href="https://mitalibo.github.io/aws-modernization-with-jfrog/css/nucleus.css?1649485424" rel="stylesheet">
@@ -60,7 +60,7 @@
 <link rel="stylesheet" href="https://mitalibo.github.io/aws-modernization-with-jfrog/css/mp-devops-series.css">
 <link rel="stylesheet" href="https://pages.awscloud.com/js/forms2/css/forms2.css">
   </head>
-  <body class="" data-url="https://mitalibo.github.io/aws-modernization-with-jfrog/ee/4_deploy_eks/42_create_eks_cluster.html">
+  <body class="" data-url="https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/210_workshop_next_steps.html">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -264,7 +264,7 @@
   
     
     <li data-nav-id="/ee/2_event_engine_setup.html" title="AWS Hosted Event Setup" class="dd-item 
-        
+        parent
         
         
         ">
@@ -481,7 +481,7 @@
  
   
     
-      <li data-nav-id="/ee/2_event_engine_setup/210_workshop_next_steps.html" title="Workshop Next Steps" class="dd-item ">
+      <li data-nav-id="/ee/2_event_engine_setup/210_workshop_next_steps.html" title="Workshop Next Steps" class="dd-item active">
         <a href="https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/210_workshop_next_steps.html">
         <b>2.10 </b>Workshop Next Steps
         <i class="fas fa-check read-icon"></i>
@@ -651,7 +651,7 @@
   
     
     <li data-nav-id="/ee/4_deploy_eks.html" title="JFrog Platform with EKS" class="dd-item 
-        parent
+        
         
         
         ">
@@ -721,7 +721,7 @@
  
   
     
-      <li data-nav-id="/ee/4_deploy_eks/42_create_eks_cluster.html" title="Create Your EKS Cluster" class="dd-item active">
+      <li data-nav-id="/ee/4_deploy_eks/42_create_eks_cluster.html" title="Create Your EKS Cluster" class="dd-item ">
         <a href="https://mitalibo.github.io/aws-modernization-with-jfrog/ee/4_deploy_eks/42_create_eks_cluster.html">
         <b>4.2 </b>Create Your EKS Cluster
         <i class="fas fa-check read-icon"></i>
@@ -1075,23 +1075,11 @@
               
               
                   
-                    
-                    
-                      <option id="oyo" value="https://mitalibo.github.io/aws-modernization-with-jfrog/4_deploy_eks/42_create_eks_cluster.html">On Your Own Setup</option>
-                    
-                  
-              
-                  
-              
-          
-              
-              
-                  
               
                   
                     
                     
-                      <option id="ee" value="https://mitalibo.github.io/aws-modernization-with-jfrog/ee/4_deploy_eks/42_create_eks_cluster.html" selected>AWS Hosted Event Setup</option>
+                      <option id="ee" value="https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/210_workshop_next_steps.html" selected>AWS Hosted Event Setup</option>
                     
                   
               
@@ -1160,7 +1148,7 @@
             
           
           
-            <a href='https://mitalibo.github.io/aws-modernization-with-jfrog/ee/'>JFrog DevOps Modernization Workshop</a> > <a href='https://mitalibo.github.io/aws-modernization-with-jfrog/ee/4_deploy_eks.html'>JFrog Platform with EKS</a> > Create Your EKS Cluster
+            <a href='https://mitalibo.github.io/aws-modernization-with-jfrog/ee/'>JFrog DevOps Modernization Workshop</a> > <a href='https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup.html'>AWS Hosted Event Setup</a> > Workshop Next Steps
           
         
           
@@ -1189,61 +1177,19 @@
           
             <h1>
               
-              Create Your EKS Cluster
+              Workshop Next Steps
             </h1>
           
 
         
 
 
-<p>We will use the <a href="https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html" target="_blank">EKSCTL command line tool</a> to create an <a href="https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html" target="_blank">Amazon Elastic Kubernetes (EKS)</a> cluster. This powerful tool allows you to manage many aspects of your EKS cluster through simple commands. When using EKSCTL, you can still manage your cluster in the Amazon EKS dashboard in the AWS console.</p>
+<p>You are now ready to build an application with the JFrog Platform. Please choose which AWS service you wish to deploy to.</p>
 
+<p><a href="https://mitalibo.github.io/aws-modernization-with-jfrog/3_deploy_ecs.html" class="credit-btn">Amazon ECS using Docker Compose</a>    <a href="https://mitalibo.github.io/aws-modernization-with-jfrog/4_deploy_eks.html" class="credit-btn">Amazon EKS</a> <a href="https://mitalibo.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty.html" class="credit-btn">JFrog Platform with PagerDuty DevOps Observability on EKS</a></p>
 
-<div class="notices info" ><p>Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that you can use to run Kubernetes on AWS without needing to install, operate, and maintain your own Kubernetes control plane or nodes. Kubernetes is an open-source system for automating the deployment, scaling, and management of containerized applications. Amazon Elastic Kubernetes Service (Amazon EKS) gives you the flexibility to start, run, and scale Kubernetes applications in the AWS cloud or on-premises. Amazon EKS helps you provide highly-available and secure clusters and automates key tasks such as patching, node provisioning, and updates.</p>
-</div>
+<p><img src="https://mitalibo.github.io/aws-modernization-with-jfrog/images/CICD-detail-diagram.png" alt="Detail Diagram" /></p>
 
-
-<ol>
-<li>In your Cloud9 terminal, follow these <a href="https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html" target="_blank">instructions</a> to install EKSCTL on Linux.</li>
-<li>Follow these <a href="https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html" target="_blank">instructions</a> to install KUBECTL on Linux.</li>
-
-<li><p>Next, execute the following command to create your EKS cluster. It is that easy! This will take a few minutes.
-<code>
-eksctl create cluster --name jfrogeksworkshop --region us-west-2 --managed
-</code></p></li>
-
-<li><p>Update your kubeconfig to add the credentials for your new cluster.
-<code>
-aws eks update-kubeconfig --name jfrogeksworkshop --region us-west-2
-</code></p></li>
-
-<li><p>Execute the following command to print out your kubeconfig. Copy the output to your notepad. We will need this later to allow JFrog Pipeline to access the cluster.
-<code>
-cat /home/ec2-user/.kube/config
-</code>
-<img src="https://mitalibo.github.io/aws-modernization-with-jfrog/images/kubeconfig.png" alt="Kubeconfig" /></p></li>
-
-<li><p>Execute the following command to create a namespace where we will deploy our application.
-<code>
-kubectl create namespace aws-eks-workshop
-</code></p></li>
-
-<li><p>In your JFrog Platform instance, go to <strong>Administration</strong> &gt; <strong>Identity and Access</strong> &gt; <strong>Access Tokens</strong>.</p></li>
-
-<li><p>Click <strong>+ Generate Admin Token</strong>.
-<img src="https://mitalibo.github.io/aws-modernization-with-jfrog/images/generate-access-token.png" alt="Generate Admin Token" /></p></li>
-
-<li><p>Leave the defaults and click <strong>Generate</strong>.
-<img src="https://mitalibo.github.io/aws-modernization-with-jfrog/images/generate-access-token.png" alt="Generate Admin Token" /></p></li>
-
-<li><p>Copy the <em>Username</em> and <em>Access Token</em>.</p></li>
-
-<li><p>Go back to your Cloud9 terminal, and execute the following command to create an image pull secret that will be used to pull and deploy your image.</p>
-<pre tabindex="0"><code>kubectl create secret docker-registry artifactory-secret --namespace aws-eks-workshop --docker-server=&lt;your JFrog Platform instance domain&gt; --docker-username=&lt;username from above&gt; --docker-password=&lt;token from above&gt;</code></pre></li>
-</ol>
-
-<p>Example:</p>
-<pre tabindex="0"><code>   kubectl create secret docker-registry artifactory-secret --namespace aws-eks-workshop --docker-server=myjfrog.jfrog.io --docker-username=jefff --docker-password=xxxxx...</code></pre>
 
 <footer class="footline">
 	
@@ -1552,6 +1498,106 @@ kubectl create namespace aws-eks-workshop
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                 
                 
 
@@ -1631,106 +1677,6 @@ kubectl create namespace aws-eks-workshop
             
             
                 
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -1946,13 +1892,6 @@ kubectl create namespace aws-eks-workshop
 
 	 
 	 
-		
-			<a class="nav nav-prev" href="https://mitalibo.github.io/aws-modernization-with-jfrog/ee/4_deploy_eks/41_download_code.html" title="Download the Workshop Code"> <i class="fa fa-chevron-left"></i></a>
-		
-		
-			<a class="nav nav-next" href="https://mitalibo.github.io/aws-modernization-with-jfrog/ee/4_deploy_eks/43_pipeline_integrations.html" title="Set up our JFrog Pipelines Integrations" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
-		
-	
     </div>
 
     </section>

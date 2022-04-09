@@ -15,7 +15,7 @@ PagerDuty provides many ways for developers to integrate with their platform. Yo
 {{% notice info %}}
 A service may represent an application, component, or team you wish to open incidents against. Services contain integrations, as well as determine the routing and incident settings for events triggered by integrations associated with the service.
 {{% /notice %}}
-2. We will create two services: (1) Xray Vulnerabilities and (2) JFrog Pipelines Events. Click **+ New Service **.
+2. We will create two services: (1) Xray Vulnerabilities and (2) JFrog Pipelines and Artifactory Events. Click **+ New Service **.
 3. Name the service _Xray Vulnerabilities_ and click **Next**.
    ![New PD Service](/images/newpdservice.png)
 4. Choose **Generate an Escalation Policy** and click **Next**.

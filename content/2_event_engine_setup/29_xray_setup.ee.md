@@ -1,8 +1,8 @@
 ﻿---
 title: "Set Up Xray Security"
 chapter: false
-weight: 28
-pre: "<b>2.8 </b>"
+weight: 29
+pre: "<b>2.9 </b>"
 ---
 
 1. In your JFrog Platform instance, go to **Administration** > **Xray** > **Watches & Policies**.

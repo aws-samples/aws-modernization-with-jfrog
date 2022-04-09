@@ -112,7 +112,7 @@ JFrog Artifactory is an Artifact Repository Manager that fully supports software
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/24_attach_role_workspace.html</guid>
-      <description> Follow this link to find your Cloud9 EC2 instance. Select the instance by clicking the checkbox, then choose Actions ► Security ► Modify IAM role.  Choose JFrog-Workshop-Admin from the IAM Role drop down, and click Save.   </description>
+      <description> Follow this link to find your Cloud9 EC2 instance. Select the instance by clicking the checkbox, then choose Actions ► Security ► Modify IAM role.  Select your zone from top if that is not the one. Choose JFrog-Workshop-Admin from the IAM Role drop down, and click Save.   </description>
     </item>
     
     <item>
@@ -140,10 +140,10 @@ When signing up for the JFrog Platform Cloud Free Tier, ensure that you select A
     
     <item>
       <title>Set Up Docker Repositories</title>
-      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/27_docker_repositories.html</link>
+      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/28_docker_repositories.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/27_docker_repositories.html</guid>
+      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/28_docker_repositories.html</guid>
       <description>In your JFrog Platform instance at the top right, enable the drop down menu and select Quick Setup.
  On the Create Repositories dialog, choose Docker and click Next.
  Next, enter workshop for the Repositories Prefix.
@@ -152,11 +152,22 @@ When signing up for the JFrog Platform Cloud Free Tier, ensure that you select A
     </item>
     
     <item>
-      <title>Set Up Xray Security</title>
-      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/28_xray_setup.html</link>
+      <title>Set Up Pipelines</title>
+      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/27_pipelines_setup.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/28_xray_setup.html</guid>
+      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/27_pipelines_setup.html</guid>
+      <description>In your JFrog Platform instance, go to Application &amp;gt; Pipelines and follow the instructions to activate JFrog Pipelines. This will take a few minutes.
+Note: You might have to put your credit card info which is just for verification, it will not get charged.
+Move onto the next step while JFrog Pipelines activates.</description>
+    </item>
+    
+    <item>
+      <title>Set Up Xray Security</title>
+      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/29_xray_setup.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/29_xray_setup.html</guid>
       <description>In your JFrog Platform instance, go to Administration &amp;gt; Xray &amp;gt; Watches &amp;amp; Policies.
  Click Create a Policy.
  Call the security policy, High-Severity.
@@ -165,16 +176,6 @@ When signing up for the JFrog Platform Cloud Free Tier, ensure that you select A
  Click Create to create this new security policy.
  Click on the Watches tab under Watches &amp;amp; Policies.
  Click on Set up a Watch.</description>
-    </item>
-    
-    <item>
-      <title>Workshop Next Steps</title>
-      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/29_workshop_next_steps.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/29_workshop_next_steps.html</guid>
-      <description>You are now ready to build an application with the JFrog Platform. Please choose which AWS service you wish to deploy to.
-Amazon ECS using Docker Compose Amazon EKS JFrog Platform with PagerDuty DevOps Observability on EKS</description>
     </item>
     
     <item>
@@ -374,6 +375,16 @@ An Integration connects Pipelines to an external service/tool. Each integration 
       
       <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/5_deploy_eks_pagerduty/58_view_pagerduty.html</guid>
       <description>Go to your Pagerduty instance, navigate to Services &amp;gt; Service Directory and search and select Artifactory and Pipelines evnts. You should be able to see all the change events and notifications from Pipelines and Artifactory.  Now click on any pipeline event. This will give you information about that Jfrog pipeline event and if you click on View in Build Pipeline , it will take you to that particular pipeline in JFrog instance.</description>
+    </item>
+    
+    <item>
+      <title>Workshop Next Steps</title>
+      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/210_workshop_next_steps.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/210_workshop_next_steps.html</guid>
+      <description>You are now ready to build an application with the JFrog Platform. Please choose which AWS service you wish to deploy to.
+Amazon ECS using Docker Compose Amazon EKS JFrog Platform with PagerDuty DevOps Observability on EKS</description>
     </item>
     
     <item>
