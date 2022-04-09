@@ -1,8 +1,8 @@
 ---
 title: "Download the Workshop Code"
 chapter: false
-weight: 31
-pre: "<b>3.1 </b>"
+weight: 51
+pre: "<b>5.1 </b>"
 ---
 
 The code is located at [https://github.com/jfrogtraining/pagerduty-workshop](https://github.com/jfrogtraining/pagerduty-workshop) GitHub repository. We will clone this repo locally in order to pull the required workshop files.

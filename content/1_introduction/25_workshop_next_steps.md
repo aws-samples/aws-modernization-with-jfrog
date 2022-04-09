@@ -10,4 +10,5 @@ Before we get started on building, publishing and deploying our NPM application,
 - Set up our AWS account and IAM roles.
 - Provision a Cloud9 IDE instance.
 - Get and prepare our JFrog Platform instance.
+- Get and Setup Pagerduty instance.
 - Clone our workshop GitHub repository which contains our code.

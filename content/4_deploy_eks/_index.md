@@ -1,7 +1,7 @@
 ---
 title: "JFrog Platform with EKS"
 chapter: true
-draft: true
+draft: false
 weight: 4
 pre: "<b>4 </b>"
 ---

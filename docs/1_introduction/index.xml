@@ -2,65 +2,65 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introduction on On Your Own Setup</title>
-    <link>http://localhost:1313/aws-modernization-with-jfrog/1_introduction.html</link>
+    <link>https://mitalibo.github.io/aws-modernization-with-jfrog/1_introduction.html</link>
     <description>Recent content in Introduction on On Your Own Setup</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language><atom:link href="http://localhost:1313/aws-modernization-with-jfrog/1_introduction/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language><atom:link href="https://mitalibo.github.io/aws-modernization-with-jfrog/1_introduction/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DevOps in the Cloud</title>
-      <link>http://localhost:1313/aws-modernization-with-jfrog/1_introduction/20_devops_in_cloud.html</link>
+      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/1_introduction/20_devops_in_cloud.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-modernization-with-jfrog/1_introduction/20_devops_in_cloud.html</guid>
+      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/1_introduction/20_devops_in_cloud.html</guid>
       <description>The goal of DevOps is to allow your development teams to deliver quality software faster to your customers through continuous process improvement, leveraging the best of breed development tools and infrastructure, and utilizing software development and IT operations best practices. Your team must deliver software faster than your competitors in order to get features and fixes to your customers sooner. JFrog terms this ideal as liquid software.
  Looking forward, as release cycles get shorter and microservices get smaller, we can imagine a world in which at any one time, our systems’ software is being updated.</description>
     </item>
     
     <item>
       <title>Continuous Integration and Delivery</title>
-      <link>http://localhost:1313/aws-modernization-with-jfrog/1_introduction/21_continuous_integration_and_delivery.html</link>
+      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/1_introduction/21_continuous_integration_and_delivery.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-modernization-with-jfrog/1_introduction/21_continuous_integration_and_delivery.html</guid>
+      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/1_introduction/21_continuous_integration_and_delivery.html</guid>
       <description>Continuous integration and delivery (CI/CD) is the process for which your software components are built from code, integrated, tested, released, deployed and ultimately delivered to end-users. CI/CD pipelines are the software assembly line that orchestrates the building of your software. This CI/CD pipeline line requires infrastructure. Cloud computing has allowed this infrastructure to become dynamic and ephemeral. On cloud infrastructure, your CI/CD pipelines scale up and down to meet your software delivery demands.</description>
     </item>
     
     <item>
       <title>Binary Repository Management</title>
-      <link>http://localhost:1313/aws-modernization-with-jfrog/1_introduction/22_binary_repository_management.html</link>
+      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/1_introduction/22_binary_repository_management.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-modernization-with-jfrog/1_introduction/22_binary_repository_management.html</guid>
+      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/1_introduction/22_binary_repository_management.html</guid>
       <description>A Binary Repository Manager is a software hub that simplifies the development process for different teams across an organization by helping them to collaborate on building coherent and compatible software components. It does this by centralizing the management of all the binary artifacts generated and used by the organization, thereby overcoming the incredible complexity arising from diverse binary artifact types, their position in the overall workflow and the set of dependencies between them.</description>
     </item>
     
     <item>
       <title>DevSecOps</title>
-      <link>http://localhost:1313/aws-modernization-with-jfrog/1_introduction/23_dev_sec_ops.html</link>
+      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/1_introduction/23_dev_sec_ops.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-modernization-with-jfrog/1_introduction/23_dev_sec_ops.html</guid>
+      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/1_introduction/23_dev_sec_ops.html</guid>
       <description>Any security issue identified by a security scanning may be reviewed by a small security team that may lack the technical knowledge. This challenge can be reduced by shifting left to the developer and operations teams, making them also responsible for security and compliance. This moves security earlier in the software delivery process. Source code, dependency and artifact security scanning are some examples of moving security into the development process. Implementing the identification of security issues earlier in the CI/CD pipeline, as well as automating security and compliance policies in the Software Development Lifecycle (SDLC), rather than using manual processes, is crucial.</description>
     </item>
     
     <item>
       <title>JFrog Platform for DevOps in the Cloud</title>
-      <link>http://localhost:1313/aws-modernization-with-jfrog/1_introduction/24_jfrog_platform_overview.html</link>
+      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/1_introduction/24_jfrog_platform_overview.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-modernization-with-jfrog/1_introduction/24_jfrog_platform_overview.html</guid>
+      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/1_introduction/24_jfrog_platform_overview.html</guid>
       <description>The JFrog Platform is designed to meet the growing needs of companies to develop and distribute software in the cloud. It provides DevOps teams with the tools needed to create, manage, secure and deploy software with ease. These tools cover everything from continuous integration and delivery (CI/CD), binary repository management, artifact maturity, security and vulnerability protection (DevSecOps), release management, analytics and distribution.
 JFrog Artifactory is an Artifact Repository Manager that fully supports software packages created by any language or technology.</description>
     </item>
     
     <item>
       <title>Workshop Setup</title>
-      <link>http://localhost:1313/aws-modernization-with-jfrog/1_introduction/25_workshop_next_steps.html</link>
+      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/1_introduction/25_workshop_next_steps.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-modernization-with-jfrog/1_introduction/25_workshop_next_steps.html</guid>
+      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/1_introduction/25_workshop_next_steps.html</guid>
       <description>Before we get started on building, publishing and deploying our NPM application, we must set up our workshop environment. In this setup section, we will:
- Set up our AWS account and IAM roles. Provision a Cloud9 IDE instance. Get and prepare our JFrog Platform instance. Clone our workshop GitHub repository which contains our code.  </description>
+ Set up our AWS account and IAM roles. Provision a Cloud9 IDE instance. Get and prepare our JFrog Platform instance. Get and Setup Pagerduty instance. Clone our workshop GitHub repository which contains our code.  </description>
     </item>
     
   </channel>

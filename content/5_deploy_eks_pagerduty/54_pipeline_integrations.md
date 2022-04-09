@@ -1,8 +1,8 @@
 ---
 title: "Set up our JFrog Pipelines Integrations"
 chapter: false
-weight: 34
-pre: "<b>3.4 </b>"
+weight: 54
+pre: "<b>5.4 </b>"
 ---
 
 Our CI/CD pipeline requires access to GitHub to pull our code, access to JFrog Artifactory to deploy our Docker image and access to AWS to deploy to EKS. We will set up JFrog Pipelines integrations to enable these.
@@ -107,6 +107,13 @@ kubectl edit -n kube-system configmap/aws-auth
 44. Click **Save** to save the rule.
     ![PagerDuty Xray Webhook](/images/pdxraywebhookrule.png)
 45. Click **Save** to save the policy.
+46. Similarly, now create a webhook for artifactory also. Go to **Administration** > **General** > **Webhooks** and click on **New Webhook**.
+47. Enter _Artifactory Pagerduty Docker_ for the **Webhook Name**
+48. Enter the PagerDuty Artifactory Integration URL for the **URL** and select **Docker** from the **Events** and check all docker events.
+    ![PagerDuty Artifactory Docker Webhook](/images/pd-art-web.png)
+49. Repeat steps **46-48** to create one more webhook _Artifactory Pagerduty Artifact_ for the **events** Artifacts.
+
+
     
 
 Congratulations! We have created the integrations that are required for our CI/CD pipeline.

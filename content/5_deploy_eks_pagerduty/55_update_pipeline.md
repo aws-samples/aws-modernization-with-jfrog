@@ -1,8 +1,8 @@
 ---
 title: "Update our Pipeline"
 chapter: false
-weight: 35
-pre: "<b>3.5 </b>"
+weight: 55
+pre: "<b>5.5 </b>"
 ---
 
 We need to make an update to our CI/CD pipeline in order to use your JFrog Platform instance. The CI/CD pipeline is defined in [pipelines.yml](https://github.com/jfrogtraining/pagerduty-workshop/blob/master/pipelines.yml). This pipeline file is parameterized with a [values.yml](https://github.com/jfrogtraining/pagerduty-workshop/blob/master/values.yml) file. We need to update this file.

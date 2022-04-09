@@ -1,8 +1,8 @@
 ---
 title: "Build, Publish and Deploy to EKS"
 chapter: false
-weight: 36
-pre: "<b>3.6 </b>"
+weight: 56
+pre: "<b>5.6 </b>"
 ---
 
 1. In your JFrog Platform instance, go to **Application** > **Pipelines** > **Pipeline Sources**.

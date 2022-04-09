@@ -1,20 +1,19 @@
 ---
 title: "View Results in JFrog"
 chapter: false
-weight: 37
-pre: "<b>3.7 </b>"
+weight: 57
+pre: "<b>5.7 </b>"
 ---
 
 We have built and published our Docker image. Let's view these results in the JFrog Platform.
 
 1. Go to your JFrog Platform instance and switch to the **Packages** view in Artifactory. Go to **Artifactory** ► **Packages**.
-2. Search for the name of the Docker image that was built in your workshop ```eks-workshop-app```.
+2. Search for the name of the Docker image that was built in your workshop ```pagerduty-workshop-app```.
 3. Click on the Docker image listing.
-   ![Npm App Package](/images/npm-app-package.png)
 4. This will show a list of the versions. Click on the _latest_ version that was built.
-   ![Npm Build Published Modules](/images/npm-app-versions.png)
+   ![Npm App Package](/images/jpd-package-app.png)
 5. In the **Xray Data** tab, view the security violations. License violations are available in the JFrog Platform Pro and Enterprise tiers.
-   ![Npm Build Xray Data](/images/npm-build-xray-data.png)
+   ![Npm Build Xray Data](/images/art-xray-tab.png)
 6. Click on any violation to see the details and impact in the **Issue Details** tab.
    ![Npm Build Xray Detail](/images/npm-build-xray-detail.png)
 7. Scroll down to the **References** section to access links to documentation that can help you remediate the issue.

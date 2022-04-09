@@ -1,9 +1,9 @@
 #baseURL = "/"
-baseURL = "https://jfrog-pagerduty-workshop.onrender.com/"
+baseURL = "https://mitalibo.github.io/aws-modernization-with-jfrog/"
 languageCode = "en-US"
 defaultContentLanguage = "oyo"
 
-title = "JFrog Pagerduty DevOps Modernization Workshop"
+title = "JFrog Pagerduty DevOps Modernization with AWS Workshop"
 theme = "hugo-theme-learn"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= "false"
@@ -44,7 +44,7 @@ canonifyurls = true
   # Order sections in menu by "weight" or "title". Default to "weight"
   ordersectionsby = "weight"
   # Change default color scheme with a variant one. Can be "red", "blue", "green".
-  themeVariant = "green"
+  themeVariant = "mine"
   assetDir = "static"
 
 [[menu.shortcuts]]
@@ -81,6 +81,6 @@ weight = 1
 languageName = "On Your Own Setup"
 
 [Languages.ee]
-title = "Pagerduty Hosted Event Setup"
+title = "AWS Hosted Event Setup"
 weight = 2
-languageName = "Pagerduty Hosted Event Setup" 
+languageName = "AWS Hosted Event Setup" 

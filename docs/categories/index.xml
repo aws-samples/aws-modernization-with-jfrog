@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on On Your Own Setup</title>
-    <link>http://localhost:1313/aws-modernization-with-jfrog/categories.html</link>
+    <link>https://mitalibo.github.io/aws-modernization-with-jfrog/categories.html</link>
     <description>Recent content in Categories on On Your Own Setup</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language><atom:link href="http://localhost:1313/aws-modernization-with-jfrog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language><atom:link href="https://mitalibo.github.io/aws-modernization-with-jfrog/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

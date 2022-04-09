@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AWS Hosted Event Setup on Pagerduty Hosted Event Setup</title>
-    <link>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup.html</link>
-    <description>Recent content in AWS Hosted Event Setup on Pagerduty Hosted Event Setup</description>
+    <title>AWS Hosted Event Setup</title>
+    <link>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup.html</link>
+    <description>Recent content on AWS Hosted Event Setup</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language><atom:link href="http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language><atom:link href="https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AWS Event: Create an AWS account</title>
-      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/21_aws_event_account.html</link>
+      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/21_aws_event_account.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/21_aws_event_account.html</guid>
+      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/21_aws_event_account.html</guid>
       <description>Only complete this section if you are running the workshop through an AWS hosted event.
  For an AWS hosted event, you are provided with an AWS account through the AWS Event Engine service using a 12-digit hash by event staff. This is your unique access code.
 1 . Go to https://dashboard.eventengine.run/.
@@ -21,38 +21,38 @@
     
     <item>
       <title>Set up your Cloud9 IDE</title>
-      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/22_cloud9.html</link>
+      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/22_cloud9.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/22_cloud9.html</guid>
+      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/22_cloud9.html</guid>
       <description>AWS Cloud9 is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser. It includes a code editor, debugger, and terminal. Cloud9 comes prepackaged with essential tools for popular programming languages, including JavaScript, Python, PHP, and more, so you don’t need to install files or configure your development machine to start new projects.
  Within the AWS console, use the region drop list to select us-west-2 (Oregon).</description>
     </item>
     
     <item>
       <title>Create an IAM role for your workspace</title>
-      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/23_create_role.html</link>
+      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/23_create_role.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/23_create_role.html</guid>
+      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/23_create_role.html</guid>
       <description> Follow this link to create an IAM role with Administrator access. Confirm that AWS service and EC2 are selected, then click Next to view permissions. Confirm that AdministratorAccess is checked, then click Next through to Review. Enter JFrog-Workshop-Admin for the role name. Click Create Role.   </description>
     </item>
     
     <item>
       <title>Attach the IAM role to your Workspace</title>
-      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/24_attach_role_workspace.html</link>
+      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/24_attach_role_workspace.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/24_attach_role_workspace.html</guid>
+      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/24_attach_role_workspace.html</guid>
       <description> Follow this link to find your Cloud9 EC2 instance. Select the instance by clicking the checkbox, then choose Actions ► Security ► Modify IAM role.  Choose JFrog-Workshop-Admin from the IAM Role drop down, and click Save.   </description>
     </item>
     
     <item>
       <title>Update IAM settings for your Workspace</title>
-      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/25_update_iam_settings.html</link>
+      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/25_update_iam_settings.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/25_update_iam_settings.html</guid>
+      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/25_update_iam_settings.html</guid>
       <description>Return to your Cloud9 workspace and click the gear icon (in top right corner). Select AWS Settings. Turn off AWS managed temporary credentials. Close the Preferences tab.  Copy and run the shell commands below in your Cloud9 terminal. These shell commands will:
    Install jq- jq is a command-line tool for parsing JSON
  Ensure temporary credentials aren’t already in place.
@@ -61,10 +61,10 @@
     
     <item>
       <title>Get a Free JFrog Platform Instance</title>
-      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/26_jfrog_free.html</link>
+      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/26_jfrog_free.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/26_jfrog_free.html</guid>
+      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/26_jfrog_free.html</guid>
       <description>If you do not have access to a JFrog Platform instance, use the JFrog Platform Cloud Free Tier to get your own JFrog Platform instance with Artifactory and Xray.
 When signing up for the JFrog Platform Cloud Free Tier, ensure that you select AWS and the US West 2 (Oregon) region.
   JFrog Platform Cloud Free Tier   </description>
@@ -72,10 +72,10 @@ When signing up for the JFrog Platform Cloud Free Tier, ensure that you select A
     
     <item>
       <title>Set Up Docker Repositories</title>
-      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/27_docker_repositories.html</link>
+      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/27_docker_repositories.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/27_docker_repositories.html</guid>
+      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/27_docker_repositories.html</guid>
       <description>In your JFrog Platform instance at the top right, enable the drop down menu and select Quick Setup.
  On the Create Repositories dialog, choose Docker and click Next.
  Next, enter workshop for the Repositories Prefix.
@@ -85,10 +85,10 @@ When signing up for the JFrog Platform Cloud Free Tier, ensure that you select A
     
     <item>
       <title>Set Up Xray Security</title>
-      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/28_xray_setup.html</link>
+      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/28_xray_setup.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/28_xray_setup.html</guid>
+      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/28_xray_setup.html</guid>
       <description>In your JFrog Platform instance, go to Administration &amp;gt; Xray &amp;gt; Watches &amp;amp; Policies.
  Click Create a Policy.
  Call the security policy, High-Severity.
@@ -101,10 +101,10 @@ When signing up for the JFrog Platform Cloud Free Tier, ensure that you select A
     
     <item>
       <title>Workshop Next Steps</title>
-      <link>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/29_workshop_next_steps.html</link>
+      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/29_workshop_next_steps.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/aws-modernization-with-jfrog/ee/2_event_engine_setup/29_workshop_next_steps.html</guid>
+      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/ee/2_event_engine_setup/29_workshop_next_steps.html</guid>
       <description>You are now ready to build an application with the JFrog Platform. Please choose which AWS service you wish to deploy to.
 Amazon ECS using Docker Compose Amazon EKS JFrog Platform with PagerDuty DevOps Observability on EKS</description>
     </item>

@@ -1,8 +1,8 @@
 ---
 title: "Create Your EKS Cluster"
 chapter: false
-weight: 32
-pre: "<b>3.2 </b>"
+weight: 52
+pre: "<b>5.2 </b>"
 ---
 
 We will use the [EKSCTL command line tool](https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html) to create an [Amazon Elastic Kubernetes (EKS)](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html) cluster. This powerful tool allows you to manage many aspects of your EKS cluster through simple commands. When using EKSCTL, you can still manage your cluster in the Amazon EKS dashboard in the AWS console.

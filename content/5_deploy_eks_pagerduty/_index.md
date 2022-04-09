@@ -2,8 +2,8 @@
 title: "JFrog Platform with PagerDuty DevOps Observability with EKS"
 chapter: true
 draft: false
-weight: 3
-pre: "<b>3 </b>"
+weight: 5
+pre: "<b>5 </b>"
 ---
 
 # JFrog Platform with PagerDuty DevOps Observability with EKS
