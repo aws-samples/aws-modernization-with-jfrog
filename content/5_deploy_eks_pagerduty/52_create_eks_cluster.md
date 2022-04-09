@@ -51,6 +51,6 @@ Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that you can
    Example:
    
    ```
-   kubectl create secret docker-registry artifactory-secret --namespace workshop --docker-server=myjfrog.jfrog.io --docker-username=jefff --docker-password=xxxxx...
+   kubectl create secret docker-registry artifactory-secret --namespace workshop --docker-server=myjfrog.jfrog.io --docker-username=mitalib --docker-password=xxxxx...
    ```
 

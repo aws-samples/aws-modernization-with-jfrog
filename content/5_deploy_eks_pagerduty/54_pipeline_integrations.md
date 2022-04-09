@@ -66,6 +66,14 @@ aws iam create-access-key --user-name workshopuser
 kubectl edit -n kube-system configmap/aws-auth
 ```
 17. Add the **MapUsers** section as shown in highlighted red box
+    ```
+    mapusers: |
+      - userarn: arn:aws:iam::<id>:user/workshopuser
+        username: workshopuser
+        groups: 
+          - system:masters
+    ```
+    
     ![AWS ConfigMap](/images/aws-edit-configmap.png)
 
 18. Go back to your JFrog Platform instance and go to **Administration** > **Pipelines** > **Integrations**.
