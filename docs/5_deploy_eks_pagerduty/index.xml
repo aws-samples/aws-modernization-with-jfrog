@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JFrog Platform with PagerDuty DevOps Observability with EKS on On Your Own Setup</title>
-    <link>https://mitalibo.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty.html</link>
+    <link>//localhost:1313/5_deploy_eks_pagerduty.html</link>
     <description>Recent content in JFrog Platform with PagerDuty DevOps Observability with EKS on On Your Own Setup</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language><atom:link href="https://mitalibo.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language><atom:link href="//localhost:1313/5_deploy_eks_pagerduty/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Download the Workshop Code</title>
-      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/51_download_code.html</link>
+      <link>//localhost:1313/5_deploy_eks_pagerduty/51_download_code.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/51_download_code.html</guid>
+      <guid>//localhost:1313/5_deploy_eks_pagerduty/51_download_code.html</guid>
       <description>The code is located at https://github.com/jfrogtraining/pagerduty-workshop GitHub repository. We will clone this repo locally in order to pull the required workshop files.
  Go to https://github.com/jfrogtraining/pagerduty-workshop and fork this repository to your GitHub account.
  In your Cloud9 terminal, clone this repository to your local directory with the following command.
@@ -20,20 +20,20 @@ git clone git@github.com:&amp;lt;github username&amp;gt;/pagerduty-workshop.git 
     
     <item>
       <title>Create Your EKS Cluster</title>
-      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/52_create_eks_cluster.html</link>
+      <link>//localhost:1313/5_deploy_eks_pagerduty/52_create_eks_cluster.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/52_create_eks_cluster.html</guid>
+      <guid>//localhost:1313/5_deploy_eks_pagerduty/52_create_eks_cluster.html</guid>
       <description>We will use the EKSCTL command line tool to create an Amazon Elastic Kubernetes (EKS) cluster. This powerful tool allows you to manage many aspects of your EKS cluster through simple commands. When using EKSCTL, you can still manage your cluster in the Amazon EKS dashboard in the AWS console.
 Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that you can use to run Kubernetes on AWS without needing to install, operate, and maintain your own Kubernetes control plane or nodes.</description>
     </item>
     
     <item>
       <title>Set up PagerDuty</title>
-      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/53_set_up_pagerduty.html</link>
+      <link>//localhost:1313/5_deploy_eks_pagerduty/53_set_up_pagerduty.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/53_set_up_pagerduty.html</guid>
+      <guid>//localhost:1313/5_deploy_eks_pagerduty/53_set_up_pagerduty.html</guid>
       <description>Next we will set up your PagerDuty Developer Platform. If you do not yet have a developer platform, you can sign up and get a free developer platform instance here.
 PagerDuty provides many ways for developers to integrate with their platform. You can learn more through their developer documentation.
   In your PagerDuty, go to Services &amp;gt; Service Directory. A service may represent an application, component, or team you wish to open incidents against.</description>
@@ -41,30 +41,30 @@ PagerDuty provides many ways for developers to integrate with their platform. Yo
     
     <item>
       <title>Set up our JFrog Pipelines Integrations</title>
-      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/54_pipeline_integrations.html</link>
+      <link>//localhost:1313/5_deploy_eks_pagerduty/54_pipeline_integrations.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/54_pipeline_integrations.html</guid>
+      <guid>//localhost:1313/5_deploy_eks_pagerduty/54_pipeline_integrations.html</guid>
       <description>Our CI/CD pipeline requires access to GitHub to pull our code, access to JFrog Artifactory to deploy our Docker image and access to AWS to deploy to EKS. We will set up JFrog Pipelines integrations to enable these.
 An Integration connects Pipelines to an external service/tool. Each integration type defines the endpoint, credentials and any other configuration detail required for Pipelines to exchange information with the service. All credential information is encrypted and held in secure storage, in conformance with best security practices.</description>
     </item>
     
     <item>
       <title>Update our Pipeline</title>
-      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/55_update_pipeline.html</link>
+      <link>//localhost:1313/5_deploy_eks_pagerduty/55_update_pipeline.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/55_update_pipeline.html</guid>
+      <guid>//localhost:1313/5_deploy_eks_pagerduty/55_update_pipeline.html</guid>
       <description>We need to make an update to our CI/CD pipeline in order to use your JFrog Platform instance. The CI/CD pipeline is defined in pipelines.yml. This pipeline file is parameterized with a values.yml file. We need to update this file.
  In your Cloud9 terminal, use the editor and view the pipelines.yml file. View and understand the steps. Note the parameterized values.  The last step in the pipeline, eks_deploy, deploys our application to the EKS cluster we created earlier.</description>
     </item>
     
     <item>
       <title>Build, Publish and Deploy to EKS</title>
-      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/56_build_publish_deploy.html</link>
+      <link>//localhost:1313/5_deploy_eks_pagerduty/56_build_publish_deploy.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/56_build_publish_deploy.html</guid>
+      <guid>//localhost:1313/5_deploy_eks_pagerduty/56_build_publish_deploy.html</guid>
       <description>In your JFrog Platform instance, go to Application &amp;gt; Pipelines &amp;gt; Pipeline Sources.  Click Add a pipeline source.
  Click Add Pipeline Source at the top right and select From YAML.  For SCM Provider Integration, select the github_integration that you created previously.
  For Repository Full Name, select your forked /pagerduty-workshop.
@@ -74,20 +74,20 @@ An Integration connects Pipelines to an external service/tool. Each integration 
     
     <item>
       <title>View Results in JFrog</title>
-      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/57_view_results.html</link>
+      <link>//localhost:1313/5_deploy_eks_pagerduty/57_view_results.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/57_view_results.html</guid>
+      <guid>//localhost:1313/5_deploy_eks_pagerduty/57_view_results.html</guid>
       <description>We have built and published our Docker image. Let&amp;rsquo;s view these results in the JFrog Platform.
  Go to your JFrog Platform instance and switch to the Packages view in Artifactory. Go to Artifactory ► Packages. Search for the name of the Docker image that was built in your workshop pagerduty-workshop-app. Click on the Docker image listing. This will show a list of the versions. Click on the latest version that was built.</description>
     </item>
     
     <item>
       <title>View Events in PagerDuty</title>
-      <link>https://mitalibo.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/58_view_pagerduty.html</link>
+      <link>//localhost:1313/5_deploy_eks_pagerduty/58_view_pagerduty.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mitalibo.github.io/aws-modernization-with-jfrog/5_deploy_eks_pagerduty/58_view_pagerduty.html</guid>
+      <guid>//localhost:1313/5_deploy_eks_pagerduty/58_view_pagerduty.html</guid>
       <description>Go to your Pagerduty instance, navigate to Services &amp;gt; Service Directory and search and select Artifactory and Pipelines evnts. You should be able to see all the change events and notifications from Pipelines and Artifactory.  Now click on any pipeline event. This will give you information about that Jfrog pipeline event and if you click on View in Build Pipeline , it will take you to that particular pipeline in JFrog instance.</description>
     </item>
     

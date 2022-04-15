@@ -1,9 +1,8 @@
-#baseURL = "/"
-baseURL = "https://mitalibo.github.io/aws-modernization-with-jfrog/"
+baseURL = "/"
 languageCode = "en-US"
 defaultContentLanguage = "oyo"
 
-title = "JFrog Pagerduty DevOps Modernization with AWS Workshop"
+title = "JFrog DevOps Modernization Workshop"
 theme = "hugo-theme-learn"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= "false"
@@ -23,7 +22,7 @@ canonifyurls = true
   # Author of the site, will be used in meta information
   author = "JFrog"
   # Description of the site, will be used in meta information
-  description = "JFrog Pagerduty DevOps Modernization Workshop"
+  description = "AWS Modernization Workshop"
   # Shows a checkmark for visited pages on the menu
   showVisitedLinks = true
   # Disable search function. It will hide search bar
